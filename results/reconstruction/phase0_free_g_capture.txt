@@ -1,0 +1,12 @@
+ORDER CHECK: True 987 recordings
+gate: reproducibility_k1 = 0.8355
+gate: grey fraction +-1 SEM = 41.5%  inside 0.6690  outside 0.9538
+
+      band  %indet  sens_def  spec_def  repro_def
+      none    0.0%    0.7570    0.5881     0.8355
++-0.25 SEM   12.7%    0.7852    0.5914     0.8772
++-0.50 SEM   23.7%    0.8094    0.5757     0.9109
++-0.75 SEM   32.7%    0.8361    0.5559     0.9345
++-1.00 SEM   41.5%    0.8705    0.5265     0.9538
+
+DONE phase0_free_g

@@ -1,0 +1,4 @@
+{
+  "repo_url": "[REPOSITORY URL]",
+  "_note": "Set repo_url to the real repository address and rebuild: make_qr.py regenerates docs/figures/fig_repo_qr.png from it, and the address in Appendix J Table (J.1) is read from the markdown source (replace the placeholder there too)."
+}

@@ -1,0 +1,90 @@
+{
+ "fig_robustness.png": [
+  2075,
+  998
+ ],
+ "fig_validation_story.png": [
+  2251,
+  2438
+ ],
+ "fig_lu_false_positives.png": [
+  1959,
+  1239
+ ],
+ "fig_threshold_precision.png": [
+  1839,
+  998
+ ],
+ "fig_corpus_effect.png": [
+  2055,
+  1035
+ ],
+ "fig_ablation.png": [
+  2025,
+  1059
+ ],
+ "fig_effect_sizes.png": [
+  1832,
+  1098
+ ],
+ "fig_architecture.png": [
+  3082,
+  1663
+ ],
+ "fig_decision_curve.png": [
+  1311,
+  1098
+ ],
+ "fig_rdi_probe.png": [
+  1670,
+  1336
+ ],
+ "fig_recovery_ceiling.png": [
+  2199,
+  939
+ ],
+ "fig_score_distributions.png": [
+  1500,
+  1672
+ ],
+ "fig_ppv_prevalence.png": [
+  2199,
+  939
+ ],
+ "fig_roc.png": [
+  1244,
+  1144
+ ],
+ "fig_feature_flow.png": [
+  1734,
+  637
+ ],
+ "fig_task_genre.png": [
+  2859,
+  1179
+ ],
+ "fig_calibration.png": [
+  1244,
+  1156
+ ],
+ "fig_calibration_reconstructed.png": [
+  1560,
+  1500
+ ],
+ "fig_stimuli.png": [
+  1420,
+  2120
+ ],
+ "fig_control_referenced.png": [
+  2197,
+  939
+ ],
+ "fig_sens_spec_tradeoff.png": [
+  2221,
+  943
+ ],
+ "fig_repo_qr.png": [
+  348,
+  348
+ ]
+}

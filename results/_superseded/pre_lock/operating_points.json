@@ -1,0 +1,78 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock operating points on the 1,040-recording pool (the screening sens/spec resolve to 370/491 and 322/549). The deployed threshold is 0.367 at 0.757 sens / 0.588 spec on the locked 987 pool.",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "operating_points": {
+    "High sensitivity (rule out)": {
+      "threshold": 0.274,
+      "sens": 0.90020366598778,
+      "spec": 0.29143897996357016
+    },
+    "Screening (recommended)": {
+      "threshold": 0.383,
+      "sens": 0.7535641547861507,
+      "spec": 0.5865209471766849
+    },
+    "Balanced": {
+      "threshold": 0.426,
+      "sens": 0.6802443991853361,
+      "spec": 0.6794171220400729
+    },
+    "High specificity (rule in)": {
+      "threshold": 0.623,
+      "sens": 0.45213849287169044,
+      "spec": 0.9052823315118397
+    }
+  },
+  "ppv_npv": [
+    {
+      "prevalence": 0.01,
+      "ppv": 0.018076288826578954,
+      "npv": 0.9957738406404111
+    },
+    {
+      "prevalence": 0.05,
+      "ppv": 0.08752536287930136,
+      "npv": 0.9783644756473738
+    },
+    {
+      "prevalence": 0.077,
+      "ppv": 0.13197402564506555,
+      "npv": 0.9661352930078358
+    },
+    {
+      "prevalence": 0.11,
+      "ppv": 0.18384162122042244,
+      "npv": 0.9506330886715986
+    },
+    {
+      "prevalence": 0.15,
+      "ppv": 0.24335116100854617,
+      "npv": 0.9309714061657328
+    },
+    {
+      "prevalence": 0.25,
+      "ppv": 0.3779155759710215,
+      "npv": 0.8771505450914032
+    },
+    {
+      "prevalence": 0.42,
+      "ppv": 0.5689170007454004,
+      "npv": 0.7667196156768089
+    }
+  ]
+}

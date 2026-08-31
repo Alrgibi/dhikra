@@ -1,0 +1,7 @@
+{
+  "_provenance_for": "robust_features.json (a bare array -- provenance cannot be added inside it without changing its structure, so it lives here)",
+  "content": "the 51 features that survive the Pitt-vs-WLS transcription-convention check (the 'robust_only' arm of corpus_effect, AUC 0.713)",
+  "script": "scripts/early_detection.py",
+  "lock_state": "Lu never involved",
+  "stamped": "2026-08-22"
+}

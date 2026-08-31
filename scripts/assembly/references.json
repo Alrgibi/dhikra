@@ -1,0 +1,858 @@
+[
+ {
+  "key": "who_dementia_factsheet",
+  "entry": "World Health Organization, \"Dementia,\" fact sheet, https://www.who.int/news-room/fact-sheets/detail/dementia, accessed Aug. 2026. The fact sheet defines dementia as a syndrome of cognitive decline beyond ordinary ageing and names Alzheimer's disease as its most common form, contributing an estimated 60 to 70% of cases.",
+  "aliases": [
+   [
+    "chapter1.md",
+    1
+   ]
+  ],
+  "status": "verified",
+  "notes": "Web source. Wording of the 60–70% claim confirmed in finding 43. URL scheme added; the local entry's descriptive sentence kept verbatim (faculty requirement). Missing element: the fact sheet's own publication/update date is not in the record and was not looked up (lookup cap) — the assembler should read it off the page and insert it before 'accessed'."
+ },
+ {
+  "key": "sedighi2026_mena_prevalence",
+  "entry": "M. Sedighi et al., \"Prevalence of dementia in selected Middle East and North Africa (MENA) countries: a systematic review and meta-analysis,\" *Alzheimer's and Dementia*, vol. 22, no. 1, art. e71109, 2026, doi:10.1002/alz.71109.",
+  "aliases": [
+   [
+    "chapter1.md",
+    2
+   ],
+   [
+    "appendix_b.md",
+    1
+   ]
+  ],
+  "status": "verified",
+  "notes": "Finding 43 (CLOSED-VERIFIED): authors, journal, volume, article number and DOI. DOI added from finding 43. Full author list not in the record; 'et al.' kept. Journal printed in the chapter-wide house form 'Alzheimer's and Dementia' (the journal's own name uses '&'). Appendix B cites the same source inline in author-year form.",
+  "unnumbered_mentions": [
+   [
+    "appendix_b.md",
+    "line 44: [Sedighi et al., *Alzheimer's & Dementia*, 22(1):e71109, 2026]"
+   ]
+  ]
+ },
+ {
+  "key": "dajani2026_mena_narrative_review",
+  "entry": "I. Dajani et al., \"Dementia in the Middle East and North Africa: an integrative narrative review of epidemiology, risk structure, and health system implications,\" *Journal of Global Health*, vol. 16, art. 04181, 2026.",
+  "aliases": [
+   [
+    "chapter1.md",
+    3
+   ],
+   [
+    "appendix_b.md",
+    2
+   ]
+  ],
+  "status": "verified",
+  "notes": "Surname-only in the chapter (the scaffolding note says the initial would read as a pronoun to the format gate). First-author initial 'I.' completed from finding 43 (verify/chapter1.md row 7). Full author list not in the record; 'et al.' kept. Format-gate note: 'I. Dajani' will trip the pronoun scan unless exempted. Appendix B cites it inline.",
+  "unnumbered_mentions": [
+   [
+    "appendix_b.md",
+    "line 48: [Dajani et al., *J. Global Health*, 16:04181, 2026]"
+   ]
+  ]
+ },
+ {
+  "key": "elmetwally2019_arab_epidemiology",
+  "entry": "A. El-Metwally et al., \"Epidemiology of Alzheimer's disease and dementia in Arab countries: a systematic review,\" *Behavioural Neurology*, vol. 2019, art. 3935943, 2019.",
+  "aliases": [
+   [
+    "chapter1.md",
+    4
+   ],
+   [
+    "appendix_b.md",
+    3
+   ]
+  ],
+  "status": "verified",
+  "notes": "Finding 43 / plan line 231: resolves as cited. No DOI in the record and none looked up (cap). Appendix B cites it inline.",
+  "unnumbered_mentions": [
+   [
+    "appendix_b.md",
+    "lines 50–51: [El-Metwally et al., *Behavioural Neurology*, 2019, art. 3935943]"
+   ]
+  ]
+ },
+ {
+  "key": "peledcohen2025_tacl_review",
+  "entry": "L. Peled-Cohen and R. Reichart, \"A systematic review of NLP for dementia: tasks, datasets, and opportunities,\" *Transactions of the Association for Computational Linguistics*, vol. 13, pp. 1204–1244, 2025, doi:10.1162/tacl.a.35.",
+  "aliases": [
+   [
+    "chapter1.md",
+    5
+   ],
+   [
+    "chapter2.md",
+    4
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "MERGE: Chapter 1 [5] and Chapter 2 [4] are the same review (identical entries). Volume 13 and DOI from finding 55 / plan line 252; page range 1204–1244 read from the Crossref record of 10.1162/tacl.a.35 this session (lookup 21) — the MIT Press page returned 403 to the verifier. Preprint arXiv:2409.19737. Finding 55 flags that the Chapter 2 quotations may not match the published text (24% vs the preprint's 29%) — a text issue, not a reference issue."
+ },
+ {
+  "key": "fahmy2026_disasters_scoping_review",
+  "entry": "C. Fahmy and M. Nordheim Alme, \"Effects of natural disasters on the cognitive state of older adults with dementia: a scoping review,\" *European Geriatric Medicine*, vol. 17, no. 3, pp. 1501–1511, 2026, doi:10.1007/s41999-026-01459-1.",
+  "aliases": [
+   [
+    "chapter1.md",
+    6
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan lines 290–293 (verified 2026-08-26). DOI added from the plan; hyphen in the page range replaced by an en-dash."
+ },
+ {
+  "key": "snowdon1996_nun_study",
+  "entry": "D. A. Snowdon, S. J. Kemper, J. A. Mortimer, L. H. Greiner, D. R. Wekstein and W. R. Markesbery, \"Linguistic ability in early life and cognitive function and Alzheimer's disease in late life,\" *JAMA*, vol. 275, no. 7, pp. 528–532, 1996, doi:10.1001/jama.1996.03530310034029.",
+  "aliases": [
+   [
+    "chapter2.md",
+    1
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.1 (verified 2026-08-22). DOI added from the plan; en-dash in the page range."
+ },
+ {
+  "key": "garrard2005_murdoch",
+  "entry": "P. Garrard, L. M. Maloney, J. R. Hodges and K. Patterson, \"The effects of very early Alzheimer's disease on the characteristics of writing by a renowned author,\" *Brain*, vol. 128, no. 2, pp. 250–260, 2005.",
+  "aliases": [
+   [
+    "chapter2.md",
+    2
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.1 (verified 2026-08-22). En-dash in the page range; no DOI in the record."
+ },
+ {
+  "key": "fraser2016_linguistic_features",
+  "entry": "K. C. Fraser, J. A. Meltzer and F. Rudzicz, \"Linguistic features identify Alzheimer's disease in narrative speech,\" *Journal of Alzheimer's Disease*, vol. 49, no. 2, pp. 407–422, 2016, doi:10.3233/JAD-150520.",
+  "aliases": [
+   [
+    "chapter2.md",
+    3
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. Initials K. C. / J. A. / F. read from the Crossref record of 10.3233/JAD-150520 by the Chapter 2 verifier (verify/chapter2.md row 14); DOI from plan §2.2. In-text issue (finding 59d): at chapter2.md line 11 this entry is attached to the sentence naming Novoic, Canary Speech and ki:elements, which the paper does not mention — reported, not fixed."
+ },
+ {
+  "key": "lanzi2023_dementiabank",
+  "entry": "A. M. Lanzi, A. K. Saylor, D. Fromm, H. Liu, B. MacWhinney and M. L. Cohen, \"DementiaBank: theoretical rationale, protocol, and illustrative analyses,\" *American Journal of Speech-Language Pathology*, vol. 32, no. 2, pp. 426–438, 2023.",
+  "aliases": [
+   [
+    "chapter2.md",
+    5
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.3 (verified 2026-08-22). En-dash in the page range."
+ },
+ {
+  "key": "becker1994_pitt",
+  "entry": "J. T. Becker, F. Boller, O. L. Lopez, J. Saxton and K. L. McGonigle, \"The natural history of Alzheimer's disease,\" *Archives of Neurology*, vol. 51, no. 6, pp. 585–594, 1994.",
+  "aliases": [
+   [
+    "chapter2.md",
+    6
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.3 (verified 2026-08-22; TalkBank's required Pitt citation). TalkBank additionally requires acknowledgement of NIA grants AG03705 and AG05133 on the acknowledgements page — carried in the chapter's scaffolding note, not in this entry."
+ },
+ {
+  "key": "luz2020_adress",
+  "entry": "S. Luz, F. Haider, S. de la Fuente, D. Fromm and B. MacWhinney, \"Alzheimer's dementia recognition through spontaneous speech: the ADReSS challenge,\" in *Proc. INTERSPEECH 2020*, 2020, pp. 2172–2176.",
+  "aliases": [
+   [
+    "chapter2.md",
+    7
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.3 (verified 2026-08-22). Conference form normalised to 'in *Proc. …*, YEAR, pp.'. No DOI in the record. In-text issue (finding 59e): Table (2.2) row 1 cites this entry for 'ADReSS challenge submissions 0.85–0.95', which the paper (the baselines) does not report — the editorial [11] does; reported, not fixed."
+ },
+ {
+  "key": "guo2021_cookie_theft_chasm",
+  "entry": "Y. Guo, C. Li, C. Roan, S. Pakhomov and T. Cohen, \"Crossing the 'Cookie Theft' corpus chasm: applying what BERT learns from outside data to the ADReSS challenge dementia detection task,\" *Frontiers in Computer Science*, vol. 3, art. 642517, 2021, doi:10.3389/fcomp.2021.642517.",
+  "aliases": [
+   [
+    "chapter2.md",
+    8
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. Initials read from the Frontiers page by the Chapter 2 verifier (verify/chapter2.md row 14); DOI from plan §2.3 and DESIGN_RATIONALE citation-status table. In-text issue (finding 59c): chapter2.md line 21 cites [8] for the field's external-validation record, a claim that belongs to the TACL review [4] — reported, not fixed."
+ },
+ {
+  "key": "latif2025_transformer_ensemble",
+  "entry": "S. Latif, N. U. Islam, Z. Uddin, K. M. Cheema, S. S. Ahmed and M. F. Khan, \"Deep ensemble learning with transformer models for enhanced Alzheimer's disease detection,\" *Scientific Reports*, vol. 15, art. 24720, 2025, doi:10.1038/s41598-025-08362-y.",
+  "aliases": [
+   [
+    "chapter2.md",
+    9
+   ]
+  ],
+  "status": "verified",
+  "notes": "Confirmed on the Nature page by the Chapter 2 verifier; DOI from plan §2.3.1."
+ },
+ {
+  "key": "niemela2026_wrapper_feature_selection",
+  "entry": "M. Niemelä, M. von Bonsdorff, S. Äyrämö and T. Kärkkäinen, \"Dementia classification from spontaneous speech using wrapper-based feature selection,\" *Applied Computing and Intelligence*, vol. 6, no. 1, pp. 89–114, 2026, doi:10.3934/aci.2026006 (preprint arXiv:2502.03484).",
+  "aliases": [
+   [
+    "chapter2.md",
+    10
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "CHANGED per finding 73(d) / verify/chapter2.md row 8: the chapter cites 'arXiv:2502.03484, 2025', but every figure it quotes (ridge 86.5% with 227 features; extended Pitt 79.7% with 1,476) is from v3 = the journal version. Journal, volume, issue, pages and DOI read from Crossref this session (lookup 22); arXiv identifier retained in parentheses so a reader who follows the chapter's original locator still lands on the right paper."
+ },
+ {
+  "key": "luz2021_adress_editorial",
+  "entry": "S. Luz, F. Haider, S. de la Fuente Garcia, D. Fromm and B. MacWhinney, \"Editorial: Alzheimer's dementia recognition through spontaneous speech,\" *Frontiers in Computer Science*, vol. 3, art. 780169, 2021, doi:10.3389/fcomp.2021.780169.",
+  "aliases": [
+   [
+    "chapter2.md",
+    11
+   ],
+   [
+    "chapter6.md",
+    3
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "MERGE: Chapter 2 [11] and Chapter 6 [3] are the same editorial (identical entries). Surname-only in both chapters; initials and DOI read from the Frontiers record by the Chapter 2 verifier (verify/chapter2.md row 14); title web-verified by Session C (handover, Chapter 6)."
+ },
+ {
+  "key": "ablimit2022_cross_corpus",
+  "entry": "A. Ablimit, C. Botelho, A. Abad, T. Schultz and I. Trancoso, \"Exploring dementia detection from speech: cross corpus analysis,\" in *Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing (ICASSP)*, Singapore, 2022, pp. 6472–6476, doi:10.1109/ICASSP43922.2022.9747167.",
+  "aliases": [
+   [
+    "chapter2.md",
+    12
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter (deliberately — 'I. Trancoso' would trip the pronoun gate; the assembler must exempt it). Initials from the paper PDF (verify/chapter2.md row 14); pages, location and DOI read from Crossref this session (lookup 19)."
+ },
+ {
+  "key": "rabaya2026_arabic_moca",
+  "entry": "Y. J. Rabaya, S. A. Qarariya, T. M. Abualhaija, A. A. Salah and H. I. Ashqar, \"Automated MoCA scoring for Arabic speakers using hybrid AI of multimodal speech, vision, and LLM integration,\" *Frontiers in Psychology*, vol. 17, art. 1833118, 2026, doi:10.3389/fpsyg.2026.1833118.",
+  "aliases": [
+   [
+    "chapter2.md",
+    13
+   ],
+   [
+    "chapter5.md",
+    5
+   ],
+   [
+    "chapter6.md",
+    5
+   ]
+  ],
+  "status": "verified",
+  "notes": "MERGE: Chapter 2 [13], Chapter 5 [5] and Chapter 6 [5] are the same article (Chapter 5 abbreviates the journal to Front. Psychol.). Full author list with initials and DOI from plan §2.5 (verified 2026-08-22) and finding 22; title per finding 39 (the mandated, verified title). Note: the chapters' scaffolding says the initials are not in the record — they are (verify/chapter2.md row 14)."
+ },
+ {
+  "key": "dabbabi2023_tunisian_vot",
+  "entry": "K. Dabbabi, A. Kehili and A. Cherif, \"Early detection of Alzheimer's disease using VOT mean measure in new Tunisian Arabic database,\" in *Proc. IEEE IC_ASET 2023*, 2023, pp. 1–6, doi:10.1109/IC_ASET58101.2023.10150580.",
+  "aliases": [
+   [
+    "chapter2.md",
+    14
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.5 (paper confirmed real; VOT framing per the plan's own correction). DOI added from the plan. The conference acronym is kept as the record holds it (not expanded, to avoid inventing the venue's full name)."
+ },
+ {
+  "key": "mohmedshareif2024_arabic_transcripts",
+  "entry": "H. O. MohmedShareif, A. M. Elmangoush, A. A. Fadhl and M. A. Ali, \"Utilizing linguistic and acoustic features from Arabic transcripts for early detecting Alzheimer's disease using different machine learning algorithms,\" in *Proc. IEEE ATSIP 2024*, 2024, pp. 449–454, doi:10.1109/ATSIP62566.2024.10639034.",
+  "aliases": [
+   [
+    "chapter2.md",
+    15
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.5 (verified 2026-08-22). DOI added from the plan; acronym kept as recorded."
+ },
+ {
+  "key": "kabalan2025_arabic_cognitive_tools",
+  "entry": "M. Kabalan, O. Bazzi, J. Al-Barathie, O. El Zein, L. Chehabeddine, J. Khabsa, M. Chaaya, C. Mendes de Leon and M. Elbejjani, \"Cognitive assessment tools for Arabic-speaking older adults: a systematic review,\" *Alzheimer's and Dementia*, vol. 21, no. 5, art. e70207, 2025, doi:10.1002/alz.70207.",
+  "aliases": [
+   [
+    "chapter2.md",
+    16
+   ],
+   [
+    "chapter6.md",
+    6
+   ]
+  ],
+  "status": "verified",
+  "notes": "MERGE: Chapter 2 [16] and Chapter 6 [6] are identical entries. Plan §2.5 and DESIGN_RATIONALE (verified and corrected 2026-08-22; PMC12106054); DOI added from the plan. All nine authors kept as the chapters list them. In-text issue (finding 56): the clause 'performing poorly for mild impairment … the MoCA excepted' at chapter2.md line 82 is not in the source — reported, not fixed."
+ },
+ {
+  "key": "taiebine2026_ma_mlse",
+  "entry": "M. Taiebine and M. El Alaoui Faris, \"Cultural and psycholinguistic considerations in the adaptation and preliminary validation of the Moroccan version of the Mini-Linguistic State Examination (MA-MLSE),\" *Revista de Logopedia, Foniatría y Audiología*, vol. 46, no. 4, art. 100581, 2026, doi:10.1016/j.rlfa.2026.100581.",
+  "aliases": [
+   [
+    "chapter2.md",
+    17
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.5 (peer-reviewed paper preferred over the 2025 AAIC abstract). DOI added from the plan. Journal name written in full with its Spanish diacritics (the chapter had 'Revista de Logopedia, Foniatria y Audiologia'). The plan records the title with a trailing ellipsis ('(MA-MLSE)…'), so the published title may continue beyond what is printed — not checked (lookup cap)."
+ },
+ {
+  "key": "taiebine2019_logopenic_ppa_arabic",
+  "entry": "M. Taiebine and M. El Alaoui Faris, \"Neurolinguistic and acoustic study of logopenic primary progressive aphasia in Arabic,\" *Acta Neuropsychologica*, vol. 17, no. 4, pp. 469–485, 2019, doi:10.5604/01.3001.0013.6552.",
+  "aliases": [
+   [
+    "chapter2.md",
+    18
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.5 (verified 2026-08-22). DOI added from the plan; en-dash in the page range."
+ },
+ {
+  "key": "rauniyar2023_dementiabank_hindi",
+  "entry": "K. Rauniyar, S. Shiwakoti, S. Poudel, S. Thapa, U. Naseem and M. Nasim, \"Breaking barriers: exploring the diagnostic potential of speech narratives in Hindi for Alzheimer's disease,\" in *Proc. 5th Clinical Natural Language Processing Workshop*, 2023, pp. 24–30, doi:10.18653/v1/2023.clinicalnlp-1.4.",
+  "aliases": [
+   [
+    "chapter2.md",
+    19
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §2.5 (paper real; wording softened per the plan). DOI added from the plan; conference form normalised."
+ },
+ {
+  "key": "macwhinney2000_childes",
+  "entry": "B. MacWhinney, *The CHILDES Project: Tools for Analyzing Talk*, 3rd ed. Mahwah, NJ: Lawrence Erlbaum, 2000.",
+  "aliases": [
+   [
+    "chapter3.md",
+    1
+   ]
+  ],
+  "status": "initials-unverified",
+  "notes": "TalkBank's standard citation for use of its corpora. No entry in the project's verified-citation record and not looked up (lookup cap spent on surname-only entries), so the initial rests on the chapter draft alone. The chapter's non-IEEE parenthetical '(TalkBank / DementiaBank; membership agreement.)' dropped from the entry."
+ },
+ {
+  "key": "yorkston1980_connected_speech",
+  "entry": "K. M. Yorkston and D. R. Beukelman, \"An analysis of connected speech samples of aphasic and normal speakers,\" *Journal of Speech and Hearing Disorders*, vol. 45, no. 1, pp. 27–36, 1980.",
+  "aliases": [
+   [
+    "chapter3.md",
+    2
+   ],
+   [
+    "chapter4.md",
+    8
+   ],
+   [
+    "appendix_g.md",
+    2
+   ]
+  ],
+  "status": "verified",
+  "notes": "MERGE: Chapter 3 [2], Chapter 4 [8] and Appendix G's '[2, 3]' (which follows Chapter 3's numbering, per verify/chapter3.md row 12) are identical. Verified record per verify/chapter4.md (References D). Journal abbreviation expanded."
+ },
+ {
+  "key": "nicholas1993_ciu",
+  "entry": "M. L. Nicholas and R. H. Brookshire, \"A system for quantifying the informativeness and efficiency of the connected speech of adults with aphasia,\" *Journal of Speech and Hearing Research*, vol. 36, no. 2, pp. 338–350, 1993.",
+  "aliases": [
+   [
+    "chapter3.md",
+    3
+   ],
+   [
+    "chapter4.md",
+    9
+   ],
+   [
+    "appendix_g.md",
+    3
+   ]
+  ],
+  "status": "verified",
+  "notes": "MERGE: Chapter 3 [3], Chapter 4 [9] and Appendix G '[2, 3]'. Verified record per verify/chapter4.md. Journal abbreviation expanded."
+ },
+ {
+  "key": "mitchell2008_smc_meta_analysis",
+  "entry": "A. J. Mitchell, \"The clinical significance of subjective memory complaints in the diagnosis of mild cognitive impairment and dementia: a meta-analysis,\" *International Journal of Geriatric Psychiatry*, vol. 23, no. 11, pp. 1191–1202, 2008, doi:10.1002/gps.2053.",
+  "aliases": [
+   [
+    "chapter3.md",
+    4
+   ],
+   [
+    "appendix_h.md",
+    4
+   ]
+  ],
+  "status": "verified",
+  "notes": "Plan §3.7 (line 968–971) and DESIGN_RATIONALE §5 (PMID 18500688). Appendix H.10 reproduces the entry under the same number. Journal abbreviation expanded."
+ },
+ {
+  "key": "mitchell2014_smc_risk",
+  "entry": "A. J. Mitchell, H. Beaumont, D. Ferguson, M. Yadegarfar and B. Stubbs, \"Risk of dementia and mild cognitive impairment in older people with subjective memory complaints: meta-analysis,\" *Acta Psychiatrica Scandinavica*, vol. 130, no. 6, pp. 439–451, 2014, doi:10.1111/acps.12336.",
+  "aliases": [
+   [
+    "chapter3.md",
+    5
+   ],
+   [
+    "appendix_h.md",
+    5
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "The plan and DESIGN_RATIONALE hold this source as 'Mitchell et al. 2014' without initials; the chapter's full author list was confirmed against Crossref this session (lookup 10), which also supplied the DOI."
+ },
+ {
+  "key": "pike2022_scd_meta_analysis",
+  "entry": "K. E. Pike, M. G. Cavuoto, L. Li, B. J. Wright and G. J. Kinsella, \"Subjective cognitive decline: level of risk for future dementia and mild cognitive impairment, a meta-analysis of longitudinal studies,\" *Neuropsychology Review*, vol. 32, no. 4, pp. 703–735, 2022, doi:10.1007/s11065-021-09522-3.",
+  "aliases": [
+   [
+    "chapter3.md",
+    6
+   ],
+   [
+    "appendix_h.md",
+    6
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Record holds 'Pike et al. 2022' only. Confirmed against Crossref this session (lookup 11): one correction — the second author is M. G. Cavuoto (the chapter printed 'M. J. Cavuoto'); DOI added."
+ },
+ {
+  "key": "ronner2025_gp_referral_letters",
+  "entry": "D. Ronner, D. Oostra, J. Claassen, E. Richard and M. Perry, \"Diagnostic information in GP referral letters to a memory clinic: a retrospective cohort study,\" *BJGP Open*, vol. 9, no. 1, art. BJGPO.2024.0065, 2025.",
+  "aliases": [
+   [
+    "chapter3.md",
+    7
+   ],
+   [
+    "appendix_h.md",
+    7
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "REPLACED per finding 63: the chapter's title 'Diagnostic outcomes in a primary-care memory pathway' and the initial 'F.' were invented; the verified title, five-author list, volume, issue and article number are those the verifier read from the publisher page. The non-IEEE 'n = 651' annotation dropped. Same replacement applies to Appendix H.10 entry 7."
+ },
+ {
+  "key": "blane2025_oxford_brain_health_clinic",
+  "entry": "J. Blane et al., \"Prevalence of dementia risk factors in the Oxford Brain Health Clinic,\" *Scientific Reports*, vol. 15, art. 7765, 2025.",
+  "aliases": [
+   [
+    "chapter3.md",
+    8
+   ],
+   [
+    "appendix_h.md",
+    8
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "REPLACED per finding 63: the chapter's title 'The Oxford Brain Health Clinic: case mix and diagnostic yield' was invented; the verified title is used. Thirteen authors (Blane, Gillis, Griffanti, Mitchell, Pretorius, Forster, Shabir, Maffei, O'Donoghue, Fossey, Raymont, Martos, Mackay), so 'J. Blane et al.' — co-author initials are not in the record. 'n = 313' annotation dropped. Article number 7765 was not re-checked by the verifier (their note) and not looked up here."
+ },
+ {
+  "key": "nhsengland2020_memory_service_audit",
+  "entry": "NHS England, \"The 2019 national memory service audit,\" https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2020/04/The-2019-national-memory-service-audit.pdf, 2020, accessed Aug. 2026. An audit of 85 memory services in England, covering about 3,700 people aged 65 and over, that reports each service's diagnostic case mix and the range of dementia yield across services.",
+  "aliases": [
+   [
+    "chapter3.md",
+    9
+   ],
+   [
+    "appendix_h.md",
+    9
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Reformatted from the chapter's report-style entry ('NHS England, *2019 National Memory Service Audit*, 85 services, n ≈ 3,700 aged 65+') into the faculty's web-source form with URL, year and a descriptive sentence drawn from the chapter's own use of it. URL located by web search this session (lookup 25); the verifier had confirmed the document exists on england.nhs.uk (verify/chapter3.md row 3). Year 2020 taken from the upload path (/2020/04/). The PDF's named authors were not read (lookup cap) — corporate author used."
+ },
+ {
+  "key": "manly2022_hrs_hcap",
+  "entry": "J. J. Manly et al., \"Estimating the prevalence of dementia and mild cognitive impairment in the US: the 2016 Health and Retirement Study Harmonized Cognitive Assessment Protocol project,\" *JAMA Neurology*, vol. 79, no. 12, pp. 1242–1249, 2022, doi:10.1001/jamaneurol.2022.3543.",
+  "aliases": [
+   [
+    "chapter3.md",
+    10
+   ],
+   [
+    "appendix_h.md",
+    10
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Confirmed against Crossref and PubMed this session (lookups 12, 14, 15): eight authors (Manly, Jones, Langa, Ryan, Levine, McCammon, Heeringa, Weir) so 'et al.' stands; full subtitle restored ('the 2016 … project' — the chapter's subtitle omitted '2016' and 'project'); page range 1242–1249 completed (the chapter had 'p. 1242'); DOI added. Format-gate note: 'US' in this title is the case-excluded exception already handled by the author's pronoun scan (finding 42)."
+ },
+ {
+  "key": "borschsupan2025_share_hcap",
+  "entry": "A. Börsch-Supan, S. Douhou, M. C. Otero and B. B. Tawiah, \"Harmonized prevalence estimates of dementia in Europe vary strongly with childhood education,\" *Scientific Reports*, vol. 15, art. 14024, 2025.",
+  "aliases": [
+   [
+    "chapter3.md",
+    11
+   ],
+   [
+    "appendix_h.md",
+    11
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "REPLACED per finding 63: the chapter's title 'Prevalence of cognitive impairment in Europe: SHARE-HCAP' was invented; the verified title and four-author list are used. 'n = 47,773' annotation dropped. Article number 14024 not re-checked by the verifier and not looked up here."
+ },
+ {
+  "key": "cannonalbright2019_family_history",
+  "entry": "L. A. Cannon-Albright et al., \"Relative risk for Alzheimer disease based on complete family history,\" *Neurology*, vol. 92, no. 15, pp. e1745–e1753, 2019, doi:10.1212/WNL.0000000000007231.",
+  "aliases": [
+   [
+    "chapter3.md",
+    12
+   ],
+   [
+    "appendix_h.md",
+    12
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "DESIGN_RATIONALE §5 ('sourced and verified', no initials). Confirmed against Crossref and PubMed this session (lookups 13–15): nine authors, so 'et al.' stands; e-page range confirmed; DOI added."
+ },
+ {
+  "key": "petersen2018_mci_guideline",
+  "entry": "R. C. Petersen et al., \"Practice guideline update summary: mild cognitive impairment: report of the Guideline Development, Dissemination, and Implementation Subcommittee of the American Academy of Neurology,\" *Neurology*, vol. 90, no. 3, pp. 126–135, 2018, doi:10.1212/WNL.0000000000004826.",
+  "aliases": [
+   [
+    "appendix_h.md",
+    13
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Local to Appendix H (source of the MCI prevalence bands in Table (H.1)); DESIGN_RATIONALE §5 holds it as 'Petersen et al., AAN practice guideline update, Neurology 2018'. Confirmed against Crossref and PubMed this session (lookups 16, 18): thirteen authors; full title and DOI added. The appendix's parenthetical '(Source of the MCI prevalence bands in Table (H.1).)' dropped from the entry. FLAG for the author: both PubMed and Crossref now carry the title with a '[RETIRED]' marker — the AAN has retired this guideline. The citation is still correct as the source of the figures, but the thesis may want to say so."
+ },
+ {
+  "key": "alzassoc2024_facts_and_figures",
+  "entry": "Alzheimer's Association, \"2024 Alzheimer's disease facts and figures,\" *Alzheimer's and Dementia*, vol. 20, no. 5, pp. 3708–3821, 2024, doi:10.1002/alz.13809.",
+  "aliases": [
+   [
+    "appendix_h.md",
+    14
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Local to Appendix H (source of the dementia prevalence bands in Table (H.1)); DESIGN_RATIONALE §5 holds it as 'Alzheimer's Association, 2024 Facts and Figures'. The report is published as a journal article; its journal, volume, issue, pages and DOI were read from Crossref this session (lookup 17). The appendix's parenthetical about Table (H.1) dropped from the entry."
+ },
+ {
+  "key": "grinsztajn2022_tabular",
+  "entry": "L. Grinsztajn, E. Oyallon and G. Varoquaux, \"Why do tree-based models still outperform deep learning on typical tabular data?\" in *Advances in Neural Information Processing Systems*, vol. 35 (Datasets and Benchmarks Track), 2022.",
+  "aliases": [
+   [
+    "chapter4.md",
+    1
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. Initials read from the NeurIPS 2022 proceedings page by the Chapter 4 verifier (verify/chapter4.md, References D, row 1). NeurIPS 2022 is volume 35 of the proceedings, as the exemplar's own NeurIPS entry shows. Page range not in the record and not looked up (cap) — left out; DESIGN_RATIONALE §3 records the preprint as arXiv:2207.08815 if the assembler wants a locator. A title ending in '?' takes no comma inside the quote."
+ },
+ {
+  "key": "niculescumizil2005_calibration",
+  "entry": "A. Niculescu-Mizil and R. Caruana, \"Predicting good probabilities with supervised learning,\" in *Proc. 22nd Int. Conf. Machine Learning (ICML)*, 2005, pp. 625–632, doi:10.1145/1102351.1102430.",
+  "aliases": [
+   [
+    "chapter4.md",
+    2
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter; not searched by the verifier. Initials, pages and DOI read from Crossref this session (lookup 1)."
+ },
+ {
+  "key": "vyhnalek2022_memory_tests",
+  "entry": "M. Vyhnalek et al., \"Contribution of memory tests to early identification of conversion from amnestic mild cognitive impairment to dementia,\" *Journal of Alzheimer's Disease*, vol. 88, no. 4, pp. 1397–1409, 2022, doi:10.3233/JAD-215364.",
+  "aliases": [
+   [
+    "chapter4.md",
+    3
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. DOI and first-author initial from the verifier (verify/chapter4.md row 3); issue and page range read from Crossref this session (lookup 5). Ten authors, so 'et al.'. Journal abbreviation expanded."
+ },
+ {
+  "key": "morris1989_cerad",
+  "entry": "J. C. Morris et al., \"The Consortium to Establish a Registry for Alzheimer's Disease (CERAD). Part I. Clinical and neuropsychological assessment of Alzheimer's disease,\" *Neurology*, vol. 39, no. 9, pp. 1159–1165, 1989, doi:10.1212/WNL.39.9.1159.",
+  "aliases": [
+   [
+    "chapter4.md",
+    4
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter; not searched by the verifier. Initials, the full published title (with 'Part I.'), issue, page range and DOI read from Crossref and PubMed this session (lookups 2, 14, 15). Eight authors, so 'et al.'."
+ },
+ {
+  "key": "tombaugh1999_fluency_norms",
+  "entry": "T. N. Tombaugh, J. Kozak and L. Rees, \"Normative data stratified by age and education for two measures of verbal fluency: FAS and animal naming,\" *Archives of Clinical Neuropsychology*, vol. 14, no. 2, pp. 167–177, 1999, doi:10.1093/arclin/14.2.167.",
+  "aliases": [
+   [
+    "chapter4.md",
+    5
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter (DESIGN_RATIONALE records it without initials). Initials and DOI read from Crossref this session (lookup 3). Journal abbreviation expanded."
+ },
+ {
+  "key": "jacobsen2015_musical_memory",
+  "entry": "J.-H. Jacobsen, J. Stelzer, T. H. Fritz, G. Chételat, R. La Joie and R. Turner, \"Why musical memory can be preserved in advanced Alzheimer's disease,\" *Brain*, vol. 138, no. 8, pp. 2438–2450, 2015, doi:10.1093/brain/awv135.",
+  "aliases": [
+   [
+    "chapter4.md",
+    6
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. First-author initial and start page from the verifier (verify/chapter4.md row 6); all six authors' initials, the full page range and the DOI read from Crossref this session (lookup 4)."
+ },
+ {
+  "key": "goodglass1983_bdae",
+  "entry": "Goodglass and Kaplan, *The Assessment of Aphasia and Related Disorders*, 2nd ed. Philadelphia: Lea & Febiger, 1983.",
+  "aliases": [
+   [
+    "chapter4.md",
+    7
+   ]
+  ],
+  "status": "initials-unverified",
+  "notes": "NOT COMPLETED: surname-only in the chapter; DESIGN_RATIONALE §1.1 records it without initials; the verifier marked it 'canonical, not searched'; the lookup cap was reached before it could be checked. Initials deliberately left out rather than supplied from memory. '2nd ed.' rests on the verifier's canonical note (DESIGN_RATIONALE gives the 3rd ed. as 2001). The assembler should complete the initials from the title page."
+ },
+ {
+  "key": "cox1958_binary_regression",
+  "entry": "D. R. Cox, \"Two further applications of a model for binary regression,\" *Biometrika*, vol. 45, no. 3–4, pp. 562–565, 1958.",
+  "aliases": [
+   [
+    "chapter5.md",
+    1
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter (quoted from DESIGN_RATIONALE). Initials, issue and page range web-checked by the Chapter 5A verifier (verify/chapter5A.md row 21)."
+ },
+ {
+  "key": "miller1991_logistic_validation",
+  "entry": "M. E. Miller, S. L. Hui and W. M. Tierney, \"Validation techniques for logistic regression models,\" *Statistics in Medicine*, vol. 10, no. 8, pp. 1213–1226, 1991.",
+  "aliases": [
+   [
+    "chapter5.md",
+    2
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter. Initials, issue and page range web-checked by the Chapter 5A verifier (verify/chapter5A.md row 21)."
+ },
+ {
+  "key": "steyerberg2019_clinical_prediction_models",
+  "entry": "E. W. Steyerberg, *Clinical Prediction Models*, 2nd ed. Cham: Springer, 2019.",
+  "aliases": [
+   [
+    "chapter5.md",
+    3
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "CHANGED per finding 73(e) / verify/chapter5A.md row 20: place of publication corrected from 'New York' (the 2009 first edition) to 'Cham' (2nd ed., 2019, ISBN 978-3-030-16398-3); initials E. W. added from the same web check. Book form normalised to '*Title*, Nth ed. City: Publisher, YEAR'. The book's subtitle is not in the record and is omitted."
+ },
+ {
+  "key": "koo2016_icc_guideline",
+  "entry": "T. K. Koo and M. Y. Li, \"A guideline of selecting and reporting intraclass correlation coefficients for reliability research,\" *Journal of Chiropractic Medicine*, vol. 15, no. 2, pp. 155–163, 2016.",
+  "aliases": [
+   [
+    "chapter5.md",
+    4
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter, with no page range. Initials and pages web-checked by the Chapter 5A verifier (verify/chapter5A.md row 21). Journal name written in full."
+ },
+ {
+  "key": "hu2017_mci_clinic_community",
+  "entry": "C. Hu, D. Yu, X. Sun, M. Zhang, L. Wang and H. Qin, \"The prevalence and progression of mild cognitive impairment among clinic and community populations: a systematic review and meta-analysis,\" *International Psychogeriatrics*, vol. 29, no. 10, pp. 1595–1608, 2017, doi:10.1017/S1041610217000473.",
+  "aliases": [
+   [
+    "chapter5.md",
+    6
+   ],
+   [
+    "appendix_h.md",
+    15
+   ]
+  ],
+  "status": "verified",
+  "notes": "Surname-only in the chapter. Initials, year (2017, not 2018), pages and DOI from the DESIGN_RATIONALE citation-status table (verified and corrected 2026-08-22; PMID 28884657), as verify/chapter5B.md row 14 records. Journal abbreviation expanded. Also discussed in Appendix H.4 as a withdrawn citation (prose, no bracketed number)."
+ },
+ {
+  "key": "vickers2006_decision_curve",
+  "entry": "A. J. Vickers and E. B. Elkin, \"Decision curve analysis: a novel method for evaluating prediction models,\" *Medical Decision Making*, vol. 26, no. 6, pp. 565–574, 2006, doi:10.1177/0272989X06295361.",
+  "aliases": [
+   [
+    "chapter5.md",
+    7
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter (the decision-curve result file's reference field is also surname-only). Initials confirmed and DOI read from Crossref this session (lookup 9). Journal abbreviation expanded."
+ },
+ {
+  "key": "vandenberg2024_remote_speech",
+  "entry": "R. L. van den Berg et al., \"Digital remote assessment of speech acoustics in cognitively unimpaired adults: feasibility, reliability and associations with amyloid pathology,\" *Alzheimer's Research and Therapy*, vol. 16, art. 176, 2024, doi:10.1186/s13195-024-01543-3.",
+  "aliases": [
+   [
+    "chapter5.md",
+    8
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Verified against the article by Session B (handover) but surname-only ('van den Berg, de Boer, Zwan et al.'). Eighteen authors, so first author et al.; initials and DOI read from Crossref this session (lookup 6). Journal printed in the house form with 'and' (the journal's name is Alzheimer's Research & Therapy — verify/chapter5B.md row 14)."
+ },
+ {
+  "key": "jafari2025_speech_biomarkers_mci",
+  "entry": "Z. Jafari, M. K. Andrew and K. J. Rockwood, \"Diagnostic utility of speech-based biomarkers in mild cognitive impairment: a systematic review and meta-analysis,\" *Age and Ageing*, vol. 54, no. 10, art. afaf316, 2025, doi:10.1093/ageing/afaf316.",
+  "aliases": [
+   [
+    "chapter5.md",
+    9
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Verified by Session B and the 5B verifier (PMC12560767) but surname-only. Initials and DOI read from Crossref this session (lookup 7). Finding 73(f): the chapter's '54 studies' is the inclusion count; the pooled AUC rests on 21 — precision only."
+ },
+ {
+  "key": "albertin2024_cohesive_devices",
+  "entry": "G. Albertin and E. Martinelli, \"Exploring the use of cohesive devices in dementia within an elderly Italian semi-spontaneous speech corpus,\" in *Proc. 10th Italian Conf. Computational Linguistics (CLiC-it 2024)*, Pisa, Italy, 2024, pp. 13–19.",
+  "aliases": [
+   [
+    "chapter5.md",
+    10
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Verified by Session B but surname-only and without pages. Full names (Giorgia Albertin, Elena Martinelli), page range and proceedings details read from the ACL Anthology record 2024.clicit-1.3 this session (lookups 23–24); published in CEUR Workshop Proceedings vol. 3878. No DOI on the record."
+ },
+ {
+  "key": "bittner2022_pronoun_use",
+  "entry": "D. Bittner, C. Frankenberg and J. Schröder, \"Changes in pronoun use a decade before clinical diagnosis of Alzheimer's dementia — linguistic contexts suggest problems in perspective-taking,\" *Brain Sciences*, vol. 12, no. 1, art. 121, 2022, doi:10.3390/brainsci12010121.",
+  "aliases": [
+   [
+    "chapter5.md",
+    11
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Verified by Session B but surname-only. Initials and DOI read from Crossref this session (lookup 8)."
+ },
+ {
+  "key": "luz2024_taukadial",
+  "entry": "S. Luz, S. de la Fuente Garcia, F. Haider, D. Fromm, B. MacWhinney, A. Lanzi, Y.-N. Chang, C.-J. Chou and Y.-C. Liu, \"Connected speech-based cognitive assessment in Chinese and English,\" in *Proc. INTERSPEECH 2024*, 2024, pp. 947–951, doi:10.21437/Interspeech.2024-1807.",
+  "aliases": [
+   [
+    "chapter6.md",
+    1
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "Surname-only in the chapter, with the last three authors in the wrong order ('Lanzi, Chou, Liu and Chang'); the verifier established the order Lanzi, Chang, Chou, Liu from arXiv 2406.10272 / ISCA (verify/chapter6.md row 8). Initials, pages and DOI read from Crossref this session (lookup 20). Title web-verified by Session C (handover)."
+ },
+ {
+  "key": "ding2024_speech_ad_survey",
+  "entry": "K. Ding, M. Chetty, A. N. Hoshyar, T. Bhattacharya and B. Klein, \"Speech based detection of Alzheimer's disease: a survey of AI techniques, datasets and challenges,\" *Artificial Intelligence Review*, vol. 57, art. 325, 2024, doi:10.1007/s10462-024-10961-6.",
+  "aliases": [
+   [
+    "chapter6.md",
+    2
+   ]
+  ],
+  "status": "verified",
+  "notes": "Verified in full by Session C (handover, Chapter 6: authors, title, twelve-dataset list). DOI added from docs/ARABIC_CORPUS_GAP.md line 48. In-text note (verify/chapter6.md row 9): at chapter6.md line 79 the citation also covers the Framingham access-process sentence, which is the project's own check, not the survey's content — reported, not fixed."
+ },
+ {
+  "key": "pahar2026_process2",
+  "entry": "M. Pahar et al., \"PROCESS-2: a benchmark speech corpus for early cognitive impairment detection,\" arXiv:2605.14888, 2026.",
+  "aliases": [
+   [
+    "chapter6.md",
+    4
+   ]
+  ],
+  "status": "web-verified-this-session",
+  "notes": "COMPLETED: the chapter's entry was a descriptive placeholder ('PROCESS-2 benchmark for early cognitive impairment from speech') with no authors. Title and ten-author list (Pahar, Illingworth, Mirheidari, Elghazaly, Peters, Young, Leung, Kaur, Blackburn, Christensen) read from the arXiv record by the Chapter 6 verifier (verify/chapter6.md row 8); first author et al. per IEEE."
+ },
+ {
+  "key": "collins2024_tripod_ai",
+  "entry": "G. S. Collins et al., \"TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods,\" *BMJ*, vol. 385, art. e078378, 2024.",
+  "aliases": [
+   [
+    "appendix_d.md",
+    1
+   ]
+  ],
+  "status": "verified",
+  "notes": "Verified against the published article (finding 22; Appendix D.4). The local form 'G. S. Collins, K. G. M. Moons, P. Dhiman, R. D. Riley et al.' reduced to first author et al. (IEEE). No DOI in the record."
+ },
+ {
+  "key": "sounderajah2025_stard_ai",
+  "entry": "V. Sounderajah et al., \"The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence,\" *Nature Medicine*, vol. 31, no. 10, pp. 3283–3289, 2025, doi:10.1038/s41591-025-03953-8.",
+  "aliases": [
+   [
+    "appendix_d.md",
+    2
+   ]
+  ],
+  "status": "verified",
+  "notes": "Verified (finding 22; Appendix D.4). Author list reduced to first author et al.; journal abbreviation expanded."
+ },
+ {
+  "key": "moons2025_probast_ai",
+  "entry": "K. G. M. Moons et al., \"PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods,\" *BMJ*, vol. 388, art. e082505, 2025, doi:10.1136/bmj-2024-082505.",
+  "aliases": [
+   [
+    "appendix_d.md",
+    3
+   ]
+  ],
+  "status": "verified",
+  "notes": "Verified (finding 22; Appendix D.4). Author list reduced to first author et al."
+ },
+ {
+  "key": "hanley1982_roc_auc",
+  "entry": "J. A. Hanley and B. J. McNeil, \"The meaning and use of the area under a receiver operating characteristic (ROC) curve,\" *Radiology*, vol. 143, no. 1, pp. 29–36, 1982.",
+  "aliases": [
+   [
+    "appendix_i.md",
+    1
+   ]
+  ],
+  "status": "verified",
+  "notes": "Verified by Session C (handover, Chapter 6). Chapter 6 no longer cites it: the citation moved to Appendix I with the corpus specification (finding 41), so the only numbered alias is Appendix I [1]. Appendix B names it inline ('Hanley–McNeil'). En-dash in the page range.",
+  "unnumbered_mentions": [
+   [
+    "appendix_b.md",
+    "line 518: (Hanley–McNeil, two-sided α = 0.05)"
+   ]
+  ]
+ }
+]

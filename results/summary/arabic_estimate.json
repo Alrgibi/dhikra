@@ -1,0 +1,34 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "reason": "Every figure here was computed on the PRE-LOCK 1,040-recording pool that included Lu, with an uncalibrated model. estimate.dementia_auc 0.782 and ceiling.dementia_auc 0.805 are the retracted Arabic figures; estimate.mixed_auc 0.7424 is digit-for-digit the pre_lock_auc recorded in ablation_post_lock.json.",
+    "cite_instead": "results/reconstruction/ablation_post_lock.json -> 'Arabic-compatible 19 features' = 0.7391 [0.703, 0.774] on the locked 987 pool (97.9% retention of the full model's 0.7550)",
+    "note": "scripts/estimate_arabic.py, which produces this file, still reads results/lu/ and must NOT be re-run as committed.",
+    "lock_state": "pre-Lu-lock, Lu-inclusive",
+    "stamped": "2026-08-22 (marker added; no value changed)"
+  },
+  "method": "construct-matched ablation: the English model restricted to only those measures the Arabic engine implements, evaluated on English data where truth is known",
+  "results": {
+    "ceiling": {
+      "mixed_auc": 0.7554450046186549,
+      "mixed_spec_at_75sens": 0.5591985428051002,
+      "dementia_auc": 0.8051135727872887,
+      "dementia_spec_at_75sens": 0.7592592592592593,
+      "n_features": 64
+    },
+    "estimate": {
+      "mixed_auc": 0.7423569608137737,
+      "mixed_spec_at_75sens": 0.5737704918032787,
+      "dementia_auc": 0.7822311737719592,
+      "dementia_spec_at_75sens": 0.6851851851851852,
+      "n_features": 19
+    }
+  },
+  "assumptions": [
+    "Arabic markers carry equal diagnostic weight to their English counterparts (unverified)",
+    "Arabic measurement reliability equals English (unlikely; Arabic NLP tooling is less mature)",
+    "Libyan speakers resemble the American corpora in education and testing familiarity (they do not)",
+    "MSA word lists transfer to Libyan dialect (unvalidated)"
+  ],
+  "interpretation": "An optimistic upper bound. Every listed assumption can only reduce real Arabic performance, never raise it."
+}

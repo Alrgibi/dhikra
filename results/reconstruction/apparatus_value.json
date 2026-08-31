@@ -1,0 +1,29 @@
+{
+  "development": {
+    "n": 987,
+    "in_sample_best_feature": "iu.total",
+    "in_sample_best_auc": 0.7095538252379187,
+    "nested_best_auc": 0.7095538252379187,
+    "selection_optimism": 0.0,
+    "model_auc": 0.7550158612450047,
+    "model_minus_insample": 0.04546203600708609,
+    "model_minus_nested": 0.04546203600708609,
+    "folds_picked": [
+      "iu.total",
+      "iu.total",
+      "iu.total",
+      "iu.total",
+      "iu.total"
+    ]
+  },
+  "mci_discourse": {
+    "n": 288,
+    "in_sample_best_auc": 0.6473,
+    "nested_best_auc": 0.6018,
+    "selection_optimism": 0.045499999999999985,
+    "model_auc": 0.6379,
+    "model_minus_insample": -0.009399999999999964,
+    "model_minus_nested": 0.03610000000000002
+  },
+  "note": "both sides estimated the same way: nested feature selection inside the same folds, no model refit"
+}

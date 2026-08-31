@@ -1,0 +1,169 @@
+{
+  "combined": {
+    "auc": 0.7511473653854077,
+    "n": 987
+  },
+  "pitt_dementia": {
+    "auc": 0.8062065708695946,
+    "n": 548
+  },
+  "delaware_mci": {
+    "auc": 0.6262768817204301,
+    "n": 439
+  },
+  "calibration": {
+    "brier": 0.19893508682298397,
+    "slope": 1.1308566581727104,
+    "intercept": 0.000903504433314818,
+    "max_gap": 0.08396858768739471,
+    "bins": [
+      {
+        "bin": "(0.0, 0.2]",
+        "n": 55,
+        "predicted": 0.171,
+        "observed": 0.255
+      },
+      {
+        "bin": "(0.2, 0.4]",
+        "n": 388,
+        "predicted": 0.309,
+        "observed": 0.278
+      },
+      {
+        "bin": "(0.4, 0.6]",
+        "n": 266,
+        "predicted": 0.493,
+        "observed": 0.451
+      },
+      {
+        "bin": "(0.6, 0.8]",
+        "n": 188,
+        "predicted": 0.691,
+        "observed": 0.745
+      },
+      {
+        "bin": "(0.8, 1.0]",
+        "n": 90,
+        "predicted": 0.87,
+        "observed": 0.922
+      }
+    ]
+  },
+  "threshold_rule_sweep": {
+    "0.9": {
+      "threshold": 0.283,
+      "sensitivity": 0.9010752688172043,
+      "specificity": 0.28160919540229884
+    },
+    "0.85": {
+      "threshold": 0.324,
+      "sensitivity": 0.8516129032258064,
+      "specificity": 0.40229885057471265
+    },
+    "0.8": {
+      "threshold": 0.365,
+      "sensitivity": 0.8,
+      "specificity": 0.4904214559386973
+    },
+    "0.75": {
+      "threshold": 0.393,
+      "sensitivity": 0.7505376344086021,
+      "specificity": 0.5900383141762452
+    },
+    "0.7": {
+      "threshold": 0.428,
+      "sensitivity": 0.7053763440860215,
+      "specificity": 0.6647509578544061
+    }
+  },
+  "operating_points": {
+    "high_sensitivity": {
+      "threshold": 0.283,
+      "sensitivity": 0.9010752688172043,
+      "specificity": 0.28160919540229884
+    },
+    "screening": {
+      "threshold": 0.393,
+      "sensitivity": 0.7505376344086021,
+      "specificity": 0.5900383141762452
+    },
+    "high_specificity": {
+      "threshold": 0.612,
+      "sensitivity": 0.4559139784946237,
+      "specificity": 0.9003831417624522
+    }
+  },
+  "ppv_npv": [
+    {
+      "prevalence": 0.01,
+      "ppv": 0.01815667012302978,
+      "npv": 0.9957475533262374
+    },
+    {
+      "prevalence": 0.05,
+      "ppv": 0.08788692767701561,
+      "npv": 0.9782322668035598
+    },
+    {
+      "prevalence": 0.077,
+      "ppv": 0.13249254529634238,
+      "npv": 0.9659309571875148
+    },
+    {
+      "prevalence": 0.11,
+      "ppv": 0.18452060652200095,
+      "npv": 0.9503400222416865
+    },
+    {
+      "prevalence": 0.15,
+      "ppv": 0.24418417624130775,
+      "npv": 0.9305701430517398
+    },
+    {
+      "prevalence": 0.25,
+      "ppv": 0.3789785067026136,
+      "npv": 0.8764779319967687
+    },
+    {
+      "prevalence": 0.42,
+      "ppv": 0.57002488852017,
+      "npv": 0.7656039515042657
+    }
+  ],
+  "comparison_to_locked": {
+    "combined": {
+      "locked_auc": 0.7550158612450046,
+      "reconstructed_auc": 0.7511473653854077,
+      "delta": -0.003868495859596921
+    },
+    "pitt_dementia": {
+      "locked_auc": 0.8094717668488158,
+      "reconstructed_auc": 0.8062065708695946,
+      "delta": -0.003265195979221258
+    },
+    "delaware_mci": {
+      "locked_auc": 0.6290770609318996,
+      "reconstructed_auc": 0.6262768817204301,
+      "delta": -0.002800179211469578
+    },
+    "screening_threshold": {
+      "locked": 0.367,
+      "reconstructed": 0.393
+    },
+    "calibration_max_gap": {
+      "locked": 0.1513101141664831,
+      "reconstructed": 0.08396858768739471
+    }
+  },
+  "_provenance": {
+    "dataset": "Pitt cookie (548) + Delaware cookie (439) = 987 recordings, 581 participants; Lu locked out and untouched",
+    "lock_state": "post-Lu-lock reconstruction; results/summary/ not modified",
+    "script": "scripts/train_development.py",
+    "executed_via": "fold-chunked driver (~/train_drive.py), logic identical",
+    "model": "soft-voting ET/GB/RF (early_detection.ens recipe) -- UNCALIBRATED (approved test order); INFERRED final ensemble",
+    "cv": "StratifiedGroupKFold(5, shuffle=True, random_state=42), grouped by participant (prefixed ids)",
+    "bootstrap": "pending",
+    "generated": "2026-08-20",
+    "python": "3.12.11"
+  }
+}

@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ذِكرى — Assessment Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --teal-900:#0b3d3a; --teal-700:#0f766e; --teal-500:#14b8a6; --teal-50:#f0fdfa;
+ --ink:#132029; --ink-2:#3d4f5c; --muted:#7c8f9b;
+ --bg:#f7faf9; --card:#ffffff; --line:#e6eeec;
+ --ok:#0e9f6e; --ok-bg:#ecfdf5; --warn:#b45309; --warn-bg:#fffbeb;
+ --risk:#dc2626; --risk-bg:#fef2f2; --sand:#f9f6f0;
+ --shadow:0 1px 2px rgba(19,32,41,.04),0 8px 24px -12px rgba(19,32,41,.12);
+ --r:16px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+ background:var(--bg);color:var(--ink);line-height:1.6;font-size:15.5px;
+ background-image:radial-gradient(circle at 12% -8%,#e6f5f2 0%,transparent 42%),
+                  radial-gradient(circle at 92% 4%,#eef4f8 0%,transparent 38%)}
+.ar{font-family:'Amiri','Segoe UI',serif}
+
+header{background:linear-gradient(135deg,var(--teal-900),var(--teal-700) 70%);color:#fff;
+ padding:1.5rem 1.25rem;position:relative;overflow:hidden}
+header::after{content:'';position:absolute;inset:0;
+ background:radial-gradient(circle at 88% -30%,rgba(255,255,255,.14),transparent 55%)}
+header .in{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:1.1rem;
+ flex-wrap:wrap;position:relative;z-index:1}
+.logo{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.15);
+ display:grid;place-items:center;font-family:'Amiri',serif;font-size:1.6rem;
+ border:1px solid rgba(255,255,255,.22)}
+header h1{margin:0;font-size:1.4rem;font-weight:700;letter-spacing:-.2px}
+header .sub{opacity:.82;font-size:.86rem;font-weight:400}
+.env{margin-left:auto;display:flex;gap:.4rem;flex-wrap:wrap}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);
+ padding:.28rem .68rem;border-radius:100px;font-size:.72rem;font-weight:600}
+.chip.bad{background:rgba(255,214,160,.18);border-color:rgba(255,214,160,.3)}
+
+.wrap{max-width:1040px;margin:0 auto;padding:1.6rem 1.25rem 3rem}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+ padding:1.5rem;margin-bottom:1.1rem;box-shadow:var(--shadow)}
+.card h2{margin:0 0 .3rem;font-size:1.12rem;font-weight:700;letter-spacing:-.2px;color:var(--teal-900)}
+.card .lead{color:var(--muted);font-size:.88rem;margin:0 0 1.2rem}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+ color:var(--teal-500);margin-bottom:.35rem}
+
+label{display:block;font-size:.78rem;color:var(--ink-2);margin-bottom:.35rem;font-weight:600}
+input,select,textarea{width:100%;padding:.68rem .8rem;border:1.5px solid var(--line);
+ border-radius:11px;font-size:.98rem;font-family:inherit;background:#fff;color:var(--ink);
+ transition:border-color .15s,box-shadow .15s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal-500);
+ box-shadow:0 0 0 3.5px rgba(20,184,166,.13)}
+textarea{min-height:112px;resize:vertical;line-height:1.7}
+textarea.ar{font-size:1.12rem;line-height:2}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:.9rem;margin-bottom:1rem}
+
+button{font-family:inherit;font-size:.95rem;border:0;border-radius:11px;
+ padding:.72rem 1.4rem;cursor:pointer;font-weight:600;transition:transform .12s,box-shadow .15s,background .15s}
+button:active{transform:translateY(1px)}
+.btn{background:var(--teal-700);color:#fff;box-shadow:0 2px 8px -2px rgba(15,118,110,.5)}
+.btn:hover{background:var(--teal-900)}
+.btn:disabled{background:#c8d6d3;box-shadow:none;cursor:not-allowed}
+.btn-ghost{background:var(--teal-50);color:var(--teal-700);border:1px solid #cdeae5}
+.btn-ghost:hover{background:#e2f7f3}
+.btn-rec{background:var(--risk);color:#fff;box-shadow:0 2px 10px -2px rgba(220,38,38,.5)}
+.btn-rec.recording{animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.42)}50%{box-shadow:0 0 0 14px rgba(220,38,38,0)}}
+.hide{display:none!important}
+
+.surahs{display:grid;grid-template-columns:repeat(auto-fill,minmax(126px,1fr));gap:.5rem;margin-top:.5rem}
+.sur{border:1.5px solid var(--line);border-radius:11px;padding:.6rem .5rem;text-align:center;
+ cursor:pointer;background:#fff;transition:all .14s;user-select:none}
+.sur:hover{border-color:#bfe3dd;background:var(--teal-50)}
+.sur.on{border-color:var(--teal-500);background:var(--teal-50);box-shadow:0 0 0 3px rgba(20,184,166,.12)}
+.sur .n{font-family:'Amiri',serif;font-size:1.22rem;font-weight:700;color:var(--teal-900)}
+.sur .w{font-size:.68rem;color:var(--muted);margin-top:.1rem}
+
+.steps{display:flex;gap:.4rem;margin-bottom:1.1rem}
+.pip{flex:1;height:5px;border-radius:4px;background:#e2ecea;transition:background .3s}
+.pip.done{background:var(--teal-500)}.pip.now{background:var(--teal-700)}
+
+.instr{background:linear-gradient(180deg,var(--teal-50),#fff);border:1px solid #cdeae5;
+ border-left:4px solid var(--teal-500);padding:1rem 1.15rem;border-radius:12px;
+ font-size:1.06rem;margin-bottom:1.1rem;font-weight:500}
+.instr.rtlx{border-left:0;border-right:4px solid var(--teal-500)}
+.rtl{direction:rtl;text-align:right}
+.scene{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff;display:block}
+.story{background:var(--sand);border:1px solid #eee3d0;border-radius:13px;padding:1.15rem 1.3rem;
+ font-size:1.1rem;line-height:2;margin-bottom:1.1rem}
+.reciteBox{background:linear-gradient(180deg,#f6f2ea,#fff);border:1px solid #e9dfc9;
+ border-radius:13px;padding:1.3rem;text-align:center;margin-bottom:1.1rem}
+.reciteBox .nm{font-family:'Amiri',serif;font-size:2.1rem;font-weight:700;color:var(--teal-900)}
+.reciteBox .sb{font-size:.82rem;color:var(--muted);margin-top:.3rem}
+
+.recpanel{background:#fbfdfd;border:1px solid var(--line);border-radius:14px;padding:1.2rem;margin-top:.4rem}
+.timer{font-size:2.9rem;font-weight:700;text-align:center;color:var(--teal-900);
+ font-variant-numeric:tabular-nums;letter-spacing:-1px;line-height:1.1}
+.reclabel{text-align:center;font-size:.78rem;color:var(--muted);text-transform:uppercase;
+ letter-spacing:1.1px;font-weight:600;margin-top:.15rem}
+.meter{height:9px;background:#e8f0ee;border-radius:6px;overflow:hidden;margin:.9rem 0 .3rem}
+.meter i{display:block;height:100%;width:0;border-radius:6px;
+ background:linear-gradient(90deg,var(--teal-500),var(--teal-700));transition:width .09s}
+.hint{font-size:.82rem;color:var(--muted);margin-top:.7rem;font-style:italic}
+
+.box{padding:.9rem 1.1rem;border-radius:12px;font-size:.87rem;margin:.8rem 0;line-height:1.6}
+.box-warn{background:var(--warn-bg);border:1px solid #fde9b0;color:#8a5a08}
+.box-ok{background:var(--ok-bg);border:1px solid #b6ebd4;color:#046c4e}
+.box-info{background:#f2f7fb;border:1px solid #d9e6f0;color:#2c4a63}
+
+.band{padding:1.2rem 1.35rem;border-radius:14px;margin-bottom:1.3rem;
+ display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.band .lbl{font-size:1.2rem;font-weight:700;letter-spacing:-.3px}
+.band .txt{font-weight:400;font-size:.9rem;flex:1;min-width:200px}
+.band .cnt{font-size:.78rem;font-weight:600;opacity:.8;white-space:nowrap}
+.b-typical{background:var(--ok-bg);color:#046c4e;border:1px solid #b6ebd4}
+.b-borderline{background:var(--warn-bg);color:#8a5a08;border:1px solid #fde9b0}
+.b-elevated,.b-high{background:var(--risk-bg);color:#991b1b;border:1px solid #fbcaca}
+.b-insufficient{background:#f4f6f8;color:#42566b;border:1px solid #dfe6ec}
+.grp{margin-bottom:1.4rem}
+.grp h3{font-size:.71rem;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;
+ margin:0 0 .6rem;font-weight:700}
+.ind{display:grid;grid-template-columns:1fr auto auto;gap:.5rem 1rem;align-items:center;
+ padding:.75rem .95rem;border:1px solid var(--line);border-radius:12px;margin-bottom:.5rem;background:#fdfefe}
+.ind.flag{border-color:#fbcaca;background:#fffafa}
+.ind .nm{font-weight:600;font-size:.92rem}
+.ind .vl{font-size:1.22rem;font-weight:700;font-variant-numeric:tabular-nums;color:var(--teal-900)}
+.ind.flag .vl{color:var(--risk)}
+.ind .tg{font-size:.66rem;padding:.22rem .6rem;border-radius:100px;font-weight:700}
+.t-out{background:#fee2e2;color:#b91c1c}.t-in{background:#dcf5e8;color:#0d6b47}
+.ind .mn{grid-column:1/-1;font-size:.8rem;color:var(--muted);margin-top:-.2rem}
+.ind .rf{grid-column:1/-1;font-size:.72rem;color:#9aabb5}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.6rem}
+.stat{background:#fbfdfd;border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem}
+.stat .k{font-size:.72rem;color:var(--muted);font-weight:600}
+.stat .v{font-size:1.4rem;font-weight:700;color:var(--teal-900);font-variant-numeric:tabular-nums}
+.disclaimer{background:#f8fafb;border:1px solid var(--line);border-radius:12px;
+ padding:1rem 1.15rem;font-size:.8rem;color:var(--muted);margin-top:1.2rem;line-height:1.65}
+.spin{display:inline-block;width:17px;height:17px;border:2.5px solid #d5e3e0;
+ border-top-color:var(--teal-700);border-radius:50%;animation:sp .75s linear infinite;
+ vertical-align:-3px;margin-right:.4rem}
+@keyframes sp{to{transform:rotate(360deg)}}
+.fade{animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(max-width:560px){
+ .wrap{padding:1.1rem .85rem 2.5rem}.card{padding:1.15rem}
+ .timer{font-size:2.3rem}.ind{grid-template-columns:1fr auto}
+}
+</style>
+</head>
+<body>
+
+<header><div class="in">
+ <div class="logo">ذ</div>
+ <div>
+  <h1>ذِكرى &nbsp;·&nbsp; Dhikra</h1>
+  <div class="sub">Speech-based screening for cognitive decline</div>
+ </div>
+ <div class="env" id="env"></div>
+</div></header>
+
+<div class="wrap">
+
+<div id="v-setup" class="fade">
+ <div class="card">
+  <div class="eyebrow">Step 1</div>
+  <h2>Participant details</h2>
+  <p class="lead">Age and education are recorded because both influence speech measures and must be
+   accounted for when interpreting results.</p>
+  <div class="row">
+   <div><label>Participant code</label><input id="f-code" placeholder="P-014"></div>
+   <div><label>Age</label><input id="f-age" type="number" min="18" max="120" placeholder="72"></div>
+   <div><label>Sex</label><select id="f-sex">
+     <option value="">—</option><option value="female">Female</option><option value="male">Male</option></select></div>
+   <div><label>Years of education</label><input id="f-edu" type="number" min="0" max="30" placeholder="6"></div>
+   <div><label>Why is this person being tested?</label><select id="f-ctx">
+     <option value="population">Routine screening — no concern raised</option>
+     <option value="concern">Family or self noticed a change</option>
+     <option value="clinical">Referred by a clinician</option>
+   </select></div>
+   <div><label>Family history of dementia</label><select id="f-fh">
+     <option value="unknown">Not known</option>
+     <option value="none">None known</option>
+     <option value="second_degree">Grandparent, aunt or uncle</option>
+     <option value="one_first_degree">One parent or sibling</option>
+     <option value="two_or_more_first_degree">Two or more parents/siblings</option>
+   </select></div>
+   <div><label>Language</label><select id="f-lang" onchange="toggleSurahs()">
+     <option value="ar">العربية — Arabic</option><option value="en">English</option></select></div>
+  </div>
+ </div>
+
+ <div class="card" id="c-surah">
+  <div class="eyebrow">Step 2</div>
+  <h2>Which surahs does the participant know by heart?</h2>
+  <p class="lead">The recitation task probes <b>overlearned memory</b> — material rehearsed since
+   childhood, which is preserved far longer in Alzheimer's than everyday speech. It only measures
+   preservation if the person genuinely knows the passage, so select only what they have actually
+   memorised. The app then chooses one of them.</p>
+  <div class="surahs" id="surahGrid"></div>
+  <div style="margin-top:.9rem;display:flex;gap:.5rem;flex-wrap:wrap">
+   <button class="btn-ghost" onclick="selSurah('common')">Select the common ones</button>
+   <button class="btn-ghost" onclick="selSurah('none')">Knows none / skip task</button>
+  </div>
+ </div>
+
+ <div class="card">
+  <div class="eyebrow">Step 3</div>
+  <h2>Before you begin</h2>
+  <div class="box box-warn"><b>Consent.</b> Explain that their voice will be recorded to measure how
+   they speak, that recordings stay on this device, that taking part is voluntary, and that they may
+   stop at any time. Do not proceed without their agreement.</div>
+  <div class="box box-warn"><b>This is a screening aid, not a diagnosis.</b> ذِكرى cannot diagnose
+   Alzheimer's disease or any other condition. It indicates whether a clinical assessment is worth seeking.</div>
+  <p class="lead" style="margin-bottom:1.1rem">Find a quiet room. Hold the device about 30&nbsp;cm away.
+   Let silences stand — pauses are part of what is being measured.</p>
+  <button class="btn" onclick="startSession()">Begin session &nbsp;→</button>
+ </div>
+</div>
+
+<div id="v-task" class="hide">
+ <div class="steps" id="pips"></div>
+ <div class="card fade" id="taskCard">
+  <div class="eyebrow" id="t-eyebrow"></div>
+  <h2 id="t-title"></h2>
+  <div class="instr" id="t-instr"></div>
+  <div id="t-story" class="story hide"></div>
+  <div id="t-picture" class="hide"><img class="scene" id="t-img" alt="picture description scene"></div>
+  <div id="t-recite" class="reciteBox hide"></div>
+  <div class="recpanel">
+   <div class="timer" id="t-timer">00:00</div>
+   <div class="reclabel" id="t-reclabel">ready</div>
+   <div class="meter"><i id="t-meter"></i></div>
+   <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.9rem;justify-content:center">
+    <button class="btn-rec" id="b-rec" onclick="toggleRec()">● Start recording</button>
+    <button class="btn-ghost" id="b-skip" onclick="skipTask()">Skip</button>
+   </div>
+  </div>
+  <div class="hint" id="t-hint"></div>
+  <div id="t-status"></div>
+ </div>
+</div>
+
+<div id="v-trans" class="hide">
+ <div class="card fade">
+  <div class="eyebrow">Review</div>
+  <h2>Transcripts</h2>
+  <p class="lead">Word-level measures are computed from this text, so its accuracy matters.</p>
+  <div id="trans-msg"></div>
+  <div id="trans-list"></div>
+  <button class="btn" onclick="runAnalysis()">Analyse session &nbsp;→</button>
+ </div>
+</div>
+
+<div id="v-report" class="hide">
+ <div class="card fade" id="report-card"></div>
+ <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+  <button class="btn" onclick="location.reload()">New session</button>
+  <button class="btn-ghost" id="b-txt">Open text report</button>
+ </div>
+</div>
+
+</div>
+
+<script>
+let CFG={}, SID=null, TASKS=[], IDX=0, LANG='ar', SURAHS=[], KNOWN=new Set();
+let rec=null,chunks=[],stream=null,timerId=null,elapsed=0,limit=90;
+let audioCtx=null,analyser=null,meterId=null;
+const results={};
+const COMMON=['fatiha','ikhlas','falaq','nas','kawthar','asr'];
+
+fetch('/api/config').then(r=>r.json()).then(c=>{
+ CFG=c;
+ document.getElementById('env').innerHTML=
+  `<span class="chip ${c.ffmpeg_available?'':'bad'}">${c.ffmpeg_available?'audio ready':'ffmpeg missing'}</span>`+
+  `<span class="chip ${c.asr_available?'':'bad'}">${c.asr_available?'auto-transcribe':'manual transcript'}</span>`+
+  `<span class="chip ${c.model_attached?'':'bad'}">${c.model_attached?'screening score':'indicator profile'}</span>`;
+});
+fetch('/api/surahs').then(r=>r.json()).then(s=>{SURAHS=s;COMMON.forEach(i=>KNOWN.add(i));renderSurahs();});
+
+function renderSurahs(){
+ document.getElementById('surahGrid').innerHTML=SURAHS.map(s=>
+  `<div class="sur ${KNOWN.has(s.id)?'on':''}" onclick="tog('${s.id}')">
+     <div class="n">${s.name_ar}</div><div class="w">${s.words} words</div></div>`).join('');
+}
+function tog(id){KNOWN.has(id)?KNOWN.delete(id):KNOWN.add(id);renderSurahs();}
+function selSurah(m){KNOWN.clear();if(m==='common')COMMON.forEach(i=>KNOWN.add(i));renderSurahs();}
+function toggleSurahs(){
+ document.getElementById('c-surah').classList.toggle('hide',
+  document.getElementById('f-lang').value!=='ar');
+}
+
+async function startSession(){
+ LANG=document.getElementById('f-lang').value;
+ const r=await fetch('/api/session/start',{method:'POST',headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({
+   code:document.getElementById('f-code').value,
+   age:parseInt(document.getElementById('f-age').value)||null,
+   sex:document.getElementById('f-sex').value,
+   education:parseInt(document.getElementById('f-edu').value)||null,
+   language:LANG, referral_context:document.getElementById('f-ctx').value,
+   family_history:document.getElementById('f-fh').value,
+   known_surahs:[...KNOWN]})});
+ const d=await r.json();
+ SID=d.session_id;TASKS=d.tasks;IDX=0;
+ document.getElementById('v-setup').classList.add('hide');
+ document.getElementById('v-task').classList.remove('hide');
+ renderTask();
+}
+
+function renderTask(){
+ const t=TASKS[IDX];limit=t.seconds;elapsed=0;
+ const tc=document.getElementById('taskCard');
+ tc.classList.remove('fade');void tc.offsetWidth;tc.classList.add('fade');
+ document.getElementById('pips').innerHTML=TASKS.map((_,i)=>
+  `<div class="pip ${i<IDX?'done':(i===IDX?'now':'')}"></div>`).join('');
+ document.getElementById('t-eyebrow').textContent=`Task ${IDX+1} of ${TASKS.length}`;
+ document.getElementById('t-title').textContent=t.title;
+ const ins=document.getElementById('t-instr');
+ ins.textContent=t.instruction;
+ ins.className='instr'+(LANG==='ar'?' rtl rtlx ar':'');
+ document.getElementById('t-hint').textContent=t.hint||'';
+ document.getElementById('t-status').innerHTML='';
+ document.getElementById('t-timer').textContent=fmt(0);
+ document.getElementById('t-reclabel').textContent='ready';
+ document.getElementById('t-meter').style.width='0%';
+
+ const sEl=document.getElementById('t-story'),pEl=document.getElementById('t-picture'),
+       rEl=document.getElementById('t-recite');
+ [sEl,pEl,rEl].forEach(e=>e.classList.add('hide'));
+ if(t.type==='picture'){document.getElementById('t-img').src='/static/'+t.image;pEl.classList.remove('hide');}
+ if(t.type==='story'){sEl.className='story'+(LANG==='ar'?' rtl ar':'');sEl.textContent=t.text;sEl.classList.remove('hide');}
+ if(t.type==='recitation'){
+  rEl.innerHTML=`<div class="nm">سورة ${t.surah_name}</div>
+   <div class="sb">مهمة الذاكرة المُفرطة التعلّم — overlearned-memory probe</div>`;
+  rEl.classList.remove('hide');}
+ const b=document.getElementById('b-rec');
+ b.textContent='● Start recording';b.classList.remove('recording');b.disabled=false;
+}
+function fmt(s){return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`}
+
+async function toggleRec(){
+ if(rec&&rec.state==='recording'){stopRec();return;}
+ try{stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false}});}
+ catch(e){document.getElementById('t-status').innerHTML=
+  `<div class="box box-warn"><b>Microphone blocked.</b> Allow microphone access. Browsers only permit
+   recording on <code>localhost</code> or over HTTPS.</div>`;return;}
+ chunks=[];rec=new MediaRecorder(stream);
+ rec.ondataavailable=e=>{if(e.data.size>0)chunks.push(e.data)};
+ rec.onstop=onRecStop;rec.start();startMeter();elapsed=0;
+ document.getElementById('t-reclabel').textContent='recording';
+ const b=document.getElementById('b-rec');b.textContent='■ Stop';b.classList.add('recording');
+ timerId=setInterval(()=>{elapsed++;document.getElementById('t-timer').textContent=fmt(elapsed);
+  if(elapsed>=limit)stopRec();},1000);
+}
+function stopRec(){
+ if(rec&&rec.state==='recording')rec.stop();
+ clearInterval(timerId);stopMeter();
+ if(stream)stream.getTracks().forEach(t=>t.stop());
+ const b=document.getElementById('b-rec');
+ b.textContent='● Start recording';b.classList.remove('recording');b.disabled=true;
+ document.getElementById('t-reclabel').textContent='processing';
+}
+function startMeter(){
+ try{audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  const src=audioCtx.createMediaStreamSource(stream);
+  analyser=audioCtx.createAnalyser();analyser.fftSize=512;src.connect(analyser);
+  const buf=new Uint8Array(analyser.frequencyBinCount);
+  meterId=setInterval(()=>{analyser.getByteTimeDomainData(buf);
+   let pk=0;for(const v of buf)pk=Math.max(pk,Math.abs(v-128));
+   document.getElementById('t-meter').style.width=Math.min(100,(pk/64)*100)+'%';},80);
+ }catch(e){}
+}
+function stopMeter(){clearInterval(meterId);if(audioCtx)audioCtx.close().catch(()=>{})}
+
+async function onRecStop(){
+ const blob=new Blob(chunks,{type:'audio/webm'}),t=TASKS[IDX],fd=new FormData();
+ fd.append('audio',blob,`${t.id}.webm`);fd.append('session_id',SID);
+ fd.append('task_id',t.id);fd.append('language',LANG);
+ document.getElementById('t-status').innerHTML='<p class="hint"><span class="spin"></span>analysing recording…</p>';
+ try{
+  const d=await (await fetch('/api/task/upload',{method:'POST',body:fd})).json();
+  if(d.error)throw new Error(d.error);
+  results[t.id]=d;
+  let h=d.acoustic_ok
+   ?`<div class="box box-ok"><b>Acoustic analysis complete.</b> ${Object.keys(d.acoustic).length} measurements extracted from the recording.</div>`
+   :`<div class="box box-warn"><b>Acoustic analysis failed.</b> ${d.acoustic_error||''}</div>`;
+  if(!d.asr_available)h+=`<div class="box box-info">${d.asr_message}</div>`;
+  document.getElementById('t-status').innerHTML=h+
+   `<button class="btn" onclick="nextTask()">${IDX+1<TASKS.length?'Next task →':'Continue →'}</button>`;
+ }catch(e){
+  document.getElementById('t-status').innerHTML=
+   `<div class="box box-warn"><b>Upload failed.</b> ${e.message}</div>
+    <button class="btn-ghost" onclick="renderTask()">Try again</button>
+    <button class="btn" onclick="nextTask()">Skip</button>`;
+ }
+ document.getElementById('t-reclabel').textContent='done';
+}
+function skipTask(){if(rec&&rec.state==='recording')stopRec();nextTask()}
+function nextTask(){IDX++;IDX<TASKS.length?renderTask():showTranscripts()}
+
+function showTranscripts(){
+ document.getElementById('v-task').classList.add('hide');
+ document.getElementById('v-trans').classList.remove('hide');
+ document.getElementById('trans-msg').innerHTML=Object.keys(results).length
+  ?(CFG.asr_available
+    ?'<div class="box box-ok">Transcribed automatically. Review and correct — dialect is often imperfect.</div>'
+    :'<div class="box box-warn"><b>Automatic transcription is not installed.</b> Type what the participant said for each task. Acoustic measures were already computed from the recordings and are unaffected.</div>')
+  :'<div class="box box-warn">No recordings captured. You can still type transcripts to test the analysis.</div>';
+ document.getElementById('trans-list').innerHTML=TASKS.map(t=>{
+  const r=results[t.id]||{};
+  return `<div style="margin-bottom:1.1rem"><label>${t.title}</label>
+   <textarea id="tx-${t.id}" class="${LANG==='ar'?'rtl ar':''}"
+     placeholder="Type what was said…">${(r.transcript||'').replace(/</g,'&lt;')}</textarea></div>`;
+ }).join('');
+}
+
+async function runAnalysis(){
+ for(const t of TASKS){
+  const el=document.getElementById('tx-'+t.id);
+  if(el)await fetch('/api/task/transcript',{method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({session_id:SID,task_id:t.id,text:el.value})});
+ }
+ document.getElementById('v-trans').classList.add('hide');
+ document.getElementById('v-report').classList.remove('hide');
+ document.getElementById('report-card').innerHTML='<p><span class="spin"></span>analysing…</p>';
+ renderReport(await (await fetch('/api/session/analyze',{method:'POST',
+  headers:{'Content-Type':'application/json'},body:JSON.stringify({session_id:SID})})).json());
+}
+
+function renderReport(R){
+ const c=document.getElementById('report-card');
+ if(R.error){c.innerHTML=`<div class="box box-warn">${R.error}</div>`;return}
+ const p=R.participant;
+ let h=`<div class="eyebrow">Result</div><h2>Screening report</h2>
+  <p class="lead">${p.code||'—'} · age ${p.age??'—'} · ${p.sex||'—'} ·
+   ${p.language==='ar'?'Arabic':'English'} · ${R.generated.replace('T',' ').replace('+00:00',' UTC')}</p>
+  <div class="band b-${R.band}"><span class="lbl">${R.band.toUpperCase()}</span>
+   <span class="txt">${R.band_text}</span>
+   <span class="cnt">${R.counts.atypical} / ${R.counts.total} outside range</span></div>`;
+
+ h+=R.mode==='indicator_profile'
+  ?`<div class="box box-info"><b>Indicator-profile mode.</b> No screening score is shown for this
+    session. ${(R.model_caveats&&R.model_caveats.length)?'The reason is stated in the note below.':
+    'No trained model is attached to this installation.'} This report describes which measured
+    indicators fall outside reference ranges — it does not estimate a probability.</div>`
+  :(R.model_probability!==undefined
+    ?`<div class="box box-ok"><b>Screening score:</b> ${(R.model_probability*100).toFixed(1)}% — ${R.model_note||''}</div>`:'');
+ if(R.model_caveats) for(const c of R.model_caveats) h+=`<div class="box box-warn">${c}</div>`;
+
+ for(const g in R.groups){
+  h+=`<div class="grp"><h3>${g}</h3>`;
+  for(const i of R.groups[g]){
+   h+=`<div class="ind ${i.atypical?'flag':''}">
+     <span class="nm">${i.label}</span><span class="vl">${i.value.toFixed(3)}</span>
+     <span class="tg ${i.atypical?'t-out':'t-in'}">${i.atypical?(i.direction==='up'?'HIGH':'LOW'):'in range'}</span>
+     <span class="mn">${i.meaning}</span><span class="rf">reference ${i.reference}</span></div>`;
+  }
+  h+='</div>';
+ }
+
+ if(R.recitation&&R.recitation.ar_recite_accuracy!==undefined){
+  const r=R.recitation;
+  h+=`<div class="grp"><h3>Recitation — overlearned memory probe${r.surah_name?' · سورة '+r.surah_name:''}</h3>
+   <div class="stats">
+    <div class="stat"><div class="k">Accuracy</div><div class="v">${(r.ar_recite_accuracy*100).toFixed(1)}%</div></div>
+    <div class="stat"><div class="k">Word error rate</div><div class="v">${r.ar_recite_word_error_rate.toFixed(3)}</div></div>
+    <div class="stat"><div class="k">Edit distance</div><div class="v">${r.ar_recite_edit_distance}</div></div>
+   </div></div>`;
+ }
+
+ const dk=Object.keys(R.dissociation||{}).filter(k=>k.endsWith('_gap'));
+ if(dk.length){
+  h+=`<div class="grp"><h3>Task dissociation — spontaneous vs. overlearned</h3><div class="stats">`;
+  for(const k of dk)h+=`<div class="stat"><div class="k">${k.replace('dissoc.','').replace('_gap','').replace(/_/g,' ')}</div>
+   <div class="v">${R.dissociation[k]>0?'+':''}${R.dissociation[k].toFixed(2)}</div></div>`;
+  h+=`</div><p class="hint">A large gap — fluent recitation alongside impoverished spontaneous
+   speech — is the expected early-Alzheimer's pattern.</p></div>`;
+ }
+
+ // STAGE 2 — age-adjusted risk
+ if(R.age_adjusted){
+   const a=R.age_adjusted;
+   h+=`<div class="grp"><h3>Stage 2 — age-appropriate risk</h3>
+     <div class="stats">
+       <div class="stat"><div class="k">Speech pattern alone</div><div class="v">${(a.speech_score*100).toFixed(0)}%</div></div>
+       <div class="stat"><div class="k">Prevalence at this age</div><div class="v">${(a.age_prevalence*100).toFixed(1)}%</div></div>
+       <div class="stat"><div class="k">Age-adjusted risk</div><div class="v">${a.age_adjusted_band||'—'}</div></div>
+     </div>
+     <p class="hint"><b>${a.age_adjusted_band_text||''}</b></p>
+     <p class="hint">This estimate has not been validated against outcomes. It is
+      reported as a band because the underlying figure is not precise enough to
+      justify a percentage; the exact value (${(a.age_adjusted_probability*100).toFixed(0)}%)
+      is retained in the saved report for audit.</p>
+     <p class="hint">${a.explanation}</p>
+     <p class="hint">${a.referral_note}</p>
+     ${a.family_history_multiplier!==1 ? `<p class="hint">${a.family_history_note}</p>` : ''}
+     </div>`;
+ }
+ if(R.severity_index){
+   const sv=R.severity_index;
+   h+=`<div class="grp"><h3>Severity index — combined across tasks</h3>
+     <div class="stats">
+       <div class="stat"><div class="k">Severity band</div><div class="v">${sv.severity_band||'—'}</div></div>
+       <div class="stat"><div class="k">Tasks used</div><div class="v">${sv.tasks_used} of 3</div></div>
+     </div>
+     <p class="hint">${sv.band_basis||''}</p>
+     <p class="hint">${sv.accuracy}</p>
+     <div class="box box-info">${sv.note}</div></div>`;
+ }
+ if(R.discordance_note) h+=`<div class="box box-warn"><b>Important:</b> ${R.discordance_note}</div>`;
+ if(R.age_note) h+=`<div class="box box-info"><b>Age context:</b> ${R.age_note}</div>`;
+ if(R.education_note) h+=`<div class="box box-warn"><b>Education context:</b> ${R.education_note}</div>`;
+ if(R.memory_profile){
+   const m=R.memory_profile;
+   h+=`<div class="grp"><h3>Memory profile — new learning vs overlearned</h3>
+     <div class="band b-${m.pattern==='dissociated'?'elevated':(m.pattern==='both preserved'?'typical':'borderline')}">
+       <span class="lbl">${m.pattern.toUpperCase()}</span><span class="txt">${m.meaning}</span></div>
+     <p class="hint">${m.caveat}</p></div>`;
+ }
+ if(R.context_tasks && Object.keys(R.context_tasks).length){
+   h+=`<div class="grp"><h3>Other tasks — clinical context only</h3>`;
+   const f=R.context_tasks.fluency;
+   if(f){
+     h+=`<div class="stats">
+       <div class="stat"><div class="k">Animals named</div><div class="v">${f.total_correct}</div></div>
+       <div class="stat"><div class="k">Repeated items</div><div class="v">${f.perseverations}</div></div>
+       <div class="stat"><div class="k">Not recognised</div><div class="v">${f.unrecognised}</div></div>
+     </div>`;
+     if(f.comparable_severity) h+=`<p class="hint"><b>${f.comparable_severity}</b></p>`;
+     if(f.corpus_note) h+=`<p class="hint">${f.corpus_note}</p>`;
+     if(f.words&&f.words.length) h+=`<p class="hint">Counted: ${f.words.join(', ')}</p>`;
+     if(f.repeated&&f.repeated.length) h+=`<p class="hint">Repeated: ${f.repeated.join(', ')}</p>`;
+     h+=`<div class="box box-info">${f.note}</div>`;
+   }
+   const st=R.context_tasks.story_recall;
+   if(st) h+=`<div class="stats"><div class="stat"><div class="k">Idea units recalled</div>
+     <div class="v">${st.idea_units_recalled ?? '—'}</div></div>
+     <div class="stat"><div class="k">Words produced</div><div class="v">${st.words_produced}</div></div></div>
+     <p class="hint">${st.note}</p>`;
+   h+=`</div>`;
+ }
+ if(R.scored_from) h+=`<div class="box box-info"><b>What produced this result:</b> ${R.scored_from.note}</div>`;
+ h+=`<div class="disclaimer">${R.disclaimer}</div>`;
+ if(R.saved_to)h+=`<p class="hint">Saved as <code>${R.saved_to}</code></p>`;
+ c.innerHTML=h;
+ document.getElementById('b-txt').onclick=()=>window.open('/api/session/'+R.session_id+'/text','_blank');
+}
+</script>
+</body>
+</html>

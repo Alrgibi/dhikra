@@ -1,0 +1,9 @@
+{
+  "dataset": "Delaware (DementiaBank), Control+MCI, all 5 tasks",
+  "n_cha_files": 455,
+  "cookie_rows": 439,
+  "lock_state": "post-Lu-lock; Lu untouched by this script",
+  "script": "scripts/build_delaware.py",
+  "executed_via": "chunked driver (~/drive.py), per-file logic identical",
+  "generated": "2026-08-20"
+}

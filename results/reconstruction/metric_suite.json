@@ -1,0 +1,211 @@
+{
+  "threshold": 0.367,
+  "ppv_npv_note": "PPV and NPV are reported at the cohort prevalence AND at three assumed community prevalences. A research-cohort PPV (36-56% impaired) overstates real-world performance by a wide margin and must never be quoted without its prevalence.",
+  "Pitt": {
+    "n": 548,
+    "prevalence": 0.5565693430656934,
+    "auc": 0.8094717668488158,
+    "auc_ci95": [
+      0.7724438867279914,
+      0.8447593506709944
+    ],
+    "sensitivity": 0.8557377049180328,
+    "sensitivity_ci95": [
+      0.8172351814288934,
+      0.8959731543624161
+    ],
+    "specificity": 0.5061728395061729,
+    "specificity_ci95": [
+      0.44388330942132953,
+      0.5696865262159598
+    ],
+    "confusion_tn_fp_fn_tp": [
+      123,
+      120,
+      44,
+      261
+    ],
+    "brier": 0.18149843219773468,
+    "calibration_slope": 1.5158982235758411,
+    "calibration_intercept": 0.14768906702534815,
+    "ppv_npv": {
+      "at_cohort_prevalence": {
+        "assumed_prevalence": 0.5565693430656934,
+        "ppv": 0.6850393700787402,
+        "npv": 0.7365269461077846
+      },
+      "at_prev_0.05": {
+        "assumed_prevalence": 0.05,
+        "ppv": 0.08358075598657395,
+        "npv": 0.9852213684747407
+      },
+      "at_prev_0.10": {
+        "assumed_prevalence": 0.1,
+        "ppv": 0.16145439549109908,
+        "npv": 0.9693047050616231
+      },
+      "at_prev_0.15": {
+        "assumed_prevalence": 0.15,
+        "ppv": 0.2341861658721748,
+        "npv": 0.9521132942488478
+      }
+    }
+  },
+  "Delaware": {
+    "n": 439,
+    "prevalence": 0.36446469248291574,
+    "auc": 0.6290770609318996,
+    "auc_ci95": [
+      0.5755338992188623,
+      0.6817042321287169
+    ],
+    "sensitivity": 0.56875,
+    "sensitivity_ci95": [
+      0.49312350510980646,
+      0.6428675856307435
+    ],
+    "specificity": 0.6594982078853047,
+    "specificity_ci95": [
+      0.6023155054405055,
+      0.71672998905274
+    ],
+    "confusion_tn_fp_fn_tp": [
+      184,
+      95,
+      69,
+      91
+    ],
+    "brier": 0.21980332496387456,
+    "calibration_slope": 0.8231650993215214,
+    "calibration_intercept": -0.11059657536186393,
+    "ppv_npv": {
+      "at_cohort_prevalence": {
+        "assumed_prevalence": 0.36446469248291574,
+        "ppv": 0.489247311827957,
+        "npv": 0.7272727272727273
+      },
+      "at_prev_0.05": {
+        "assumed_prevalence": 0.05,
+        "ppv": 0.08080804865860995,
+        "npv": 0.9667289422427157
+      },
+      "at_prev_0.10": {
+        "assumed_prevalence": 0.1,
+        "ppv": 0.15653959269740858,
+        "npv": 0.9322651128914786
+      },
+      "at_prev_0.15": {
+        "assumed_prevalence": 0.15,
+        "ppv": 0.2276584361278907,
+        "npv": 0.8965431997033496
+      }
+    }
+  },
+  "Lu": {
+    "n": 53,
+    "prevalence": 0.49056603773584906,
+    "auc": 0.8532763532763533,
+    "auc_ci95": [
+      0.7350238095238094,
+      0.945403605015674
+    ],
+    "sensitivity": 0.9615384615384616,
+    "sensitivity_ci95": [
+      0.8695652173913043,
+      1.0
+    ],
+    "specificity": 0.3333333333333333,
+    "specificity_ci95": [
+      0.16666666666666666,
+      0.5185185185185185
+    ],
+    "confusion_tn_fp_fn_tp": [
+      9,
+      18,
+      1,
+      25
+    ],
+    "brier": 0.17881490982446221,
+    "calibration_slope": 1.8855638458915311,
+    "calibration_intercept": -0.8639454371189997,
+    "ppv_npv": {
+      "at_cohort_prevalence": {
+        "assumed_prevalence": 0.49056603773584906,
+        "ppv": 0.5813953488372092,
+        "npv": 0.9
+      },
+      "at_prev_0.05": {
+        "assumed_prevalence": 0.05,
+        "ppv": 0.07055503292568202,
+        "npv": 0.9939637826961771
+      },
+      "at_prev_0.10": {
+        "assumed_prevalence": 0.1,
+        "ppv": 0.13812154696132595,
+        "npv": 0.9873417721518988
+      },
+      "at_prev_0.15": {
+        "assumed_prevalence": 0.15,
+        "ppv": 0.20288548241659146,
+        "npv": 0.9800443458980045
+      }
+    }
+  },
+  "Development combined": {
+    "n": 987,
+    "prevalence": 0.47112462006079026,
+    "auc": 0.7550158612450046,
+    "auc_ci95": [
+      0.72445300144048,
+      0.7842023331626858
+    ],
+    "sensitivity": 0.7569892473118279,
+    "sensitivity_ci95": [
+      0.7186796536796537,
+      0.7938645379371997
+    ],
+    "specificity": 0.5881226053639846,
+    "specificity_ci95": [
+      0.5445469970725887,
+      0.6323849569078088
+    ],
+    "confusion_tn_fp_fn_tp": [
+      307,
+      215,
+      113,
+      352
+    ],
+    "brier": 0.19853576545440682,
+    "calibration_slope": 1.2886714739148792,
+    "calibration_intercept": 0.13762040667464606,
+    "ppv_npv": {
+      "at_cohort_prevalence": {
+        "assumed_prevalence": 0.47112462006079026,
+        "ppv": 0.620811287477954,
+        "npv": 0.7309523809523809
+      },
+      "at_prev_0.05": {
+        "assumed_prevalence": 0.05,
+        "ppv": 0.08819984361117071,
+        "npv": 0.9787156424115343
+      },
+      "at_prev_0.10": {
+        "assumed_prevalence": 0.1,
+        "ppv": 0.16958078261664078,
+        "npv": 0.9561044545204911
+      },
+      "at_prev_0.15": {
+        "assumed_prevalence": 0.15,
+        "ppv": 0.24490416104090665,
+        "npv": 0.9320383763225417
+      }
+    }
+  },
+  "_provenance": {
+    "model": "frozen",
+    "lock_state": "Lu = stored one-shot predictions",
+    "script": "inline, recorded in results/reconstruction/metric_suite.json",
+    "bootstrap": "2000 resamples, seed 42",
+    "generated": "2026-08-22"
+  }
+}

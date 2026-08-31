@@ -1,0 +1,37 @@
+/sessions/rcw-014aorer9cua6gj1xveecsut/mnt/Dhikra Cowork/dhikra/scripts/_bootstrap/phase0_free_e.py:36: RuntimeWarning: invalid value encountered in divide
+  nw=np.where(den>0,100.0*tot/den,np.nan)
+==============================================================================
+ITEM 6 -- development controls at threshold 0.367
+==============================================================================
+  n controls=522  false positives=215 (0.412)  by corpus:
+          size  sum      mean
+source                       
+Delaware   279   95  0.340502
+Pitt       243  120  0.493827
+
+  who gets flagged (mean of FP vs TN among controls):
+   sex mix  TN=f    0.723127
+m    0.276873
+Name: sex, dtype: float64  FP=f    0.655814
+m    0.344186
+Name: sex, dtype: float64
+   age        FP=   67.04  TN=   68.39  SMD=-0.180
+   mmse       FP=   29.01  TN=   29.27  SMD=-0.237
+
+  top 12 feature differences, flagged controls vs correctly-passed controls:
+   iu.total                         FP=  11.893  TN=  16.111  SMD=-1.194
+   iu.proportion                    FP=   0.517  TN=   0.700  SMD=-1.194
+   iu.actions                       FP=   3.042  TN=   4.580  SMD=-1.115
+   iu.objects                       FP=   5.944  TN=   7.554  SMD=-0.863
+   iu.subjects                      FP=   2.219  TN=   2.795  SMD=-0.783
+   iu.has_woman_drying_dishes       FP=   0.433  TN=   0.795  SMD=-0.757
+   iu.has_girl_reaching             FP=   0.451  TN=   0.788  SMD=-0.707
+   iu.places                        FP=   0.688  TN=   1.182  SMD=-0.674
+   iu.has_window                    FP=   0.391  TN=   0.713  SMD=-0.654
+   iu.has_boy_taking_cookie         FP=   0.474  TN=   0.775  SMD=-0.631
+   iu.has_woman                     FP=   0.693  TN=   0.928  SMD=-0.629
+   sem.content_dispersion           FP=   0.474  TN=   0.492  SMD=-0.627
+
+  words: FP=103.2  TN=127.4
+  iu.total: FP=11.89  TN=16.11
+  P(short transcript | flagged) = 0.274   P(short | passed) = 0.137   (short = bottom 20% by words, cut=66)

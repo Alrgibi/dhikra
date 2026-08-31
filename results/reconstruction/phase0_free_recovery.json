@@ -1,0 +1,32 @@
+{
+  "what": "stdout of the five committed phase0_free drivers, captured to committed files",
+  "why": "the 2026-08-23 free-diagnostics sweep printed to stdout only; its figures entered THESIS_PLAN sections 5.22, 5.23 (flagged-controls table), 5.24 and parts of 5.2.1 with no result file behind them. Owner ruling 2026-08-28: re-run all five committed drivers unchanged, capture stdout, check every value against the plan text; a mismatch is a finding, reported and never smoothed.",
+  "governance": "no model fitted, no threshold touched, no Lu file opened; the five scripts read exactly the eight committed post-lock inputs hashed below; fixed seed 42",
+  "command": "$HOME/dhenv/bin/python scripts/_bootstrap/phase0_free{,_b,_c,_d,_e}.py > results/reconstruction/<name>_capture.txt 2>&1",
+  "interpreter": {
+    "python": "3.12.13",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "env": "pinned dhenv"
+  },
+  "cross_check": "independently executed the same day in a second environment (numpy 2.4.4, pandas 3.0.2): numeric content identical on all five captures; the e-capture differs only in where a harmless RuntimeWarning interleaves with stdout",
+  "verification_against_plan": "every figure the plan quotes from this sweep reproduces exactly: the 5.22 efficiency-family table and paired delta -0.1074 [-0.1673, -0.0464]; the 5.23 flagged-vs-passed controls table; the 5.24 arms A-D decomposition, Spearman-Brown prediction and threshold shift; the within-sex z-scoring deltas -0.0015 / -0.0052. NOT produced by these drivers: the 5.2.1 Pitt-only core (by-sex participant-bootstrap AUCs, MMSE composition, band sensitivities, stratified-threshold test, Delaware by-sex, length quartiles) - no committed producer found; see WRITING_FINDINGS 29",
+  "date": "2026-08-28",
+  "captures": [
+    "results/reconstruction/phase0_free_capture.txt",
+    "results/reconstruction/phase0_free_b_capture.txt",
+    "results/reconstruction/phase0_free_c_capture.txt",
+    "results/reconstruction/phase0_free_d_capture.txt",
+    "results/reconstruction/phase0_free_e_capture.txt"
+  ],
+  "inputs_sha256": {
+    "results/summary/oof_predictions.npy": "0e10c8f0e8f390b0a0a13a120b38a6763d7120acf4dcfeb18f87726df755d4ef",
+    "results/summary/oof_labels.npy": "a5d74bf38964229d43ffb04a5dfd97579cd0d92b1216ce9d0a0dc0ef38a06471",
+    "results/summary/oof_groups.npy": "5367e46c33cbe4dd07bf657e7a5760f1c725b24c7967d6d4da6f17ae3f465ba7",
+    "results/summary/oof_source.npy": "a9b6df44a5638ff3ee07609548247b130ab079de716f9a9f54df6d09c99bfbde",
+    "results/pitt_cookie/features.csv": "b7597d84b215444a71b20cf58a507d57db70c18dca0585a2edcebb81619e3dfe",
+    "results/pitt_cookie/meta.csv": "0f5fcc1bf1e51aaf4c54cb77dfd6c3c6c92d3318332f11008fd7116d0d202ace",
+    "results/delaware/cookie_features.csv": "24fbc4d2b10623cffb77187f6f58c850dec5865715fd76cc73d7101a432ef83f",
+    "results/delaware/cookie_meta.csv": "457d8ecba06a14fa5fb44fefafcf39400de3e6740cd6a1186540e12d46536a55"
+  }
+}

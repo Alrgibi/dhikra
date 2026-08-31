@@ -1,0 +1,22 @@
+{
+  "_provenance": {
+    "WARNING": "Despite the filename these are NOT headline numbers and must never be quoted as such (docs/FIGURE_RECONCILIATION.md section A classifies this experiment as CONTEXT ONLY).",
+    "content": "ten-seed means and SDs of the age/sex-matched Pitt experiment, recomputed from results/pitt_cookie/matching_stability.csv (368-381 recordings per seed)",
+    "script": "UNKNOWN -- no committed script writes this file (audit item 11)",
+    "lock_state": "pre-lock, Pitt-only; Lu never involved",
+    "cite_instead": "results/summary/CURRENT_development_stats.json for development performance; results/reconstruction/acoustic_regen_verification.json for the acoustic arms",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "auc_text": {
+    "mean": 0.8019,
+    "sd": 0.0153
+  },
+  "auc_acoustic": {
+    "mean": 0.6647,
+    "sd": 0.0195
+  },
+  "auc_combined": {
+    "mean": 0.8036,
+    "sd": 0.0109
+  }
+}

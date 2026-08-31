@@ -1,0 +1,22 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock specialist-vs-blended comparison trained on the three-corpus (Lu-inclusive) pool.",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "dementia_specialist": 0.8044645854313529,
+  "mci_specialist": 0.5719086021505376,
+  "blended": 0.7554450046186549
+}

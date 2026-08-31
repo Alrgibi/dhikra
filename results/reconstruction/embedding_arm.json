@@ -1,0 +1,16 @@
+{
+  "generated": "2026-08-23",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "representation": "mean of spaCy en_core_web_md static word vectors, 300 dimensions",
+  "n": 548,
+  "n_dimensions": 300,
+  "handcrafted_64_feature_pitt_auc": 0.8095,
+  "embedding_auc": 0.8018,
+  "delta": -0.0077,
+  "GRADE": "CEILING-CLAIM-QUALIFIED",
+  "floor_not_ceiling": "en_core_web_md vectors are STATIC and context-independent, and averaging discards word order. A contextual transformer would almost certainly do better. This is a FLOOR on what pretrained representations offer.",
+  "why_no_transformer": "the device has no torch, no transformers library and no network; weights could only arrive through a 20 MB-per-file channel and the runtime alone is hundreds of megabytes. A hardware constraint, not a judgement.",
+  "not_a_deployment_candidate": "a 300-dimensional dense vector forfeits every deployability property this project exists for: no paper fallback, no explainable indicators, no operator-facing reference ranges.",
+  "scope": "Pitt only. The combined-pool comparison against 0.755 is unmeasured.",
+  "governance": "Lu not read; deployed model, features and threshold unchanged"
+}

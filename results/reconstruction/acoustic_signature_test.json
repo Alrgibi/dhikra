@@ -1,0 +1,16 @@
+{
+  "generated": "2026-08-23",
+  "S1_auc": 0.7078624813153962,
+  "embedded": 0.7079222720478326,
+  "delta": -5.9790732436448835e-05,
+  "grade": "MATCH",
+  "n": 373,
+  "hypothesis": "StratifiedGroupKFold(5, shuffle=True, random_state=42), grouped by participant, matched-373 cohort from the ORIGINAL multimodal mask, recovered model config, 27 pkl features",
+  "registered_interpretation": "failure = protocol not confirmed, not model wrong",
+  "supersedes": "the 2026-08-22 run recorded in acoustic_regen_verification.json (S1_auc 0.7078624813) -- same test, now from committed code",
+  "what_remains_uncommitted": "the ORIGINAL trainer script only. The configuration is recovered, the protocol is confirmed by this test, and this script re-fits from raw features.",
+  "_provenance": {
+    "dataset": "Pitt cookie audio subset, matched 373; Lu never read",
+    "script": "scripts/acoustic_signature_test.py"
+  }
+}

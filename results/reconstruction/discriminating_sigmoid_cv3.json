@@ -1,0 +1,118 @@
+{
+  "variant": "CalibratedClassifierCV(ens, method='sigmoid', cv=3)",
+  "aucs": {
+    "combined": 0.755032340460594,
+    "pitt": 0.8094717668488158,
+    "delaware": 0.6291218637992831
+  },
+  "threshold_floor_0.75": {
+    "threshold": 0.367,
+    "sensitivity": 0.7569892473118279,
+    "specificity": 0.5881226053639846
+  },
+  "calibration": {
+    "brier": 0.1985359433325371,
+    "slope": 1.2886779219674989,
+    "intercept": 0.13761939048949673,
+    "max_gap": 0.15130960755546385,
+    "bins": [
+      {
+        "bin": "(0.0, 0.2]",
+        "n": 20,
+        "predicted": 0.189,
+        "observed": 0.1
+      },
+      {
+        "bin": "(0.2, 0.4]",
+        "n": 466,
+        "predicted": 0.3,
+        "observed": 0.292
+      },
+      {
+        "bin": "(0.4, 0.6]",
+        "n": 244,
+        "predicted": 0.493,
+        "observed": 0.488
+      },
+      {
+        "bin": "(0.6, 0.8]",
+        "n": 203,
+        "predicted": 0.695,
+        "observed": 0.764
+      },
+      {
+        "bin": "(0.8, 1.0]",
+        "n": 54,
+        "predicted": 0.83,
+        "observed": 0.981
+      }
+    ]
+  },
+  "signatures": {
+    "S1_combined_auc": true,
+    "S2_pitt_auc": true,
+    "S3_delaware_auc": true,
+    "S4_threshold": true,
+    "S5_max_gap": true,
+    "S6_slope_intercept": true,
+    "S7_bin_table": true
+  },
+  "grade": "MATCH",
+  "criteria": "docs/RECONSTRUCTION.md sect 2.7, pre-registered 2026-08-20",
+  "_provenance": {
+    "dataset": "Pitt 548 + Delaware 439 = 987; Lu locked out and untouched",
+    "lock_state": "post-Lu-lock reconstruction; results/summary/ untouched",
+    "executed_via": "fold-chunked cdrive.py, logic identical to train_development.py + wrapper",
+    "generated": "2026-08-20"
+  },
+  "bootstrap_ci_agreement": {
+    "method": "participant-level, 2000 resamples, seed 42 (RECONSTRUCTION.md sect 2.5, tolerance \u00b10.005)",
+    "subsets": {
+      "combined": {
+        "reconstructed": [
+          0.717899,
+          0.792617
+        ],
+        "locked": [
+          0.7191685596447916,
+          0.7901689631261094
+        ],
+        "delta": [
+          -0.00127,
+          0.002448
+        ],
+        "within_pm_0.005": true
+      },
+      "pitt_dementia": {
+        "reconstructed": [
+          0.762374,
+          0.857025
+        ],
+        "locked": [
+          0.7612403197890507,
+          0.8551574671615094
+        ],
+        "delta": [
+          0.001134,
+          0.001868
+        ],
+        "within_pm_0.005": true
+      },
+      "delaware_mci": {
+        "reconstructed": [
+          0.570672,
+          0.685823
+        ],
+        "locked": [
+          0.5703440958878332,
+          0.6868212739102012
+        ],
+        "delta": [
+          0.000328,
+          -0.000998
+        ],
+        "within_pm_0.005": true
+      }
+    }
+  }
+}

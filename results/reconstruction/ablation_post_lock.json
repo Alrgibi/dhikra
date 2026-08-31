@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "set": "age only",
+      "n_features": 1,
+      "auc": 0.5570716433897747,
+      "ci": [
+        0.509753666640721,
+        0.602884684502396
+      ],
+      "pre_lock_auc": 0.6230454186282038,
+      "delta_vs_pre_lock": -0.06597377523842918
+    },
+    {
+      "set": "information content only",
+      "n_features": 31,
+      "auc": 0.7107300292506078,
+      "ci": [
+        0.6721435503175942,
+        0.7490692306669628
+      ],
+      "pre_lock_auc": 0.7109426878716718,
+      "delta_vs_pre_lock": -0.00021265862106401023
+    },
+    {
+      "set": "linguistic only",
+      "n_features": 24,
+      "auc": 0.7388373913401722,
+      "ci": [
+        0.7023872078086687,
+        0.7743803290230015
+      ],
+      "pre_lock_auc": 0.7413441955193483,
+      "delta_vs_pre_lock": -0.0025068041791760365
+    },
+    {
+      "set": "semantic coherence only",
+      "n_features": 9,
+      "auc": 0.5771556873892802,
+      "ci": [
+        0.5369688510836772,
+        0.616427991660977
+      ],
+      "pre_lock_auc": 0.6017087168300816,
+      "delta_vs_pre_lock": -0.0245530294408014
+    },
+    {
+      "set": "Arabic-compatible 19 features",
+      "n_features": 19,
+      "auc": 0.7390639805545255,
+      "ci": [
+        0.7029804522454896,
+        0.774299344277369
+      ],
+      "pre_lock_auc": 0.7423569608137737,
+      "delta_vs_pre_lock": -0.0032929802592481794
+    },
+    {
+      "set": "all features, logistic baseline",
+      "n_features": 64,
+      "auc": 0.7432826597453961,
+      "ci": [
+        0.7038311439170438,
+        0.7802807389800258
+      ],
+      "pre_lock_auc": 0.7505815053476232,
+      "delta_vs_pre_lock": -0.007298845602227155
+    },
+    {
+      "set": "all features, final ensemble",
+      "n_features": 64,
+      "auc": 0.755032340460594,
+      "ci": [
+        0.7178986151013685,
+        0.7926167554861396
+      ],
+      "pre_lock_auc": 0.7554450046186549,
+      "delta_vs_pre_lock": -0.00041266415806096024
+    },
+    {
+      "set": "all features + age",
+      "n_features": 65,
+      "auc": 0.7670209698018375,
+      "ci": [
+        0.7309487650799221,
+        0.8043432230967218
+      ],
+      "pre_lock_auc": 0.7712448851642868,
+      "delta_vs_pre_lock": -0.00422391536244926
+    }
+  ],
+  "_provenance": {
+    "dataset": "Pitt cookie (548) + Delaware cookie (439) = 987 recordings, 581 participants; Lu locked out, never read",
+    "lock_state": "post-Lu-lock",
+    "model": "CalibratedClassifierCV(sigmoid, cv=3, ensemble='auto') over the committed ens() for every row except the logistic-baseline row (registered design; the pre-lock table's per-row model is unknown-code)",
+    "cv": "StratifiedGroupKFold(5, shuffle=True, random_state=42), grouped by participant",
+    "bootstrap": "participant-level, 2000 resamples, seed 42",
+    "arabic_19_source": "scripts/estimate_arabic.py::ARABIC_EQUIVALENT",
+    "supersedes": "results/_superseded/ablation_pre_lock.json (pre-lock pool, settled by its 16-digit match to final_by_population.json combined)",
+    "script": "abdrive.py (chunked driver; registered in docs/RECONSTRUCTION.md sect 2.10)",
+    "generated": "2026-08-20"
+  }
+}

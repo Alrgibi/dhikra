@@ -1,0 +1,22 @@
+{
+  "n": 20,
+  "human_mean": 13.2,
+  "auto_mean": 11.7,
+  "bias": -1.5,
+  "mean_absolute_difference": 1.6,
+  "sd_diff": 1.877848713148555,
+  "registered_criterion": "mean absolute difference <= 1.2 units per transcript",
+  "grade": "INADEQUATE",
+  "spearman": 0.9198519925833999,
+  "pearson": 0.9391950121367744,
+  "discordant_pairs": 13,
+  "tied_pairs": 12,
+  "total_pairs": 190,
+  "icc21": 0.904,
+  "bland_altman_loa": [
+    -5.18,
+    2.18
+  ],
+  "benchmark": "Yeh et al., PLOS Digital Health 2025: three human raters, 22-unit Cookie Theft scheme, MAE 1.20 +/- 1.19, interrater ICC 0.347 [-0.30, 0.69]",
+  "governance": "pre-registered in docs/scorer_check/ADEQUACY_BENCHMARK.md, committed 2026-08-25T20:07:10Z before any score was entered; report-and-stop"
+}

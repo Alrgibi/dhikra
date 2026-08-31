@@ -1,0 +1,65 @@
+{
+  "reviewer_suggestions_acted_on": [
+    {
+      "item": "Lock the external test corpus",
+      "status": "DONE",
+      "detail": "Lu excluded from the TRAINING DATA of the final model and from every decision taken after the lock of 2026-08-18T17:37. It was NOT untouched before that lock -- five pre-lock scorings compared training configurations and one informed the decision to add Delaware (docs/LU_EXPOSURE_TIMELINE.md). Wording corrected 2026-08-22. Final model trained on Pitt+Delaware (987 recordings, 581 participants). Lu scored ONCE with a pre-specified threshold: AUC 0.853 (95% CI 0.737-0.946)."
+    },
+    {
+      "item": "Task-level fusion vs concatenation",
+      "status": "TESTED, no benefit",
+      "detail": "Concatenated 246 features 0.684; task-level fusion of 5 scores 0.638 (-0.047). Fusion weights favour Cinderella (0.392) and Cat (0.227) over Cookie Theft (0.056), consistent with the earlier task comparison."
+    },
+    {
+      "item": "Late fusion of acoustic and linguistic models",
+      "status": "TESTED, no benefit",
+      "detail": "acoustic 0.728, linguistic 0.808, pooled 0.838, late fusion 0.830. Pooling all features slightly beats combining separate models."
+    },
+    {
+      "item": "Feature selection swept inside folds",
+      "status": "DONE previously",
+      "detail": "Tested k=15..80; no size beat the full set. Best 60 features 0.792 vs all 0.804."
+    },
+    {
+      "item": "Ablation table with CIs",
+      "status": "DONE",
+      "detail": "results/reconstruction/ablation_post_lock.json [pointer corrected 2026-08-22: results/summary/ablation.json no longer exists; the pre-lock ablation is quarantined at results/_superseded/ablation_pre_lock.json]"
+    },
+    {
+      "item": "Probability calibration",
+      "status": "DONE",
+      "detail": "slope 1.19, intercept 0.06, Brier 0.198, max gap 0.069 -> reportable as a probability. [SUPERSEDED 2026-08-22: those four values are the pre-lock Lu-inclusive calibration. Post-lock: slope 1.276, intercept 0.135, Brier 0.199, max gap 0.151, and the output is a SCREENING SCORE, not a probability -- results/summary/CURRENT_development_stats.json.]"
+    },
+    {
+      "item": "Prevalence-dependent PPV/NPV",
+      "status": "DONE",
+      "detail": "results/summary/operating_points.json"
+    },
+    {
+      "item": "Audio robustness stress test",
+      "status": "DONE",
+      "detail": "Robust to compression, 8kHz, low volume, clipping (all ~1.00). Fails on background noise below ~12 dB SNR."
+    },
+    {
+      "item": "Quality-control refusal system",
+      "status": "DONE",
+      "detail": "Thresholds calibrated on real audio; picture-task failure blocks the whole result."
+    },
+    {
+      "item": "Reproducibility freeze",
+      "status": "DONE",
+      "detail": "results/summary/model_card.json"
+    }
+  ],
+  "not_done_and_why": [
+    {
+      "item": "Whisper / wav2vec 2.0 / BERT / RoBERTa embeddings",
+      "reason": "Weights cannot be downloaded in this environment: huggingface.co, openaipublic.azureedge.net and dl.fbaipublicfiles.com all return HTTP 403. This is the most promising remaining direction and is specified as the primary future work rather than attempted and abandoned."
+    },
+    {
+      "item": "Subgroup analysis by sex and education",
+      "reason": "Education is not recorded consistently across corpora; sex subgroups would be too small to interpret. Stated as a limitation."
+    }
+  ],
+  "_correction_note": "Wording and pointers corrected 2026-08-22; no numeric value in this file was changed. This file is a pre-lock action log kept for the record."
+}

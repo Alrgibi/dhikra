@@ -1,0 +1,97 @@
+{
+  "stored_vector": {
+    "n": 987,
+    "aucs": {
+      "combined": 0.7550158612450046,
+      "pitt": 0.8094717668488158,
+      "delaware": 0.6290770609318996
+    },
+    "brier": 0.19853576545440682,
+    "max_gap": 0.1513101141664831,
+    "slope": 1.2886714739148792,
+    "intercept": 0.13762040667464606,
+    "threshold_floor_0.75": {
+      "threshold": 0.367,
+      "sensitivity": 0.7569892473118279,
+      "specificity": 0.5881226053639846
+    },
+    "bins": [
+      {
+        "bin": "(0.0, 0.2]",
+        "n": 20,
+        "predicted": 0.189,
+        "observed": 0.1
+      },
+      {
+        "bin": "(0.2, 0.4]",
+        "n": 467,
+        "predicted": 0.3,
+        "observed": 0.291
+      },
+      {
+        "bin": "(0.4, 0.6]",
+        "n": 243,
+        "predicted": 0.493,
+        "observed": 0.49
+      },
+      {
+        "bin": "(0.6, 0.8]",
+        "n": 203,
+        "predicted": 0.695,
+        "observed": 0.764
+      },
+      {
+        "bin": "(0.8, 1.0]",
+        "n": 54,
+        "predicted": 0.83,
+        "observed": 0.981
+      }
+    ]
+  },
+  "locked_reference": "results/summary/CURRENT_development_stats.json",
+  "dispersion": {
+    "stored_locked": {
+      "sd": 0.18920193339297595,
+      "p5": 0.21366232403136215,
+      "p95": 0.8050956716571943,
+      "min": 0.15361051004611473,
+      "max": 0.8756556558283873
+    },
+    "recon_uncalibrated": {
+      "sd": 0.20544310526082984,
+      "p5": 0.19748884731502847,
+      "p95": 0.8600177146617717,
+      "min": 0.09710520709750169,
+      "max": 0.9585667207941763
+    },
+    "recon_sigmoid": {
+      "sd": 0.21592047320191418,
+      "p5": 0.19022041822809288,
+      "p95": 0.8466570303108801,
+      "min": 0.1383037117510665,
+      "max": 0.9101010463541546
+    },
+    "recon_isotonic": {
+      "sd": 0.2486726040739598,
+      "p5": 0.13850435388366422,
+      "p95": 0.9295922088418926,
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "tail_check_on_reconstructed": {
+    "top54_observed": 0.9814814814814815,
+    "bottom20_observed": 0.2
+  },
+  "_provenance": {
+    "purpose": "read-only diagnostic: does the stored OOF vector reproduce every locked signature (single-vector consistency)?",
+    "inputs": [
+      "results/summary/oof_predictions.npy",
+      "oof_labels.npy",
+      "oof_source.npy"
+    ],
+    "no_training": true,
+    "lu_untouched": true,
+    "generated": "2026-08-20"
+  }
+}

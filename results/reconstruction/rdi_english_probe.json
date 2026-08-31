@@ -1,0 +1,242 @@
+{
+  "generated": "2026-08-23",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "governance": "Lu not read; no model trained or modified; descriptive only",
+  "cohorts": {
+    "pitt": {
+      "n_recordings": 548,
+      "n_participants": 290,
+      "n_impaired": 305,
+      "sanity_pn_reproduces_committed_feature": 1.0,
+      "auc": {
+        "pn": {
+          "auc": 0.656,
+          "ci95": [
+            0.5999,
+            0.7114
+          ]
+        },
+        "rdi_full": {
+          "auc": 0.658,
+          "ci95": [
+            0.6024,
+            0.7144
+          ]
+        },
+        "rdi_free": {
+          "auc": 0.5955,
+          "ci95": [
+            0.5409,
+            0.6517
+          ]
+        },
+        "rdi_full_naive": {
+          "auc": 0.6521,
+          "ci95": [
+            0.5982,
+            0.7083
+          ]
+        },
+        "rdi_free_naive": {
+          "auc": 0.5908,
+          "ci95": [
+            0.5392,
+            0.6434
+          ]
+        },
+        "_paired_diff_rdi_full_minus_pn": {
+          "point": 0.002,
+          "ci95": [
+            -0.0115,
+            0.0163
+          ]
+        }
+      },
+      "convergent_spearman_rdi_free_vs_pn": {
+        "within_controls": 0.5771,
+        "within_impaired": 0.6315
+      },
+      "means": {
+        "pn": {
+          "healthy": 0.5681,
+          "impaired": 0.8148
+        },
+        "rdi_full": {
+          "healthy": 0.6868,
+          "impaired": 1.0308
+        },
+        "rdi_free": {
+          "healthy": 0.1188,
+          "impaired": 0.2161
+        },
+        "rdi_full_naive": {
+          "healthy": 0.7468,
+          "impaired": 1.0933
+        },
+        "rdi_free_naive": {
+          "healthy": 0.1788,
+          "impaired": 0.2785
+        }
+      },
+      "matched_subset": {
+        "n": 368,
+        "auc": {
+          "pn": {
+            "auc": 0.663,
+            "ci95": [
+              0.5859,
+              0.7357
+            ]
+          },
+          "rdi_full": {
+            "auc": 0.675,
+            "ci95": [
+              0.6007,
+              0.7447
+            ]
+          },
+          "rdi_free": {
+            "auc": 0.6254,
+            "ci95": [
+              0.5621,
+              0.69
+            ]
+          },
+          "rdi_full_naive": {
+            "auc": 0.6709,
+            "ci95": [
+              0.5954,
+              0.74
+            ]
+          },
+          "rdi_free_naive": {
+            "auc": 0.6174,
+            "ci95": [
+              0.549,
+              0.6865
+            ]
+          },
+          "_paired_diff_rdi_full_minus_pn": {
+            "point": 0.0119,
+            "ci95": [
+              -0.004,
+              0.0303
+            ]
+          }
+        }
+      }
+    },
+    "dela": {
+      "n_recordings": 439,
+      "n_participants": 291,
+      "n_impaired": 160,
+      "sanity_pn_reproduces_committed_feature": 1.0,
+      "auc": {
+        "pn": {
+          "auc": 0.5506,
+          "ci95": [
+            0.4902,
+            0.6119
+          ]
+        },
+        "rdi_full": {
+          "auc": 0.5496,
+          "ci95": [
+            0.4879,
+            0.6103
+          ]
+        },
+        "rdi_free": {
+          "auc": 0.5345,
+          "ci95": [
+            0.4765,
+            0.5965
+          ]
+        },
+        "rdi_full_naive": {
+          "auc": 0.5409,
+          "ci95": [
+            0.4789,
+            0.6019
+          ]
+        },
+        "rdi_free_naive": {
+          "auc": 0.5005,
+          "ci95": [
+            0.4381,
+            0.5637
+          ]
+        },
+        "_paired_diff_rdi_full_minus_pn": {
+          "point": -0.0011,
+          "ci95": [
+            -0.0142,
+            0.0118
+          ]
+        }
+      },
+      "convergent_spearman_rdi_free_vs_pn": {
+        "within_controls": 0.5557,
+        "within_impaired": 0.6244
+      },
+      "means": {
+        "pn": {
+          "healthy": 0.6049,
+          "impaired": 0.6624
+        },
+        "rdi_full": {
+          "healthy": 0.7085,
+          "impaired": 0.7791
+        },
+        "rdi_free": {
+          "healthy": 0.1036,
+          "impaired": 0.1167
+        },
+        "rdi_full_naive": {
+          "healthy": 0.7877,
+          "impaired": 0.8558
+        },
+        "rdi_free_naive": {
+          "healthy": 0.1828,
+          "impaired": 0.1934
+        }
+      }
+    }
+  },
+  "GRADE": {
+    "primary_does_rdi_free_discriminate": "PARTIAL",
+    "primary_detail": {
+      "pitt": {
+        "auc": 0.5955,
+        "ci95": [
+          0.5409,
+          0.6517
+        ]
+      },
+      "pitt_matched": {
+        "auc": 0.6254,
+        "ci95": [
+          0.5621,
+          0.69
+        ]
+      },
+      "delaware": {
+        "auc": 0.5345,
+        "ci95": [
+          0.4765,
+          0.5965
+        ]
+      }
+    },
+    "secondary_full_index_vs_pronoun_marker": {
+      "pitt": "NEUTRAL",
+      "pitt_matched": "NEUTRAL",
+      "delaware": "NEUTRAL"
+    },
+    "tertiary_convergent": "SAME CONSTRUCT \u2014 Spearman 0.556-0.631 across both cohorts and both groups, all >0.5",
+    "control_comparison_that_must_be_reported": "The ESTABLISHED pronoun-to-noun marker ALSO fails on Delaware: AUC 0.5506 [0.4902, 0.6119], interval spanning chance. The referential index's Delaware failure is therefore NOT a defect specific to it \u2014 the marker it replaces fails identically on the same cohort. Reporting the PARTIAL grade without this comparison would misattribute a cohort property to the new measure.",
+    "pos_filtering_finding": "POS filtering matters most where signal is weakest. Pronoun-free naive (bare closed-class string match, which is exactly what the Arabic implementation does) reaches 0.5005 on Delaware \u2014 precisely chance \u2014 against 0.5345 filtered. On Pitt the two are near-identical (0.5908 vs 0.5955). Existential 'there is/are' and complementiser 'that' are noise, and Arabic hunaak does the same double duty. RECOMMENDATION: the Arabic index should exclude existential and complementiser uses; it currently cannot, because no Arabic parser is available offline. Record as a known limitation of the Arabic engine.",
+    "quantitative_prediction_for_the_pilot": "The pronoun-free index is a LOSSY substitute in English: 0.5955 against 0.6560 for the pronoun marker on Pitt. Since Arabic drops pronouns, the Arabic referential index is structurally the pronoun-free variant. The honest expectation for a future Arabic dementia sample is therefore an AUC near 0.6, NOT near 0.8. This is the first quantitative, falsifiable prediction the Arabic side of this project has been able to make.",
+    "registered_asymmetry_applied": "Per the pre-registration, a positive result is construct evidence IN ENGLISH ONLY and does not validate the Arabic index. What it removes is the position that the construct had no empirical support of any kind."
+  }
+}

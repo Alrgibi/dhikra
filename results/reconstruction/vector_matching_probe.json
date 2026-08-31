@@ -1,0 +1,71 @@
+{
+  "registration": "module docstring, committed before execution",
+  "n_transcripts": 20,
+  "entity_units": 17,
+  "arms": {
+    "baseline": {
+      "mae": 0.55,
+      "bias": 0.05,
+      "misses": 6,
+      "false_credits": 7
+    },
+    "k=0.30": {
+      "mae": 7.2,
+      "bias": 7.2,
+      "misses": 0,
+      "false_credits": 144
+    },
+    "k=0.35": {
+      "mae": 6.7,
+      "bias": 6.7,
+      "misses": 0,
+      "false_credits": 134
+    },
+    "k=0.40": {
+      "mae": 5.9,
+      "bias": 5.9,
+      "misses": 3,
+      "false_credits": 121
+    },
+    "k=0.45": {
+      "mae": 5.85,
+      "bias": 5.85,
+      "misses": 3,
+      "false_credits": 120
+    },
+    "k=0.50": {
+      "mae": 5.2,
+      "bias": 5.2,
+      "misses": 3,
+      "false_credits": 107
+    },
+    "k=0.55": {
+      "mae": 4.75,
+      "bias": 4.75,
+      "misses": 3,
+      "false_credits": 98
+    },
+    "k=0.60": {
+      "mae": 4.4,
+      "bias": 4.4,
+      "misses": 3,
+      "false_credits": 91
+    },
+    "k=0.65": {
+      "mae": 3.7,
+      "bias": 3.7,
+      "misses": 3,
+      "false_credits": 77
+    },
+    "k=0.70": {
+      "mae": 3.55,
+      "bias": 3.55,
+      "misses": 3,
+      "false_credits": 74
+    }
+  },
+  "grade": "VECTORS-HURT",
+  "best": null,
+  "note": "entity units only; non-entity units are identical across arms",
+  "governance": "nothing deployed; changing the extractor changes the model, so any gain is specified-successor material"
+}

@@ -1,0 +1,199 @@
+{
+  "generated_from": "docs/scorer_check/scoring_sheet_FILLED.csv",
+  "n_transcripts": 20,
+  "n_units": 23,
+  "PRIMARY_bland_altman": {
+    "mean_difference_auto_minus_human": -1.5,
+    "sd_of_differences": 1.878,
+    "limits_of_agreement_95": [
+      -5.18,
+      2.18
+    ],
+    "direction": "the software credits FEWER units than the human",
+    "caveat": "n=20 gives imprecise limits, roughly +/- half an SD of the differences"
+  },
+  "SECONDARY_icc21": {
+    "icc": 0.904,
+    "koo_li_band": "excellent",
+    "caveat": "the sample was stratified across the range of automated counts, which INFLATES ICC relative to a random sample. Quote it with this sentence."
+  },
+  "human_total_mean": 13.2,
+  "automated_total_mean": 11.7,
+  "TERTIARY_per_unit": [
+    {
+      "unit": "water",
+      "kappa": 0.1,
+      "raw_agreement": 0.55,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 9
+    },
+    {
+      "unit": "stool_falling",
+      "kappa": 0.211,
+      "raw_agreement": 0.7,
+      "false_credit_auto_only": 4,
+      "miss_human_only": 2
+    },
+    {
+      "unit": "water_overflowing",
+      "kappa": 0.348,
+      "raw_agreement": 0.85,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 3
+    },
+    {
+      "unit": "woman_drying_dishes",
+      "kappa": 0.468,
+      "raw_agreement": 0.75,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 5
+    },
+    {
+      "unit": "boy",
+      "kappa": 0.494,
+      "raw_agreement": 0.8,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 4
+    },
+    {
+      "unit": "boy_taking_cookie",
+      "kappa": 0.5,
+      "raw_agreement": 0.75,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 5
+    },
+    {
+      "unit": "girl_reaching",
+      "kappa": 0.5,
+      "raw_agreement": 0.75,
+      "false_credit_auto_only": 2,
+      "miss_human_only": 3
+    },
+    {
+      "unit": "woman",
+      "kappa": 0.545,
+      "raw_agreement": 0.8,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 4
+    },
+    {
+      "unit": "girl",
+      "kappa": 0.571,
+      "raw_agreement": 0.85,
+      "false_credit_auto_only": 1,
+      "miss_human_only": 2
+    },
+    {
+      "unit": "woman_unconcerned",
+      "kappa": 0.687,
+      "raw_agreement": 0.9,
+      "false_credit_auto_only": 1,
+      "miss_human_only": 1
+    },
+    {
+      "unit": "exterior",
+      "kappa": 0.765,
+      "raw_agreement": 0.9,
+      "false_credit_auto_only": 2,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "kitchen",
+      "kappa": 0.773,
+      "raw_agreement": 0.95,
+      "false_credit_auto_only": 1,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "stool",
+      "kappa": 0.773,
+      "raw_agreement": 0.95,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 1
+    },
+    {
+      "unit": "sink",
+      "kappa": 0.857,
+      "raw_agreement": 0.95,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 1
+    },
+    {
+      "unit": "window",
+      "kappa": 0.894,
+      "raw_agreement": 0.95,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 1
+    },
+    {
+      "unit": "cookie",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "jar",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "plate",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "dishcloth",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "cupboard",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "curtain",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "counter",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    },
+    {
+      "unit": "faucet",
+      "kappa": 1.0,
+      "raw_agreement": 1.0,
+      "false_credit_auto_only": 0,
+      "miss_human_only": 0
+    }
+  ],
+  "actionable": {
+    "lists_too_loose": [
+      "stool_falling"
+    ],
+    "lists_too_tight": [
+      "water",
+      "water_overflowing",
+      "woman_drying_dishes",
+      "boy",
+      "boy_taking_cookie",
+      "girl_reaching",
+      "woman"
+    ]
+  }
+}

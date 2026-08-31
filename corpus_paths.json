@@ -1,0 +1,13 @@
+{
+  "_comment": "Single source of truth for data locations, read via src/dhikra/paths.py (env DHIKRA_<KEY> overrides; Windows paths are auto-translated when running inside a Linux mount of these folders). wls_xlsx located 2026-08-20 at the DementiaBank root under its expected name. pitt_audio added 2026-08-21: 522 readable mp3 cookie recordings (flat folder; 537 stub .wav files of 11 bytes are download artefacts, ignored by size ordering). acoustic_features_csv regenerated 2026-08-21 from that audio by scripts/extract_audio_features.py (scheduling harness _bootstrap/chunk_extract.py; committed extractor code unmodified).",
+  "pitt_root": "C:/Users/PC/Desktop/DementiaBank/Pitt",
+  "pitt_cookie": "C:/Users/PC/Desktop/DementiaBank/pitt_cookie",
+  "pitt_orig_root": "C:/Users/PC/Desktop/DementiaBank/Pitt-orig",
+  "delaware_root": "C:/Users/PC/Desktop/DementiaBank/Delaware",
+  "lu_root": "C:/Users/PC/Desktop/DementiaBank/Lu",
+  "wls_root": "C:/Users/PC/Desktop/DementiaBank/WLS",
+  "wls_xlsx": "C:/Users/PC/Desktop/DementiaBank/WLS-data.xlsx",
+  "pitt_audio": "C:/Users/PC/Desktop/DementiaBank/pitt_audio",
+  "acoustic_features_csv": "C:/Users/PC/Desktop/Dhikra Cowork/dhikra/results/acoustic_features.csv",
+  "arabic_audio": null
+}

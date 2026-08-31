@@ -1,0 +1,1262 @@
+{
+  "amendments": "see the module docstring -- ceiling normalisation, variant (e), and direction, all fixed before execution",
+  "governance": "model frozen; Lu is stored predictions read as data; 0.367 remains the primary prespecified result",
+  "roc_ceilings": {
+    "Pitt": {
+      "at_sens_0.90": 0.41975308641975306,
+      "at_sens_0.85": 0.5473251028806584,
+      "at_sens_0.80": 0.6707818930041153,
+      "at_sens_0.75": 0.7695473251028807
+    },
+    "Delaware": {
+      "at_sens_0.90": 0.16129032258064516,
+      "at_sens_0.85": 0.26881720430107525,
+      "at_sens_0.80": 0.30824372759856633,
+      "at_sens_0.75": 0.3763440860215054
+    },
+    "Lu": {
+      "at_sens_0.90": 0.5555555555555556,
+      "at_sens_0.85": 0.7037037037037037,
+      "at_sens_0.80": 0.7777777777777778,
+      "at_sens_0.75": 0.7777777777777778
+    },
+    "_note": "Maximum specificity any threshold can achieve at the stated sensitivity. A threshold rule cannot exceed this -- it is set by AUC. Delaware's ceiling is the reason Part A cannot fix Delaware."
+  },
+  "rules_development_fixed": {
+    "Pitt->Delaware": {
+      "sens_target_0.90": {
+        "source_threshold": 0.341,
+        "target_ceiling_spec": 0.16129032258064516,
+        "absolute": {
+          "threshold": 0.341,
+          "sensitivity": 0.625,
+          "specificity": 0.5698924731182796,
+          "recovery_fraction": 0.957831325301205
+        },
+        "percentile": {
+          "threshold": 0.260823242901004,
+          "sensitivity": 0.81875,
+          "specificity": 0.27598566308243727,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.18463442062802105,
+          "sensitivity": 0.99375,
+          "specificity": 0.010752688172043012,
+          "recovery_fraction": 0.18750000000000003
+        },
+        "z_norm": {
+          "threshold": 0.2466296368169285,
+          "sensitivity": 0.88125,
+          "specificity": 0.2222222222222222,
+          "recovery_fraction": 0.9538461538461538
+        },
+        "quantile_map": {
+          "threshold": 0.260823242901004,
+          "sensitivity": 0.81875,
+          "specificity": 0.27598566308243727,
+          "recovery_fraction": 1.0
+        }
+      },
+      "sens_target_0.85": {
+        "source_threshold": 0.379,
+        "target_ceiling_spec": 0.26881720430107525,
+        "absolute": {
+          "threshold": 0.379,
+          "sensitivity": 0.50625,
+          "specificity": 0.6845878136200717,
+          "recovery_fraction": 0.9947916666666666
+        },
+        "percentile": {
+          "threshold": 0.2888011213081606,
+          "sensitivity": 0.75625,
+          "specificity": 0.3727598566308244,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.22263442062802102,
+          "sensitivity": 0.9375,
+          "specificity": 0.11827956989247312,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.2718319761772697,
+          "sensitivity": 0.79375,
+          "specificity": 0.3154121863799283,
+          "recovery_fraction": 0.9887640449438201
+        },
+        "quantile_map": {
+          "threshold": 0.2888011213081606,
+          "sensitivity": 0.75625,
+          "specificity": 0.3727598566308244,
+          "recovery_fraction": 1.0
+        }
+      },
+      "sens_target_0.80": {
+        "source_threshold": 0.448,
+        "target_ceiling_spec": 0.30824372759856633,
+        "absolute": {
+          "threshold": 0.448,
+          "sensitivity": 0.3375,
+          "specificity": 0.8207885304659498,
+          "recovery_fraction": 1.0
+        },
+        "percentile": {
+          "threshold": 0.31476787362271574,
+          "sensitivity": 0.68125,
+          "specificity": 0.46236559139784944,
+          "recovery_fraction": 0.9555555555555555
+        },
+        "mean_match": {
+          "threshold": 0.29163442062802103,
+          "sensitivity": 0.7375,
+          "specificity": 0.3763440860215054,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.3175941186999945,
+          "sensitivity": 0.68125,
+          "specificity": 0.4838709677419355,
+          "recovery_fraction": 1.0
+        },
+        "quantile_map": {
+          "threshold": 0.31476787362271574,
+          "sensitivity": 0.68125,
+          "specificity": 0.46236559139784944,
+          "recovery_fraction": 0.9555555555555555
+        }
+      },
+      "sens_target_0.75": {
+        "source_threshold": 0.5145,
+        "target_ceiling_spec": 0.3763440860215054,
+        "absolute": {
+          "threshold": 0.5145,
+          "sensitivity": 0.25625,
+          "specificity": 0.8960573476702509,
+          "recovery_fraction": 1.0
+        },
+        "percentile": {
+          "threshold": 0.336251586410328,
+          "sensitivity": 0.64375,
+          "specificity": 0.5519713261648745,
+          "recovery_fraction": 0.9871794871794872
+        },
+        "mean_match": {
+          "threshold": 0.358134420628021,
+          "sensitivity": 0.59375,
+          "specificity": 0.6379928315412187,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.3616982125805916,
+          "sensitivity": 0.5875,
+          "specificity": 0.6487455197132617,
+          "recovery_fraction": 0.9945054945054944
+        },
+        "quantile_map": {
+          "threshold": 0.336251586410328,
+          "sensitivity": 0.64375,
+          "specificity": 0.5519713261648745,
+          "recovery_fraction": 0.9871794871794872
+        }
+      }
+    },
+    "Pitt->Lu": {
+      "sens_target_0.90": {
+        "source_threshold": 0.341,
+        "target_ceiling_spec": 0.5555555555555556,
+        "absolute": {
+          "threshold": 0.341,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.25925925925925924,
+          "recovery_fraction": 0.6363636363636364
+        },
+        "percentile": {
+          "threshold": 0.3931550185906342,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 0.7333333333333333
+        },
+        "mean_match": {
+          "threshold": 0.40167465599458313,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.48148148148148145,
+          "recovery_fraction": 0.8666666666666666
+        },
+        "z_norm": {
+          "threshold": 0.40576820140548486,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.48148148148148145,
+          "recovery_fraction": 0.8666666666666666
+        },
+        "quantile_map": {
+          "threshold": 0.3931550185906342,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 0.7333333333333333
+        }
+      },
+      "sens_target_0.85": {
+        "source_threshold": 0.379,
+        "target_ceiling_spec": 0.7037037037037037,
+        "absolute": {
+          "threshold": 0.379,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 1.0
+        },
+        "percentile": {
+          "threshold": 0.49805790066918987,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.4396746559945831,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "z_norm": {
+          "threshold": 0.4429231716079901,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "quantile_map": {
+          "threshold": 0.49805790066918987,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 1.0
+        }
+      },
+      "sens_target_0.80": {
+        "source_threshold": 0.448,
+        "target_ceiling_spec": 0.7777777777777778,
+        "absolute": {
+          "threshold": 0.448,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "percentile": {
+          "threshold": 0.5374705127716165,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.7037037037037037,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.5086746559945832,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.5925925925925926,
+          "recovery_fraction": 0.8421052631578947
+        },
+        "z_norm": {
+          "threshold": 0.5103887753967498,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.6296296296296297,
+          "recovery_fraction": 0.8947368421052632
+        },
+        "quantile_map": {
+          "threshold": 0.5374705127716165,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.7037037037037037,
+          "recovery_fraction": 1.0
+        }
+      },
+      "sens_target_0.75": {
+        "source_threshold": 0.5145,
+        "target_ceiling_spec": 0.7777777777777778,
+        "absolute": {
+          "threshold": 0.5145,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.6296296296296297,
+          "recovery_fraction": 0.8947368421052632
+        },
+        "percentile": {
+          "threshold": 0.6063850110273112,
+          "sensitivity": 0.8076923076923077,
+          "specificity": 0.7407407407407407,
+          "recovery_fraction": 0.9523809523809523
+        },
+        "mean_match": {
+          "threshold": 0.5751746559945831,
+          "sensitivity": 0.8461538461538461,
+          "specificity": 0.7407407407407407,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.575409973251134,
+          "sensitivity": 0.8461538461538461,
+          "specificity": 0.7407407407407407,
+          "recovery_fraction": 1.0
+        },
+        "quantile_map": {
+          "threshold": 0.6063850110273112,
+          "sensitivity": 0.8076923076923077,
+          "specificity": 0.7407407407407407,
+          "recovery_fraction": 0.9523809523809523
+        }
+      }
+    },
+    "Delaware->Pitt": {
+      "sens_target_0.90": {
+        "source_threshold": 0.2335,
+        "target_ceiling_spec": 0.41975308641975306,
+        "absolute": {
+          "threshold": 0.2335,
+          "sensitivity": 0.9836065573770492,
+          "specificity": 0.1111111111111111,
+          "recovery_fraction": 0.7105263157894736
+        },
+        "percentile": {
+          "threshold": 0.28206288130748475,
+          "sensitivity": 0.9508196721311475,
+          "specificity": 0.2551440329218107,
+          "recovery_fraction": 0.9841269841269842
+        },
+        "mean_match": {
+          "threshold": 0.38986557937197897,
+          "sensitivity": 0.8360655737704918,
+          "specificity": 0.5720164609053497,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.32120317908152607,
+          "sensitivity": 0.9245901639344263,
+          "specificity": 0.3497942386831276,
+          "recovery_fraction": 0.9770114942528737
+        },
+        "quantile_map": {
+          "threshold": 0.28206288130748475,
+          "sensitivity": 0.9508196721311475,
+          "specificity": 0.2551440329218107,
+          "recovery_fraction": 0.9841269841269842
+        }
+      },
+      "sens_target_0.85": {
+        "source_threshold": 0.256,
+        "target_ceiling_spec": 0.5473251028806584,
+        "absolute": {
+          "threshold": 0.256,
+          "sensitivity": 0.9770491803278688,
+          "specificity": 0.17695473251028807,
+          "recovery_fraction": 0.9772727272727272
+        },
+        "percentile": {
+          "threshold": 0.33547361229621236,
+          "sensitivity": 0.9114754098360656,
+          "specificity": 0.3991769547325103,
+          "recovery_fraction": 0.989795918367347
+        },
+        "mean_match": {
+          "threshold": 0.412365579371979,
+          "sensitivity": 0.8163934426229508,
+          "specificity": 0.6213991769547325,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.35512860115347233,
+          "sensitivity": 0.8852459016393442,
+          "specificity": 0.4691358024691358,
+          "recovery_fraction": 0.9913043478260869
+        },
+        "quantile_map": {
+          "threshold": 0.33547361229621236,
+          "sensitivity": 0.9114754098360656,
+          "specificity": 0.3991769547325103,
+          "recovery_fraction": 0.989795918367347
+        }
+      },
+      "sens_target_0.80": {
+        "source_threshold": 0.2695,
+        "target_ceiling_spec": 0.6707818930041153,
+        "absolute": {
+          "threshold": 0.2695,
+          "sensitivity": 0.9606557377049181,
+          "specificity": 0.21810699588477367,
+          "recovery_fraction": 0.9298245614035089
+        },
+        "percentile": {
+          "threshold": 0.3536421100495736,
+          "sensitivity": 0.8852459016393442,
+          "specificity": 0.4567901234567901,
+          "recovery_fraction": 0.9652173913043478
+        },
+        "mean_match": {
+          "threshold": 0.425865579371979,
+          "sensitivity": 0.8065573770491803,
+          "specificity": 0.6255144032921811,
+          "recovery_fraction": 0.9325153374233128
+        },
+        "z_norm": {
+          "threshold": 0.3754838543966401,
+          "sensitivity": 0.8524590163934426,
+          "specificity": 0.5390946502057613,
+          "recovery_fraction": 0.9849624060150377
+        },
+        "quantile_map": {
+          "threshold": 0.3536421100495736,
+          "sensitivity": 0.8852459016393442,
+          "specificity": 0.4567901234567901,
+          "recovery_fraction": 0.9652173913043478
+        }
+      },
+      "sens_target_0.75": {
+        "source_threshold": 0.2915,
+        "target_ceiling_spec": 0.7695473251028807,
+        "absolute": {
+          "threshold": 0.2915,
+          "sensitivity": 0.9377049180327869,
+          "specificity": 0.2880658436213992,
+          "recovery_fraction": 0.9722222222222223
+        },
+        "percentile": {
+          "threshold": 0.38316552174468926,
+          "sensitivity": 0.8459016393442623,
+          "specificity": 0.551440329218107,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.44786557937197896,
+          "sensitivity": 0.8,
+          "specificity": 0.6707818930041153,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.4086553782003209,
+          "sensitivity": 0.8163934426229508,
+          "specificity": 0.6131687242798354,
+          "recovery_fraction": 0.9867549668874173
+        },
+        "quantile_map": {
+          "threshold": 0.38316552174468926,
+          "sensitivity": 0.8459016393442623,
+          "specificity": 0.551440329218107,
+          "recovery_fraction": 1.0
+        }
+      }
+    },
+    "Delaware->Lu": {
+      "sens_target_0.90": {
+        "source_threshold": 0.2335,
+        "target_ceiling_spec": 0.5555555555555556,
+        "absolute": {
+          "threshold": 0.2335,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "recovery_fraction": 0.0
+        },
+        "percentile": {
+          "threshold": 0.3390197180967466,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.25925925925925924,
+          "recovery_fraction": 0.6363636363636364
+        },
+        "mean_match": {
+          "threshold": 0.45054023536656207,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "z_norm": {
+          "threshold": 0.3864116147915313,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 1.0
+        },
+        "quantile_map": {
+          "threshold": 0.3390197180967466,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.25925925925925924,
+          "recovery_fraction": 0.6363636363636364
+        }
+      },
+      "sens_target_0.85": {
+        "source_threshold": 0.256,
+        "target_ceiling_spec": 0.7037037037037037,
+        "absolute": {
+          "threshold": 0.256,
+          "sensitivity": 1.0,
+          "specificity": 0.037037037037037035,
+          "recovery_fraction": 0.14285714285714285
+        },
+        "percentile": {
+          "threshold": 0.3873252659569619,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 1.0
+        },
+        "mean_match": {
+          "threshold": 0.4730402353665621,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.4195826160070729,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "quantile_map": {
+          "threshold": 0.3873252659569619,
+          "sensitivity": 0.9615384615384616,
+          "specificity": 0.4074074074074074,
+          "recovery_fraction": 1.0
+        }
+      },
+      "sens_target_0.80": {
+        "source_threshold": 0.2695,
+        "target_ceiling_spec": 0.7777777777777778,
+        "absolute": {
+          "threshold": 0.2695,
+          "sensitivity": 1.0,
+          "specificity": 0.07407407407407407,
+          "recovery_fraction": 0.2857142857142857
+        },
+        "percentile": {
+          "threshold": 0.4000045630521068,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.4444444444444444,
+          "recovery_fraction": 0.7999999999999999
+        },
+        "mean_match": {
+          "threshold": 0.4865402353665621,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 1.0
+        },
+        "z_norm": {
+          "threshold": 0.43948521673639784,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5185185185185185,
+          "recovery_fraction": 0.9333333333333332
+        },
+        "quantile_map": {
+          "threshold": 0.4000045630521068,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.4444444444444444,
+          "recovery_fraction": 0.7999999999999999
+        }
+      },
+      "sens_target_0.75": {
+        "source_threshold": 0.2915,
+        "target_ceiling_spec": 0.7777777777777778,
+        "absolute": {
+          "threshold": 0.2915,
+          "sensitivity": 1.0,
+          "specificity": 0.18518518518518517,
+          "recovery_fraction": 0.7142857142857143
+        },
+        "percentile": {
+          "threshold": 0.5035754465818295,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 0.7894736842105263
+        },
+        "mean_match": {
+          "threshold": 0.508540235366562,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.5925925925925926,
+          "recovery_fraction": 0.8421052631578947
+        },
+        "z_norm": {
+          "threshold": 0.471919084591594,
+          "sensitivity": 0.9230769230769231,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 1.0
+        },
+        "quantile_map": {
+          "threshold": 0.5035754465818295,
+          "sensitivity": 0.8846153846153846,
+          "specificity": 0.5555555555555556,
+          "recovery_fraction": 0.7894736842105263
+        }
+      }
+    }
+  },
+  "variant_e_control_referenced": {
+    "control_percentile_0.90": {
+      "Pitt": {
+        "threshold": 0.6429688910741224,
+        "sensitivity": 0.5311475409836065,
+        "specificity": 0.897119341563786,
+        "n_controls_defining_it": 243
+      },
+      "Delaware": {
+        "threshold": 0.5162255271943249,
+        "sensitivity": 0.25,
+        "specificity": 0.899641577060932,
+        "n_controls_defining_it": 279
+      },
+      "Lu": {
+        "threshold": 0.7137121466793066,
+        "sensitivity": 0.5769230769230769,
+        "specificity": 0.8888888888888888,
+        "n_controls_defining_it": 27
+      }
+    },
+    "control_percentile_0.85": {
+      "Pitt": {
+        "threshold": 0.6099013666757395,
+        "sensitivity": 0.6,
+        "specificity": 0.8477366255144033,
+        "n_controls_defining_it": 243
+      },
+      "Delaware": {
+        "threshold": 0.4714784511316052,
+        "sensitivity": 0.31875,
+        "specificity": 0.8494623655913979,
+        "n_controls_defining_it": 279
+      },
+      "Lu": {
+        "threshold": 0.6799181247534207,
+        "sensitivity": 0.6923076923076923,
+        "specificity": 0.8518518518518519,
+        "n_controls_defining_it": 27
+      }
+    },
+    "control_percentile_0.80": {
+      "Pitt": {
+        "threshold": 0.5499952928015575,
+        "sensitivity": 0.6950819672131148,
+        "specificity": 0.7983539094650206,
+        "n_controls_defining_it": 243
+      },
+      "Delaware": {
+        "threshold": 0.43850315411382806,
+        "sensitivity": 0.35625,
+        "specificity": 0.7992831541218638,
+        "n_controls_defining_it": 279
+      },
+      "Lu": {
+        "threshold": 0.6398518956134841,
+        "sensitivity": 0.7692307692307693,
+        "specificity": 0.7777777777777778,
+        "n_controls_defining_it": 27
+      }
+    },
+    "control_percentile_0.75": {
+      "Pitt": {
+        "threshold": 0.4884201919567439,
+        "sensitivity": 0.760655737704918,
+        "specificity": 0.7489711934156379,
+        "n_controls_defining_it": 243
+      },
+      "Delaware": {
+        "threshold": 0.4115557910307148,
+        "sensitivity": 0.425,
+        "specificity": 0.7491039426523297,
+        "n_controls_defining_it": 279
+      },
+      "Lu": {
+        "threshold": 0.5877089774041334,
+        "sensitivity": 0.8461538461538461,
+        "specificity": 0.7407407407407407,
+        "n_controls_defining_it": 27
+      }
+    },
+    "_note": "Threshold = the given percentile of the LOCAL control distribution, so specificity is fixed BY CONSTRUCTION and sensitivity is what varies. Prevalence-independent. Needs a local normative sample (controls only), not diagnosed patients. The spread in the sensitivity column across cohorts is the honest measure of how much the instrument's yield varies between populations at matched specificity."
+  },
+  "bootstrap_on_lu": {
+    "sens_target_0.90": {
+      "percentile": {
+        "sens_median": 0.9629629629629629,
+        "sens_ci95": [
+          0.8709326788218794,
+          1.0
+        ],
+        "spec_median": 0.34615384615384615,
+        "spec_ci95": [
+          0.24,
+          0.47619047619047616
+        ]
+      },
+      "mean_match": {
+        "sens_median": 0.9473684210526315,
+        "sens_ci95": [
+          0.8333333333333334,
+          1.0
+        ],
+        "spec_median": 0.4482758620689655,
+        "spec_ci95": [
+          0.2777777777777778,
+          0.6471323529411761
+        ]
+      },
+      "control_ref_0.80": {
+        "sens_median": 0.7777777777777778,
+        "sens_ci95": [
+          0.4332142857142857,
+          0.9615384615384616
+        ],
+        "spec_median": 0.7741935483870968,
+        "spec_ci95": [
+          0.6896551724137931,
+          0.8
+        ]
+      }
+    },
+    "sens_target_0.85": {
+      "percentile": {
+        "sens_median": 0.9354838709677419,
+        "sens_ci95": [
+          0.84,
+          1.0
+        ],
+        "spec_median": 0.4444444444444444,
+        "spec_ci95": [
+          0.3225806451612903,
+          0.5833333333333334
+        ]
+      },
+      "mean_match": {
+        "sens_median": 0.9285714285714286,
+        "sens_ci95": [
+          0.8180976430976431,
+          1.0
+        ],
+        "spec_median": 0.5,
+        "spec_ci95": [
+          0.34480064655172415,
+          0.6818181818181818
+        ]
+      },
+      "control_ref_0.80": {
+        "sens_median": 0.7727272727272727,
+        "sens_ci95": [
+          0.43333333333333335,
+          0.9615740740740739
+        ],
+        "spec_median": 0.7741935483870968,
+        "spec_ci95": [
+          0.6896551724137931,
+          0.8
+        ]
+      }
+    },
+    "sens_target_0.80": {
+      "percentile": {
+        "sens_median": 0.8888888888888888,
+        "sens_ci95": [
+          0.7726398601398601,
+          1.0
+        ],
+        "spec_median": 0.6129032258064516,
+        "spec_ci95": [
+          0.4736476608187134,
+          0.782608695652174
+        ]
+      },
+      "mean_match": {
+        "sens_median": 0.9230769230769231,
+        "sens_ci95": [
+          0.7998529411764707,
+          1.0
+        ],
+        "spec_median": 0.5555555555555556,
+        "spec_ci95": [
+          0.38461538461538464,
+          0.7391706924315617
+        ]
+      },
+      "control_ref_0.80": {
+        "sens_median": 0.7692307692307693,
+        "sens_ci95": [
+          0.45443181818181816,
+          0.96
+        ],
+        "spec_median": 0.7741935483870968,
+        "spec_ci95": [
+          0.6818181818181818,
+          0.8
+        ]
+      }
+    },
+    "sens_target_0.75": {
+      "percentile": {
+        "sens_median": 0.8518518518518519,
+        "sens_ci95": [
+          0.7272727272727273,
+          0.9629629629629629
+        ],
+        "spec_median": 0.6923076923076923,
+        "spec_ci95": [
+          0.5555555555555556,
+          0.8519841269841263
+        ]
+      },
+      "mean_match": {
+        "sens_median": 0.9130434782608695,
+        "sens_ci95": [
+          0.7931034482758621,
+          1.0
+        ],
+        "spec_median": 0.5862068965517241,
+        "spec_ci95": [
+          0.42857142857142855,
+          0.7647058823529411
+        ]
+      },
+      "control_ref_0.80": {
+        "sens_median": 0.7692307692307693,
+        "sens_ci95": [
+          0.44,
+          0.9629629629629629
+        ],
+        "spec_median": 0.7741935483870968,
+        "spec_ci95": [
+          0.6875,
+          0.8
+        ]
+      }
+    },
+    "_note": "2000 resamples of the 53 Lu recordings, seed 42. Rules fixed on development; only the Lu sample is resampled."
+  },
+  "banded_output": {
+    "edges_from_development_only": {
+      "low_below": 0.3340185308406163,
+      "high_above": 0.5325010669799607
+    },
+    "method": "tertiles of the pooled development score distribution",
+    "Pitt": {
+      "low": {
+        "n": 121,
+        "proportion": 0.2208029197080292,
+        "observed_impairment_rate": 0.21487603305785125
+      },
+      "intermediate": {
+        "n": 156,
+        "proportion": 0.2846715328467153,
+        "observed_impairment_rate": 0.3782051282051282
+      },
+      "high": {
+        "n": 271,
+        "proportion": 0.49452554744525545,
+        "observed_impairment_rate": 0.8118081180811808
+      }
+    },
+    "Delaware": {
+      "low": {
+        "n": 208,
+        "proportion": 0.47380410022779046,
+        "observed_impairment_rate": 0.25961538461538464
+      },
+      "intermediate": {
+        "n": 173,
+        "proportion": 0.3940774487471526,
+        "observed_impairment_rate": 0.3988439306358382
+      },
+      "high": {
+        "n": 58,
+        "proportion": 0.13211845102505695,
+        "observed_impairment_rate": 0.6379310344827587
+      }
+    },
+    "Lu": {
+      "low": {
+        "n": 7,
+        "proportion": 0.1320754716981132,
+        "observed_impairment_rate": 0.0
+      },
+      "intermediate": {
+        "n": 13,
+        "proportion": 0.24528301886792453,
+        "observed_impairment_rate": 0.23076923076923078
+      },
+      "high": {
+        "n": 33,
+        "proportion": 0.6226415094339622,
+        "observed_impairment_rate": 0.696969696969697
+      }
+    }
+  },
+  "decision_curve": {
+    "threshold_probabilities": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5
+    ],
+    "reference": "Vickers & Elkin, Med Decis Making 2006;26(6):565-574",
+    "warning": "Net benefit depends on the prevalence of the sample it is computed in. These cohorts are 36-56% impaired; a Libyan community clinic would be far lower, and every curve here would shift down. See community_prevalence_reweighted.",
+    "Pitt": {
+      "prevalence": 0.5565693430656934,
+      "model": [
+        0.533230887437572,
+        0.5072992700729927,
+        0.4783168741949334,
+        0.44571167883211676,
+        0.4233576642335767,
+        0.38712200208550573,
+        0.3628579449747333,
+        0.34367396593673966,
+        0.32398805573988054,
+        0.3156934306569343
+      ],
+      "treat_all": [
+        0.533230887437572,
+        0.5072992700729927,
+        0.4783168741949334,
+        0.4457116788321167,
+        0.4087591240875912,
+        0.36652763295099056,
+        0.31779898933183603,
+        0.2609489051094889,
+        0.19376244193762437,
+        0.11313868613138678
+      ],
+      "treat_none": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Delaware": {
+      "prevalence": 0.36446469248291574,
+      "model": [
+        0.33101546577149027,
+        0.29384965831435084,
+        0.25231140292107734,
+        0.21127562642369024,
+        0.15793470007593016,
+        0.09957696062479662,
+        0.0849833537760645,
+        0.05315110098709186,
+        0.027541934147856717,
+        0.022779043280182237
+      ],
+      "treat_all": [
+        0.33101546577149027,
+        0.29384965831435084,
+        0.25231140292107734,
+        0.2055808656036447,
+        0.15261958997722103,
+        0.09209241783273675,
+        0.022253373050639624,
+        -0.0592255125284738,
+        -0.1555187409401531,
+        -0.27107061503416846
+      ],
+      "treat_none": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "Lu": {
+      "prevalence": 0.49056603773584906,
+      "model": [
+        0.4637537239324727,
+        0.4339622641509434,
+        0.4006659267480577,
+        0.3632075471698113,
+        0.3207547169811321,
+        0.32075471698113206,
+        0.2786647314949202,
+        0.2641509433962264,
+        0.25214408233276164,
+        0.22641509433962265
+      ],
+      "treat_all": [
+        0.4637537239324727,
+        0.4339622641509434,
+        0.4006659267480577,
+        0.3632075471698113,
+        0.3207547169811321,
+        0.2722371967654986,
+        0.21625544267053703,
+        0.15094339622641506,
+        0.0737564322469983,
+        -0.018867924528301883
+      ],
+      "treat_none": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "community_prevalence_reweighted": {
+      "prev_0.05": {
+        "Pitt": {
+          "model": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.18375446940565335,
+            -0.21291776293597783,
+            -0.23811114002370834,
+            -0.2376567081302964,
+            -0.2113366614945243,
+            -0.21605619031848528,
+            -0.19262564932874587
+          ],
+          "treat_all": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.1875,
+            -0.26666666666666666,
+            -0.35714285714285715,
+            -0.4615384615384615,
+            -0.5833333333333334,
+            -0.7272727272727272,
+            -0.8999999999999999
+          ]
+        },
+        "Delaware": {
+          "model": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.17589493727598565,
+            -0.19687126642771802,
+            -0.20369911674347158,
+            -0.16984835952577887,
+            -0.14939590800477898,
+            -0.12273368768328446,
+            -0.10820564516129032
+          ],
+          "treat_all": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.1875,
+            -0.26666666666666666,
+            -0.35714285714285715,
+            -0.4615384615384615,
+            -0.5833333333333334,
+            -0.7272727272727272,
+            -0.8999999999999999
+          ]
+        },
+        "Lu": {
+          "model": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.1875,
+            -0.26666666666666666,
+            -0.26666666666666666,
+            -0.3118945868945869,
+            -0.30569800569800576,
+            -0.32808857808857805,
+            -0.376068376068376
+          ],
+          "treat_all": [
+            0.0,
+            -0.05555555555555555,
+            -0.11764705882352942,
+            -0.1875,
+            -0.26666666666666666,
+            -0.35714285714285715,
+            -0.4615384615384615,
+            -0.5833333333333334,
+            -0.7272727272727272,
+            -0.8999999999999999
+          ]
+        }
+      },
+      "prev_0.10": {
+        "Pitt": {
+          "model": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.1216241651487553,
+            -0.15011536126290223,
+            -0.17639864689045015,
+            -0.17838400822007378,
+            -0.156555353167375,
+            -0.16275211127670142,
+            -0.14245294474802672
+          ],
+          "treat_all": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.125,
+            -0.19999999999999998,
+            -0.2857142857142857,
+            -0.3846153846153846,
+            -0.5000000000000001,
+            -0.6363636363636364,
+            -0.8
+          ]
+        },
+        "Delaware": {
+          "model": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.11433467741935484,
+            -0.14045698924731181,
+            -0.15547811059907835,
+            -0.12933002481389577,
+            -0.11719086021505379,
+            -0.09883980938416424,
+            -0.08737903225806452
+          ],
+          "treat_all": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.125,
+            -0.19999999999999998,
+            -0.2857142857142857,
+            -0.3846153846153846,
+            -0.5000000000000001,
+            -0.6363636363636364,
+            -0.8
+          ]
+        },
+        "Lu": {
+          "model": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.125,
+            -0.19999999999999998,
+            -0.20000000000000004,
+            -0.2448717948717949,
+            -0.24102564102564106,
+            -0.26223776223776224,
+            -0.30769230769230765
+          ],
+          "treat_all": [
+            0.052631578947368425,
+            0.0,
+            -0.05882352941176472,
+            -0.125,
+            -0.19999999999999998,
+            -0.2857142857142857,
+            -0.3846153846153846,
+            -0.5000000000000001,
+            -0.6363636363636364,
+            -0.8
+          ]
+        }
+      },
+      "prev_0.15": {
+        "Pitt": {
+          "model": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.059493860891857236,
+            -0.0873129595898266,
+            -0.11468615375719196,
+            -0.11911130830985109,
+            -0.10177404484022577,
+            -0.10944803223491742,
+            -0.09228024016730757
+          ],
+          "treat_all": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.0625,
+            -0.13333333333333333,
+            -0.21428571428571433,
+            -0.3076923076923077,
+            -0.41666666666666674,
+            -0.5454545454545454,
+            -0.7
+          ]
+        },
+        "Delaware": {
+          "model": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.052774417562724024,
+            -0.08404271206690561,
+            -0.10725710445468511,
+            -0.0888116901020127,
+            -0.08498581242532859,
+            -0.074945931085044,
+            -0.0665524193548387
+          ],
+          "treat_all": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.0625,
+            -0.13333333333333333,
+            -0.21428571428571433,
+            -0.3076923076923077,
+            -0.41666666666666674,
+            -0.5454545454545454,
+            -0.7
+          ]
+        },
+        "Lu": {
+          "model": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.0625,
+            -0.13333333333333333,
+            -0.13333333333333333,
+            -0.1778490028490028,
+            -0.17635327635327636,
+            -0.19638694638694637,
+            -0.2393162393162393
+          ],
+          "treat_all": [
+            0.10526315789473684,
+            0.05555555555555555,
+            0.0,
+            -0.0625,
+            -0.13333333333333333,
+            -0.21428571428571433,
+            -0.3076923076923077,
+            -0.41666666666666674,
+            -0.5454545454545454,
+            -0.7
+          ]
+        }
+      },
+      "_method": "Sensitivity and specificity are taken from the cohort at each threshold and recombined at an assumed community prevalence: NB = prev*sens - (1-prev)*(1-spec)*pt/(1-pt). This assumes the operating characteristics transport, which section 5.13 shows they do not -- so read it as an upper bound on community net benefit, not an estimate."
+    }
+  },
+  "_provenance": {
+    "inputs": [
+      "results/summary/oof_predictions.npy + oof_labels.npy + oof_source.npy",
+      "results/reconstruction/lu_oneshot_reproduction.json -> predictions"
+    ],
+    "model": "FROZEN -- no training, refitting or re-scoring",
+    "lock_state": "Lu read as stored predictions only; no locked file modified",
+    "script": "_bootstrap/partA_driver.py",
+    "bootstrap": "2000 resamples, seed 42",
+    "generated": "2026-08-22"
+  }
+}

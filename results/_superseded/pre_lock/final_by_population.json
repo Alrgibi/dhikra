@@ -1,0 +1,27 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock per-population AUCs on the 1,040 pool. Its Lu entry (0.849) is cross-validated performance INSIDE a model that includes Lu in training -- external_validation_honest.json states it must never be reported as external validation. The citable external figure is 0.853.",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "by_population": {
+    "Pitt": 0.8048843014234635,
+    "Delaware": 0.6395161290322581,
+    "Lu": 0.849002849002849
+  },
+  "dementia_only": 0.8051135727872887,
+  "mci_only": 0.6395161290322581,
+  "combined": 0.7554450046186549
+}

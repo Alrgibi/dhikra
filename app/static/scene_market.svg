@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="A market scene">
+<title>مشهد السوق — Market scene</title>
+<desc>A market stall: a vendor weighing dates while a crate of oranges tips off the edge of the table unnoticed, a woman holding a basket and money, a child reaching for fruit, a cat, an awning, a bicycle and sacks.</desc>
+<defs><style>
+.ln{fill:none;stroke:#1f2d3a;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.th{fill:none;stroke:#1f2d3a;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+.fn{fill:none;stroke:#1f2d3a;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.wood{fill:#e8d9c0}.skin{fill:#f6e2cf}.cl1{fill:#f3e2e2}.cl2{fill:#dfeae4}.cl3{fill:#e6e0f0}
+.or{fill:#f7c99a}.dt{fill:#d9b892}.gr{fill:#dfeadb}
+</style></defs>
+
+<rect width="900" height="600" fill="#fdfcf7"/>
+<rect y="440" width="900" height="160" fill="#f0ece1"/>
+<line x1="0" y1="440" x2="900" y2="440" class="th"/>
+<g class="fn" opacity=".45">
+ <line x1="0" y1="492" x2="900" y2="492"/><line x1="0" y1="546" x2="900" y2="546"/>
+ <line x1="120" y1="440" x2="90" y2="600"/><line x1="330" y1="440" x2="325" y2="600"/>
+ <line x1="540" y1="440" x2="560" y2="600"/><line x1="750" y1="440" x2="800" y2="600"/>
+</g>
+
+<!-- awning -->
+<path d="M90 150 q170 -40 340 0 q170 -40 340 0 l0 26 q-170 -38 -340 0 q-170 -38 -340 0z" fill="#dfe9e6"/>
+<path d="M90 150 q170 -40 340 0 q170 -40 340 0 l0 26 q-170 -38 -340 0 q-170 -38 -340 0z" class="th"/>
+<line x1="120" y1="168" x2="120" y2="352" class="th"/>
+<line x1="740" y1="168" x2="740" y2="352" class="th"/>
+
+<!-- stall table -->
+<rect x="150" y="352" width="560" height="26" class="wood"/>
+<rect x="150" y="352" width="560" height="26" class="th"/>
+<line x1="190" y1="378" x2="184" y2="452" class="th"/>
+<line x1="668" y1="378" x2="676" y2="452" class="th"/>
+<line x1="200" y1="416" x2="660" y2="416" class="ln"/>
+
+<!-- crates of produce on table -->
+<g>
+ <rect x="200" y="306" width="104" height="46" rx="4" class="wood"/>
+ <rect x="200" y="306" width="104" height="46" rx="4" class="ln"/>
+ <circle cx="222" cy="300" r="14" class="or"/><circle cx="222" cy="300" r="14" class="ln"/>
+ <circle cx="252" cy="296" r="14" class="or"/><circle cx="252" cy="296" r="14" class="ln"/>
+ <circle cx="282" cy="300" r="14" class="or"/><circle cx="282" cy="300" r="14" class="ln"/>
+</g>
+<!-- dates tray -->
+<g>
+ <rect x="330" y="322" width="96" height="30" rx="4" class="wood"/>
+ <rect x="330" y="322" width="96" height="30" rx="4" class="ln"/>
+ <ellipse cx="352" cy="318" rx="12" ry="7" class="dt"/><ellipse cx="352" cy="318" rx="12" ry="7" class="fn"/>
+ <ellipse cx="378" cy="315" rx="12" ry="7" class="dt"/><ellipse cx="378" cy="315" rx="12" ry="7" class="fn"/>
+ <ellipse cx="404" cy="318" rx="12" ry="7" class="dt"/><ellipse cx="404" cy="318" rx="12" ry="7" class="fn"/>
+</g>
+<!-- greens -->
+<g>
+ <ellipse cx="470" cy="336" rx="34" ry="16" class="gr"/><ellipse cx="470" cy="336" rx="34" ry="16" class="ln"/>
+ <path d="M452 330 q10 -16 20 -4 M470 328 q10 -14 18 -2" class="fn"/>
+</g>
+
+<!-- HAZARD: crate of oranges tipping off the right edge, unnoticed -->
+<g transform="translate(614,286) rotate(19)">
+ <rect x="0" y="26" width="92" height="42" rx="4" class="wood"/>
+ <rect x="0" y="26" width="92" height="42" rx="4" class="ln"/>
+ <circle cx="20" cy="22" r="13" class="or"/><circle cx="20" cy="22" r="13" class="ln"/>
+ <circle cx="48" cy="18" r="13" class="or"/><circle cx="48" cy="18" r="13" class="ln"/>
+ <circle cx="74" cy="24" r="13" class="or"/><circle cx="74" cy="24" r="13" class="ln"/>
+</g>
+<!-- oranges already falling -->
+<circle cx="706" cy="392" r="13" class="or"/><circle cx="706" cy="392" r="13" class="ln"/>
+<circle cx="736" cy="436" r="13" class="or"/><circle cx="736" cy="436" r="13" class="ln"/>
+<circle cx="700" cy="470" r="13" class="or"/><circle cx="700" cy="470" r="13" class="ln"/>
+<circle cx="756" cy="486" r="13" class="or"/><circle cx="756" cy="486" r="13" class="ln"/>
+<g class="fn" opacity=".7"><path d="M714 404 q10 12 14 24"/><path d="M726 452 q-10 10 -16 16"/></g>
+
+<!-- scale -->
+<g transform="translate(500,256)">
+ <line x1="30" y1="20" x2="30" y2="96" class="th"/>
+ <line x1="0" y1="20" x2="60" y2="20" class="th"/>
+ <path d="M0 20 l-14 22 h28z" fill="#eef1ea"/><path d="M0 20 l-14 22 h28z" class="ln"/>
+ <path d="M60 20 l-14 26 h28z" fill="#eef1ea"/><path d="M60 20 l-14 26 h28z" class="ln"/>
+ <rect x="14" y="96" width="32" height="10" rx="3" class="ln" fill="#e8d9c0"/>
+</g>
+
+<!-- VENDOR behind stall, weighing, back to the tipping crate -->
+<g transform="translate(300,196)">
+ <path d="M10 60 q30 -16 60 0 l14 96 q-44 14 -88 0z" class="cl2"/>
+ <path d="M10 60 q30 -16 60 0 l14 96 q-44 14 -88 0z" class="th"/>
+ <path d="M14 74 q-22 30 4 54" class="th"/>
+ <path d="M74 74 q46 12 108 34" class="th"/>
+ <circle cx="40" cy="34" r="23" class="skin"/><circle cx="40" cy="34" r="23" class="th"/>
+ <path d="M17 30 q23 -30 46 0 q4 10 0 14 l-46 0 q-4 -4 0 -14z" fill="#cbd5cf"/>
+ <path d="M17 30 q23 -30 46 0 q4 10 0 14 l-46 0 q-4 -4 0 -14z" class="ln"/>
+ <circle cx="32" cy="38" r="2.2" fill="#1f2d3a"/><circle cx="48" cy="38" r="2.2" fill="#1f2d3a"/>
+ <path d="M33 48 q7 5 14 0" class="fn"/>
+ <path d="M22 20 q18 -8 36 0" class="fn"/>
+</g>
+
+<!-- WOMAN customer with basket and money -->
+<g transform="translate(150,268)">
+ <path d="M12 58 q28 -14 56 0 l14 116 q-42 14 -84 0z" class="cl1"/>
+ <path d="M12 58 q28 -14 56 0 l14 116 q-42 14 -84 0z" class="th"/>
+ <path d="M16 72 q-26 26 -8 56" class="th"/>
+ <path d="M72 72 q30 22 16 50" class="th"/>
+ <circle cx="40" cy="32" r="22" class="skin"/><circle cx="40" cy="32" r="22" class="th"/>
+ <path d="M18 30 q22 -30 44 0 q6 22 -4 30 l-36 0 q-10 -8 -4 -30z" fill="#c9b8cf"/>
+ <path d="M18 30 q22 -30 44 0 q6 22 -4 30 l-36 0 q-10 -8 -4 -30z" class="ln"/>
+ <circle cx="32" cy="36" r="2.2" fill="#1f2d3a"/><circle cx="48" cy="36" r="2.2" fill="#1f2d3a"/>
+ <path d="M33 46 q7 5 14 0" class="fn"/>
+ <!-- money in raised hand -->
+ <rect x="82" y="112" width="26" height="15" rx="2" fill="#dcefe2"/>
+ <rect x="82" y="112" width="26" height="15" rx="2" class="ln"/>
+ <!-- basket -->
+ <path d="M-16 132 h52 l-8 44 h-36z" fill="#e8d9c0"/>
+ <path d="M-16 132 h52 l-8 44 h-36z" class="th"/>
+ <path d="M-10 132 q16 -24 40 0" class="ln"/>
+</g>
+
+<!-- CHILD reaching up for fruit -->
+<g transform="translate(430,352)">
+ <path d="M20 52 l0 42" class="th"/>
+ <path d="M20 94 l-12 24 M20 94 l13 24" class="th"/>
+ <path d="M6 60 q14 -10 28 0 l8 36 q-22 8 -44 0z" class="cl3"/>
+ <path d="M6 60 q14 -10 28 0 l8 36 q-22 8 -44 0z" class="ln"/>
+ <path d="M8 66 q-18 -30 -4 -56" class="th"/>
+ <path d="M4 8 q-2 -8 6 -8" class="ln"/>
+ <path d="M36 68 q16 8 16 24" class="th"/>
+ <circle cx="20" cy="38" r="16" class="skin"/><circle cx="20" cy="38" r="16" class="th"/>
+ <path d="M6 32 q14 -14 28 0" class="ln"/>
+ <circle cx="14" cy="38" r="2" fill="#1f2d3a"/><circle cx="26" cy="38" r="2" fill="#1f2d3a"/>
+ <path d="M15 46 q5 4 10 0" class="fn"/>
+</g>
+
+<!-- sacks -->
+<g transform="translate(770,368)">
+ <path d="M0 30 q6 -34 26 -34 q20 0 26 34 q-26 12 -52 0z" fill="#e6ded2"/>
+ <path d="M0 30 q6 -34 26 -34 q20 0 26 34 q-26 12 -52 0z" class="th"/>
+ <path d="M14 -4 q12 -10 24 0" class="fn"/>
+ <path d="M6 30 q4 34 20 40 q16 -6 20 -40" fill="#e6ded2"/>
+ <path d="M6 30 q4 34 20 40 q16 -6 20 -40" class="ln"/>
+</g>
+
+<!-- bicycle leaning -->
+<g transform="translate(60,392)" class="th">
+ <circle cx="26" cy="44" r="24" fill="none"/><circle cx="106" cy="44" r="24" fill="none"/>
+ <path d="M26 44 l30 -34 h34 l16 34 M56 10 l14 34 M56 10 h20"/>
+ <path d="M90 10 q10 -6 16 0"/>
+</g>
+
+<!-- cat -->
+<g transform="translate(330,486)">
+ <ellipse cx="30" cy="12" rx="32" ry="16" fill="#e2d6c6"/><ellipse cx="30" cy="12" rx="32" ry="16" class="ln"/>
+ <circle cx="62" cy="-2" r="13" fill="#e2d6c6"/><circle cx="62" cy="-2" r="13" class="ln"/>
+ <path d="M55 -11 l-3 -11 l10 6z M70 -11 l4 -11 l-10 6z" fill="#e2d6c6" class="ln"/>
+ <path d="M-2 8 q-20 -6 -16 -24" class="th"/>
+ <circle cx="58" cy="-2" r="1.8" fill="#1f2d3a"/><circle cx="67" cy="-2" r="1.8" fill="#1f2d3a"/>
+</g>
+</svg>

@@ -1,0 +1,149 @@
+{
+  "generated": "2026-08-23",
+  "question": "Prospective specificity of a control-referenced threshold set at the 80th percentile of n local healthy controls.",
+  "result": "achieved specificity ~ Beta(k, n+1-k), k = ceil(0.80n); exact and distribution-free (Wilks 1941)",
+  "target_percentile": 0.8,
+  "table": [
+    {
+      "n_controls": 15,
+      "order_statistic_k": 12,
+      "expected_specificity": 0.75,
+      "median_specificity": 0.7606,
+      "ci95": [
+        0.5191,
+        0.9221
+      ],
+      "ci95_width": 0.403
+    },
+    {
+      "n_controls": 20,
+      "order_statistic_k": 16,
+      "expected_specificity": 0.7619,
+      "median_specificity": 0.7703,
+      "ci95": [
+        0.5634,
+        0.9134
+      ],
+      "ci95_width": 0.35
+    },
+    {
+      "n_controls": 25,
+      "order_statistic_k": 20,
+      "expected_specificity": 0.7692,
+      "median_specificity": 0.7762,
+      "ci95": [
+        0.593,
+        0.9064
+      ],
+      "ci95_width": 0.3135
+    },
+    {
+      "n_controls": 27,
+      "order_statistic_k": 22,
+      "expected_specificity": 0.7857,
+      "median_specificity": 0.7926,
+      "ci95": [
+        0.6192,
+        0.9138
+      ],
+      "ci95_width": 0.2946
+    },
+    {
+      "n_controls": 30,
+      "order_statistic_k": 24,
+      "expected_specificity": 0.7742,
+      "median_specificity": 0.7801,
+      "ci95": [
+        0.6143,
+        0.9007
+      ],
+      "ci95_width": 0.2863
+    },
+    {
+      "n_controls": 40,
+      "order_statistic_k": 32,
+      "expected_specificity": 0.7805,
+      "median_specificity": 0.7851,
+      "ci95": [
+        0.6435,
+        0.8916
+      ],
+      "ci95_width": 0.2481
+    },
+    {
+      "n_controls": 50,
+      "order_statistic_k": 40,
+      "expected_specificity": 0.7843,
+      "median_specificity": 0.7881,
+      "ci95": [
+        0.6628,
+        0.8847
+      ],
+      "ci95_width": 0.2219
+    },
+    {
+      "n_controls": 75,
+      "order_statistic_k": 60,
+      "expected_specificity": 0.7895,
+      "median_specificity": 0.792,
+      "ci95": [
+        0.6917,
+        0.8729
+      ],
+      "ci95_width": 0.1812
+    },
+    {
+      "n_controls": 100,
+      "order_statistic_k": 80,
+      "expected_specificity": 0.7921,
+      "median_specificity": 0.794,
+      "ci95": [
+        0.7082,
+        0.8651
+      ],
+      "ci95_width": 0.1569
+    },
+    {
+      "n_controls": 150,
+      "order_statistic_k": 120,
+      "expected_specificity": 0.7947,
+      "median_specificity": 0.796,
+      "ci95": [
+        0.727,
+        0.8551
+      ],
+      "ci95_width": 0.1281
+    },
+    {
+      "n_controls": 200,
+      "order_statistic_k": 160,
+      "expected_specificity": 0.796,
+      "median_specificity": 0.797,
+      "ci95": [
+        0.7378,
+        0.8487
+      ],
+      "ci95_width": 0.1109
+    }
+  ],
+  "sample_size_for_interval_width": {
+    "0.20": 59,
+    "0.15": 108,
+    "0.10": 244
+  },
+  "lu_comparison": {
+    "n_controls": 27,
+    "in_sample_bootstrap_specificity": 0.774,
+    "in_sample_bootstrap_ci95": [
+      0.69,
+      0.8
+    ],
+    "prospective_beta_ci95": [
+      0.6192,
+      0.9138
+    ],
+    "note": "The bootstrap interval is in-sample -- the same 27 controls set the threshold and were scored against it, which is why it cannot exceed the 0.80 target. It measures how precisely the rule hits its own target. The Beta interval measures what a new population would experience. Report both, labelled."
+  },
+  "pilot_implication": "docs/libyan_pilot_protocol.md targets 20 healthy participants, giving [0.56, 0.91]. n >= 30 is the point at which the normative deliverable is worth publishing; 59 buys a +/-10-point interval and 108 a +/-7.5-point one.",
+  "caveat": "Assumes the local control sample is iid from the population the threshold will be applied to. It says nothing about sensitivity, and it is not a validation result."
+}

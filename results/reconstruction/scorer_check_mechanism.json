@@ -1,0 +1,12 @@
+{
+  "slope_of_difference_on_human_total": -0.0019872813990460905,
+  "p": 0.9818195147774506,
+  "corr_human_vs_diff": -0.00544618365497102,
+  "corr_pronoun_ratio_vs_diff": 0.06312638046545604,
+  "p_pronoun": 0.791475298037076,
+  "lower_half_bias": -1.6,
+  "upper_half_bias": -1.4,
+  "total_misses": 41,
+  "total_false_credits": 11,
+  "interpretation": "entity units are credited only when NAMED; anchored pronouns are not resolved"
+}

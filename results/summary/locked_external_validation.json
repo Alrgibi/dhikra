@@ -1,0 +1,14 @@
+{
+  "external_auc": 0.8532763532763533,
+  "ci": [
+    0.7370689655172414,
+    0.9458216462473428
+  ],
+  "n": 53,
+  "sensitivity": 0.9615384615384616,
+  "specificity": 0.3333333333333333,
+  "threshold": 0.367,
+  "brier": 0.1788148720389137,
+  "development_auc": 0.7550158612450046,
+  "protocol": "Lu was excluded from the TRAINING DATA of this model and from every decision taken after the lock of 2026-08-18T17:37, then evaluated ONCE with a threshold fixed beforehand. It was NOT untouched before that lock: five pre-lock scorings compared training configurations, and one of them informed the decision to add Delaware to the training pool. Full record: docs/LU_EXPOSURE_TIMELINE.md. Corrected 2026-08-22 -- the previous wording ('excluded from every development decision') overclaimed."
+}

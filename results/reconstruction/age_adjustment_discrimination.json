@@ -1,0 +1,61 @@
+{
+  "registration": "module docstring, committed before execution",
+  "family_history": "NOT TESTABLE -- no corpus in this project records it",
+  "context": "population",
+  "family_history_arg": "unknown",
+  "results": {
+    "combined": {
+      "cohort": "COMBINED (primary)",
+      "n": 987,
+      "auc_raw": 0.7550158612450047,
+      "auc_adjusted": 0.7713426440901413,
+      "auc_age_prior_alone": NaN,
+      "delta": 0.016326782845136556,
+      "ci95": [
+        -0.012652845701858215,
+        0.04457717002873178
+      ],
+      "grade": "NEUTRAL"
+    },
+    "pitt": {
+      "cohort": "Pitt",
+      "n": 548,
+      "auc_raw": 0.809471766848816,
+      "auc_adjusted": 0.8450313701679822,
+      "auc_age_prior_alone": NaN,
+      "delta": 0.03555960331916619,
+      "ci95": [
+        0.003455371364738727,
+        0.06935287619665204
+      ],
+      "grade": "HELPS"
+    },
+    "delaware": {
+      "cohort": "Delaware",
+      "n": 439,
+      "auc_raw": 0.6290770609318996,
+      "auc_adjusted": 0.6325268817204301,
+      "auc_age_prior_alone": NaN,
+      "delta": 0.003449820788530511,
+      "ci95": [
+        -0.0497335170073128,
+        0.05812902488093339
+      ],
+      "grade": "NEUTRAL"
+    },
+    "pitt_matched": {
+      "cohort": "Pitt, AGE-MATCHED (decisive)",
+      "n": 368,
+      "auc_raw": 0.8006356724417301,
+      "auc_adjusted": 0.7660164526984918,
+      "auc_age_prior_alone": NaN,
+      "delta": -0.03461921974323823,
+      "ci95": [
+        -0.0767986329504377,
+        0.004258246508856775
+      ],
+      "grade": "NEUTRAL"
+    }
+  },
+  "governance": "Lu not read; no model, feature or threshold changed; the layer is already deployed"
+}

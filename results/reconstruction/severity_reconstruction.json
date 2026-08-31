@@ -1,0 +1,43 @@
+{
+ "grade": "CANNOT-CONFIRM",
+ "matching_cell": null,
+ "cells": {
+  "H-A/in_sample": {
+   "n": 156,
+   "r": 0.6882867162,
+   "mae": 3.2078198166,
+   "match": false
+  },
+  "H-A/cv5": {
+   "n": 156,
+   "r": 0.6771415946,
+   "mae": 3.2622205384,
+   "match": false
+  },
+  "H-B/in_sample": {
+   "n": 156,
+   "r": 0.6439658134,
+   "mae": 3.1937965532,
+   "match": false
+  },
+  "H-B/cv5": {
+   "n": 156,
+   "r": 0.6314463872,
+   "mae": 3.2453872596,
+   "match": false
+  }
+ },
+ "embedded": {
+  "r": 0.6547703149207457,
+  "mae": 3.3167418331190133,
+  "n": 155
+ },
+ "recovered_config": "Pipeline(median impute -> StandardScaler -> Ridge(alpha=1.0)); features ['iu','total_correct','idea_units_recalled']",
+ "registered_interpretation": "CANNOT-CONFIRM means the inline aggregation was none of the two registered hypotheses \u2014 not that the deployed model or its recorded r/mae are wrong.",
+ "_provenance": {
+  "dataset": "Pitt dementia cohort; fluency+recall rebuilt from transcripts via committed analyze_secondary_tasks logic; iu from results/pitt_cookie/features.csv",
+  "lock_state": "post-Lu-lock; Lu untouched; results/secondary_tasks/ originals unmodified",
+  "script": "_bootstrap/sevdrive.py",
+  "generated": "2026-08-22"
+ }
+}

@@ -1,0 +1,287 @@
+{
+  "generated": "2026-08-23",
+  "type": "descriptive instrument properties, not a hypothesis test",
+  "governance": "Lu not read; no model trained, modified or re-scored",
+  "A_simplest_competitive_baseline": {
+    "question": "how much does the 64-feature calibrated ensemble buy over the best single hand-countable feature?",
+    "top_12_single_features": [
+      {
+        "feature": "iu.total",
+        "auc_directed": 0.7096
+      },
+      {
+        "feature": "iu.proportion",
+        "auc_directed": 0.7096
+      },
+      {
+        "feature": "iu.actions",
+        "auc_directed": 0.6974
+      },
+      {
+        "feature": "iu.objects",
+        "auc_directed": 0.671
+      },
+      {
+        "feature": "ling.content_word_ratio",
+        "auc_directed": 0.6348
+      },
+      {
+        "feature": "iu.has_exterior",
+        "auc_directed": 0.6297
+      },
+      {
+        "feature": "ling.verb_rate",
+        "auc_directed": 0.6229
+      },
+      {
+        "feature": "ling.pronoun_rate",
+        "auc_directed": 0.6214
+      },
+      {
+        "feature": "iu.places",
+        "auc_directed": 0.6193
+      },
+      {
+        "feature": "iu.has_window",
+        "auc_directed": 0.6193
+      },
+      {
+        "feature": "ling.pronoun_to_noun_ratio",
+        "auc_directed": 0.614
+      },
+      {
+        "feature": "iu.has_woman_drying_dishes",
+        "auc_directed": 0.6088
+      }
+    ],
+    "best_single_feature": "iu.total",
+    "best_single_auc_combined": 0.7096,
+    "best_single_ci95": [
+      0.6712,
+      0.7466
+    ],
+    "best_single_by_cohort": {
+      "Pitt": 0.7538,
+      "Delaware": 0.6074
+    },
+    "full_model_reference": {
+      "combined": 0.755,
+      "combined_ci95": [
+        0.7192,
+        0.7902
+      ],
+      "Pitt": 0.8095,
+      "Delaware": 0.6291
+    },
+    "interpretation": "Counting information units -- one number, scorable by hand from a printed checklist -- reaches AUC 0.7096 combined and 0.7538 on Pitt, against 0.7550 and 0.8095 for the deployed 64-feature calibrated ensemble. The combined intervals overlap. The whole machine-learning apparatus buys roughly four and a half points of AUC over a count. Report this as a DEPLOYMENT FINDING, not only as a limitation: the instrument has a paper fallback for a clinic with no computer."
+  },
+  "B_calibration_x_bayesian_chain": {
+    "problem": "risk_adjustment.py derives a likelihood ratio by dividing model odds by the training prevalence. That is exact only for a calibrated score. The development calibration slope is 1.289 (>1), so predictions are compressed toward the middle and the derived LR is pulled toward 1.",
+    "direction": "the chain UNDERSTATES risk at high scores and slightly overstates it at low scores",
+    "calibration_slope": 1.2886714739,
+    "calibration_intercept": 0.1376204067,
+    "rows": [
+      {
+        "score": 0.1,
+        "lr_raw": 0.125,
+        "lr_calibration_corrected": 0.076,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.0152,
+            "corrected": 0.0093,
+            "shift": -0.0059,
+            "band_as_deployed": "low",
+            "band_corrected": "low",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.0828,
+            "corrected": 0.0521,
+            "shift": -0.0307,
+            "band_as_deployed": "low",
+            "band_corrected": "low",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.25,
+        "lr_raw": 0.374,
+        "lr_calibration_corrected": 0.313,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.0442,
+            "corrected": 0.0372,
+            "shift": -0.007,
+            "band_as_deployed": "low",
+            "band_corrected": "low",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.2132,
+            "corrected": 0.1846,
+            "shift": -0.0286,
+            "band_as_deployed": "moderate",
+            "band_corrected": "moderate",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.367,
+        "lr_raw": 0.651,
+        "lr_calibration_corrected": 0.638,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.0745,
+            "corrected": 0.0731,
+            "shift": -0.0013,
+            "band_as_deployed": "low",
+            "band_corrected": "low",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.3203,
+            "corrected": 0.316,
+            "shift": -0.0043,
+            "band_as_deployed": "high",
+            "band_corrected": "high",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.5,
+        "lr_raw": 1.123,
+        "lr_calibration_corrected": 1.288,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.1218,
+            "corrected": 0.1373,
+            "shift": 0.0155,
+            "band_as_deployed": "moderate",
+            "band_corrected": "moderate",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.4484,
+            "corrected": 0.4826,
+            "shift": 0.0342,
+            "band_as_deployed": "high",
+            "band_corrected": "high",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.7,
+        "lr_raw": 2.619,
+        "lr_calibration_corrected": 3.839,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.2446,
+            "corrected": 0.3218,
+            "shift": 0.0772,
+            "band_as_deployed": "moderate",
+            "band_corrected": "high",
+            "band_unchanged": false
+          },
+          "80-84": {
+            "as_deployed": 0.6548,
+            "corrected": 0.7354,
+            "shift": 0.0806,
+            "band_as_deployed": "very high",
+            "band_corrected": "very high",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.85,
+        "lr_raw": 6.361,
+        "lr_calibration_corrected": 12.044,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.4402,
+            "corrected": 0.5982,
+            "shift": 0.158,
+            "band_as_deployed": "high",
+            "band_corrected": "high",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.8216,
+            "corrected": 0.8971,
+            "shift": 0.0755,
+            "band_as_deployed": "very high",
+            "band_corrected": "very high",
+            "band_unchanged": true
+          }
+        }
+      },
+      {
+        "score": 0.95,
+        "lr_raw": 21.329,
+        "lr_calibration_corrected": 57.264,
+        "posterior": {
+          "65-69": {
+            "as_deployed": 0.725,
+            "corrected": 0.8762,
+            "shift": 0.1512,
+            "band_as_deployed": "very high",
+            "band_corrected": "very high",
+            "band_unchanged": true
+          },
+          "80-84": {
+            "as_deployed": 0.9392,
+            "corrected": 0.9765,
+            "shift": 0.0373,
+            "band_as_deployed": "very high",
+            "band_corrected": "very high",
+            "band_unchanged": true
+          }
+        }
+      }
+    ],
+    "band_absorption": "13 of 14 posterior comparisons keep the same reported band",
+    "interpretation": "The largest distortion is about 0.16 in posterior probability, at high scores. It is a REPORTING error rather than a TRIAGE error -- everyone above the 0.367 threshold is referred either way -- and the banded output introduced 2026-08-23 absorbs most of it. Report it: two sections of the thesis currently contradict each other and an examiner who reads both will notice."
+  },
+  "C_test_retest_and_mdc": {
+    "question": "how much does a healthy person's score move between visits, with nothing changed?",
+    "controls": {
+      "all_gaps": {
+        "n_pairs": 144,
+        "mean_change": -0.0073,
+        "sd_of_change": 0.1554,
+        "standard_error_of_measurement": 0.1099,
+        "minimal_detectable_change_95": 0.305
+      },
+      "gap_le_1.5y": {
+        "n_pairs": 123,
+        "mean_change": 0.0127,
+        "sd_of_change": 0.1459,
+        "standard_error_of_measurement": 0.1032,
+        "minimal_detectable_change_95": 0.286
+      }
+    },
+    "inter_visit_gap_years": {
+      "median": 1.0,
+      "mean": 1.2,
+      "range": [
+        1.0,
+        6.0
+      ]
+    },
+    "impaired_group_drift": {
+      "n_pairs": 113,
+      "mean_change_per_visit": 0.0447,
+      "sd": 0.196,
+      "note": "positive = the score rises as the group progresses, which it does"
+    },
+    "upper_bound_caveats": [
+      "out-of-fold predictions: two visits by one person were scored by DIFFERENT fold models, which a deployed frozen model would not do",
+      "median inter-visit gap is one year, so genuine change is inside the estimate"
+    ],
+    "interpretation": "Minimal detectable change is about 0.29 score points on a 0-1 scale whose deployed threshold is 0.367. A person's score can cross the threshold and move two reported bands without anything about them having changed. THE INSTRUMENT IS A SCREENING TEST AND NOT A MONITORING TEST, and this is the number that establishes it. At GROUP level the picture differs: impaired participants' scores rise about 0.045 per visit while controls' do not move, so progression is visible in aggregate and not individually."
+  }
+}

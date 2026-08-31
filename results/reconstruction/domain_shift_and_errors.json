@@ -1,0 +1,677 @@
+{
+  "A4_feature_shift": {
+    "method": "standardised mean difference between PITT CONTROLS and DELAWARE CONTROLS on each of the 64 deployed features. Controls only, so a difference is corpus-driven rather than disease-driven.",
+    "premise_note": "the 0.930 corpus effect was measured on ALL features; without CHAT markup it was 0.783. The deployed 64 contain NO chat.* features, so the worst offenders are already excluded.",
+    "n_features_ranked": 64,
+    "summary": {
+      "median_abs_smd": 0.2194579494997848,
+      "n_abs_smd_over_0.5": 6,
+      "n_abs_smd_over_0.8": 0,
+      "n_abs_smd_over_1.0": 0
+    },
+    "top_20": [
+      {
+        "feature": "ling.subordination_rate",
+        "smd_pitt_vs_delaware_controls": -0.7598847480930577,
+        "abs_smd": 0.7598847480930577
+      },
+      {
+        "feature": "ling.mean_tree_depth",
+        "smd_pitt_vs_delaware_controls": -0.6638411417327036,
+        "abs_smd": 0.6638411417327036
+      },
+      {
+        "feature": "ling.mattr_50",
+        "smd_pitt_vs_delaware_controls": -0.6603409444687022,
+        "abs_smd": 0.6603409444687022
+      },
+      {
+        "feature": "ling.idea_density",
+        "smd_pitt_vs_delaware_controls": -0.6462683883679208,
+        "abs_smd": 0.6462683883679208
+      },
+      {
+        "feature": "ling.mean_sentence_len",
+        "smd_pitt_vs_delaware_controls": -0.5518319105586107,
+        "abs_smd": 0.5518319105586107
+      },
+      {
+        "feature": "sem.global_coherence",
+        "smd_pitt_vs_delaware_controls": -0.5459639546450573,
+        "abs_smd": 0.5459639546450573
+      },
+      {
+        "feature": "iu.has_counter",
+        "smd_pitt_vs_delaware_controls": -0.4803950775380666,
+        "abs_smd": 0.4803950775380666
+      },
+      {
+        "feature": "iu.has_woman_unconcerned",
+        "smd_pitt_vs_delaware_controls": -0.4422772362566335,
+        "abs_smd": 0.4422772362566335
+      },
+      {
+        "feature": "iu.has_woman",
+        "smd_pitt_vs_delaware_controls": -0.41485362308525064,
+        "abs_smd": 0.41485362308525064
+      },
+      {
+        "feature": "ling.det_rate",
+        "smd_pitt_vs_delaware_controls": 0.406000800575825,
+        "abs_smd": 0.406000800575825
+      },
+      {
+        "feature": "iu.places",
+        "smd_pitt_vs_delaware_controls": -0.4058069751955223,
+        "abs_smd": 0.4058069751955223
+      },
+      {
+        "feature": "iu.has_kitchen",
+        "smd_pitt_vs_delaware_controls": -0.3978276069434462,
+        "abs_smd": 0.3978276069434462
+      },
+      {
+        "feature": "sem.local_coherence",
+        "smd_pitt_vs_delaware_controls": -0.38502472801798615,
+        "abs_smd": 0.38502472801798615
+      },
+      {
+        "feature": "iu.has_jar",
+        "smd_pitt_vs_delaware_controls": -0.36003523612791766,
+        "abs_smd": 0.36003523612791766
+      },
+      {
+        "feature": "iu.proportion",
+        "smd_pitt_vs_delaware_controls": -0.34885330572227663,
+        "abs_smd": 0.34885330572227663
+      },
+      {
+        "feature": "iu.total",
+        "smd_pitt_vs_delaware_controls": -0.34885330572227613,
+        "abs_smd": 0.34885330572227613
+      },
+      {
+        "feature": "iu.has_water",
+        "smd_pitt_vs_delaware_controls": 0.3413143187728197,
+        "abs_smd": 0.3413143187728197
+      },
+      {
+        "feature": "ling.adv_rate",
+        "smd_pitt_vs_delaware_controls": -0.3338530525422481,
+        "abs_smd": 0.3338530525422481
+      },
+      {
+        "feature": "iu.subjects",
+        "smd_pitt_vs_delaware_controls": -0.3302698125021152,
+        "abs_smd": 0.3302698125021152
+      },
+      {
+        "feature": "iu.has_faucet",
+        "smd_pitt_vs_delaware_controls": 0.3277250597677917,
+        "abs_smd": 0.3277250597677917
+      }
+    ],
+    "all": [
+      {
+        "feature": "ling.subordination_rate",
+        "smd_pitt_vs_delaware_controls": -0.7598847480930577,
+        "abs_smd": 0.7598847480930577
+      },
+      {
+        "feature": "ling.mean_tree_depth",
+        "smd_pitt_vs_delaware_controls": -0.6638411417327036,
+        "abs_smd": 0.6638411417327036
+      },
+      {
+        "feature": "ling.mattr_50",
+        "smd_pitt_vs_delaware_controls": -0.6603409444687022,
+        "abs_smd": 0.6603409444687022
+      },
+      {
+        "feature": "ling.idea_density",
+        "smd_pitt_vs_delaware_controls": -0.6462683883679208,
+        "abs_smd": 0.6462683883679208
+      },
+      {
+        "feature": "ling.mean_sentence_len",
+        "smd_pitt_vs_delaware_controls": -0.5518319105586107,
+        "abs_smd": 0.5518319105586107
+      },
+      {
+        "feature": "sem.global_coherence",
+        "smd_pitt_vs_delaware_controls": -0.5459639546450573,
+        "abs_smd": 0.5459639546450573
+      },
+      {
+        "feature": "iu.has_counter",
+        "smd_pitt_vs_delaware_controls": -0.4803950775380666,
+        "abs_smd": 0.4803950775380666
+      },
+      {
+        "feature": "iu.has_woman_unconcerned",
+        "smd_pitt_vs_delaware_controls": -0.4422772362566335,
+        "abs_smd": 0.4422772362566335
+      },
+      {
+        "feature": "iu.has_woman",
+        "smd_pitt_vs_delaware_controls": -0.41485362308525064,
+        "abs_smd": 0.41485362308525064
+      },
+      {
+        "feature": "ling.det_rate",
+        "smd_pitt_vs_delaware_controls": 0.406000800575825,
+        "abs_smd": 0.406000800575825
+      },
+      {
+        "feature": "iu.places",
+        "smd_pitt_vs_delaware_controls": -0.4058069751955223,
+        "abs_smd": 0.4058069751955223
+      },
+      {
+        "feature": "iu.has_kitchen",
+        "smd_pitt_vs_delaware_controls": -0.3978276069434462,
+        "abs_smd": 0.3978276069434462
+      },
+      {
+        "feature": "sem.local_coherence",
+        "smd_pitt_vs_delaware_controls": -0.38502472801798615,
+        "abs_smd": 0.38502472801798615
+      },
+      {
+        "feature": "iu.has_jar",
+        "smd_pitt_vs_delaware_controls": -0.36003523612791766,
+        "abs_smd": 0.36003523612791766
+      },
+      {
+        "feature": "iu.proportion",
+        "smd_pitt_vs_delaware_controls": -0.34885330572227663,
+        "abs_smd": 0.34885330572227663
+      },
+      {
+        "feature": "iu.total",
+        "smd_pitt_vs_delaware_controls": -0.34885330572227613,
+        "abs_smd": 0.34885330572227613
+      },
+      {
+        "feature": "iu.has_water",
+        "smd_pitt_vs_delaware_controls": 0.3413143187728197,
+        "abs_smd": 0.3413143187728197
+      },
+      {
+        "feature": "ling.adv_rate",
+        "smd_pitt_vs_delaware_controls": -0.3338530525422481,
+        "abs_smd": 0.3338530525422481
+      },
+      {
+        "feature": "iu.subjects",
+        "smd_pitt_vs_delaware_controls": -0.3302698125021152,
+        "abs_smd": 0.3302698125021152
+      },
+      {
+        "feature": "iu.has_faucet",
+        "smd_pitt_vs_delaware_controls": 0.3277250597677917,
+        "abs_smd": 0.3277250597677917
+      },
+      {
+        "feature": "iu.has_woman_drying_dishes",
+        "smd_pitt_vs_delaware_controls": -0.3224437442770869,
+        "abs_smd": 0.3224437442770869
+      },
+      {
+        "feature": "iu.has_boy",
+        "smd_pitt_vs_delaware_controls": -0.2867717400004784,
+        "abs_smd": 0.2867717400004784
+      },
+      {
+        "feature": "iu.has_cupboard",
+        "smd_pitt_vs_delaware_controls": -0.28233188158619416,
+        "abs_smd": 0.28233188158619416
+      },
+      {
+        "feature": "ling.word_count",
+        "smd_pitt_vs_delaware_controls": -0.27546868663687746,
+        "abs_smd": 0.27546868663687746
+      },
+      {
+        "feature": "ling.repeated_bigram_ratio",
+        "smd_pitt_vs_delaware_controls": 0.26832100302589296,
+        "abs_smd": 0.26832100302589296
+      },
+      {
+        "feature": "iu.has_cookie",
+        "smd_pitt_vs_delaware_controls": 0.2603210792936325,
+        "abs_smd": 0.2603210792936325
+      },
+      {
+        "feature": "iu.actions",
+        "smd_pitt_vs_delaware_controls": -0.2577025830217513,
+        "abs_smd": 0.2577025830217513
+      },
+      {
+        "feature": "iu.has_window",
+        "smd_pitt_vs_delaware_controls": -0.25159208519806375,
+        "abs_smd": 0.25159208519806375
+      },
+      {
+        "feature": "iu.has_exterior",
+        "smd_pitt_vs_delaware_controls": -0.2515304468315274,
+        "abs_smd": 0.2515304468315274
+      },
+      {
+        "feature": "ling.verb_rate",
+        "smd_pitt_vs_delaware_controls": -0.2434568414428841,
+        "abs_smd": 0.2434568414428841
+      },
+      {
+        "feature": "sem.progression",
+        "smd_pitt_vs_delaware_controls": 0.23902710858719253,
+        "abs_smd": 0.23902710858719253
+      },
+      {
+        "feature": "sem.content_dispersion",
+        "smd_pitt_vs_delaware_controls": -0.2203404480927648,
+        "abs_smd": 0.2203404480927648
+      },
+      {
+        "feature": "ling.mean_dependency_distance",
+        "smd_pitt_vs_delaware_controls": -0.21857545090680483,
+        "abs_smd": 0.21857545090680483
+      },
+      {
+        "feature": "iu.has_boy_taking_cookie",
+        "smd_pitt_vs_delaware_controls": -0.21481824655196774,
+        "abs_smd": 0.21481824655196774
+      },
+      {
+        "feature": "ling.content_word_ratio",
+        "smd_pitt_vs_delaware_controls": -0.21271044611157597,
+        "abs_smd": 0.21271044611157597
+      },
+      {
+        "feature": "iu.has_stool",
+        "smd_pitt_vs_delaware_controls": 0.20410988778856642,
+        "abs_smd": 0.20410988778856642
+      },
+      {
+        "feature": "ling.noun_rate",
+        "smd_pitt_vs_delaware_controls": 0.19710867425504022,
+        "abs_smd": 0.19710867425504022
+      },
+      {
+        "feature": "iu.has_stool_falling",
+        "smd_pitt_vs_delaware_controls": 0.19416047691766652,
+        "abs_smd": 0.19416047691766652
+      },
+      {
+        "feature": "ling.immediate_repeat_count",
+        "smd_pitt_vs_delaware_controls": -0.190605753990654,
+        "abs_smd": 0.190605753990654
+      },
+      {
+        "feature": "iu.action_object_ratio",
+        "smd_pitt_vs_delaware_controls": -0.18911797870575991,
+        "abs_smd": 0.18911797870575991
+      },
+      {
+        "feature": "iu.objects",
+        "smd_pitt_vs_delaware_controls": -0.17646666314036327,
+        "abs_smd": 0.17646666314036327
+      },
+      {
+        "feature": "sem.min_coherence",
+        "smd_pitt_vs_delaware_controls": -0.17455012521438235,
+        "abs_smd": 0.17455012521438235
+      },
+      {
+        "feature": "sem.content_dispersion_sd",
+        "smd_pitt_vs_delaware_controls": -0.13782196156620183,
+        "abs_smd": 0.13782196156620183
+      },
+      {
+        "feature": "iu.has_water_overflowing",
+        "smd_pitt_vs_delaware_controls": -0.13502621011173438,
+        "abs_smd": 0.13502621011173438
+      },
+      {
+        "feature": "iu.has_sink",
+        "smd_pitt_vs_delaware_controls": -0.13307219836559636,
+        "abs_smd": 0.13307219836559636
+      },
+      {
+        "feature": "iu.has_girl_reaching",
+        "smd_pitt_vs_delaware_controls": 0.13237734477627208,
+        "abs_smd": 0.13237734477627208
+      },
+      {
+        "feature": "iu.per_100_words",
+        "smd_pitt_vs_delaware_controls": -0.1281649394270568,
+        "abs_smd": 0.1281649394270568
+      },
+      {
+        "feature": "ling.pronoun_to_noun_ratio",
+        "smd_pitt_vs_delaware_controls": -0.12673591969140532,
+        "abs_smd": 0.12673591969140532
+      },
+      {
+        "feature": "ling.honore_r",
+        "smd_pitt_vs_delaware_controls": -0.1224924363805409,
+        "abs_smd": 0.1224924363805409
+      },
+      {
+        "feature": "ling.type_token_ratio",
+        "smd_pitt_vs_delaware_controls": -0.11901401421796523,
+        "abs_smd": 0.11901401421796523
+      },
+      {
+        "feature": "ling.repeated_word_ratio",
+        "smd_pitt_vs_delaware_controls": 0.11901401421796523,
+        "abs_smd": 0.11901401421796523
+      },
+      {
+        "feature": "sem.global_coherence_sd",
+        "smd_pitt_vs_delaware_controls": 0.10493283863846462,
+        "abs_smd": 0.10493283863846462
+      },
+      {
+        "feature": "iu.has_curtain",
+        "smd_pitt_vs_delaware_controls": -0.10268134642915394,
+        "abs_smd": 0.10268134642915394
+      },
+      {
+        "feature": "iu.has_plate",
+        "smd_pitt_vs_delaware_controls": 0.10241216920025269,
+        "abs_smd": 0.10241216920025269
+      },
+      {
+        "feature": "sem.local_coherence_sd",
+        "smd_pitt_vs_delaware_controls": 0.08565835585414415,
+        "abs_smd": 0.08565835585414415
+      },
+      {
+        "feature": "ling.adj_rate",
+        "smd_pitt_vs_delaware_controls": -0.0806332929587083,
+        "abs_smd": 0.0806332929587083
+      },
+      {
+        "feature": "ling.pronoun_rate",
+        "smd_pitt_vs_delaware_controls": -0.07995720873047578,
+        "abs_smd": 0.07995720873047578
+      },
+      {
+        "feature": "ling.brunet_w",
+        "smd_pitt_vs_delaware_controls": -0.04182444622781442,
+        "abs_smd": 0.04182444622781442
+      },
+      {
+        "feature": "ling.filler_count",
+        "smd_pitt_vs_delaware_controls": -0.04069548106397126,
+        "abs_smd": 0.04069548106397126
+      },
+      {
+        "feature": "iu.has_girl",
+        "smd_pitt_vs_delaware_controls": 0.037849342906261685,
+        "abs_smd": 0.037849342906261685
+      },
+      {
+        "feature": "ling.filler_rate",
+        "smd_pitt_vs_delaware_controls": -0.032384817265746844,
+        "abs_smd": 0.032384817265746844
+      },
+      {
+        "feature": "ling.sentence_count",
+        "smd_pitt_vs_delaware_controls": -0.027365705106975873,
+        "abs_smd": 0.027365705106975873
+      },
+      {
+        "feature": "iu.has_dishcloth",
+        "smd_pitt_vs_delaware_controls": -0.006714414582249953,
+        "abs_smd": 0.006714414582249953
+      },
+      {
+        "feature": "sem.loop_rate",
+        "smd_pitt_vs_delaware_controls": -0.00595410952745573,
+        "abs_smd": 0.00595410952745573
+      }
+    ]
+  },
+  "A5_lu_false_positives": {
+    "n_controls": 27,
+    "n_false_positive": 18,
+    "n_true_negative": 9,
+    "note": "descriptive only; no decision follows. Lu features are the parse-only build already on disk; nothing was scored.",
+    "ranked_differences_fp_vs_tn": [
+      {
+        "variable": "iu.has_stool_falling",
+        "false_positive_mean": 0.4444444444444444,
+        "true_negative_mean": 1.0,
+        "smd": -1.5365907428821481
+      },
+      {
+        "variable": "ling.pronoun_to_noun_ratio",
+        "false_positive_mean": 0.8926769529135257,
+        "true_negative_mean": 0.5366994787284641,
+        "smd": 1.531413501480666
+      },
+      {
+        "variable": "ling.pronoun_rate",
+        "false_positive_mean": 0.16039657597730897,
+        "true_negative_mean": 0.11496845060625262,
+        "smd": 1.3287591278133855
+      },
+      {
+        "variable": "iu.has_cupboard",
+        "false_positive_mean": 0.05555555555555555,
+        "true_negative_mean": 0.5555555555555556,
+        "smd": -1.224744871391589
+      },
+      {
+        "variable": "ling.noun_rate",
+        "false_positive_mean": 0.18160121012399597,
+        "true_negative_mean": 0.21827115809241038,
+        "smd": -1.1566691921044143
+      },
+      {
+        "variable": "sem.content_dispersion",
+        "false_positive_mean": 0.45939827107804543,
+        "true_negative_mean": 0.5001403365258229,
+        "smd": -1.1407722967306346
+      },
+      {
+        "variable": "iu.has_window",
+        "false_positive_mean": 0.2777777777777778,
+        "true_negative_mean": 0.7777777777777778,
+        "smd": -1.1085646858215368
+      },
+      {
+        "variable": "iu.has_exterior",
+        "false_positive_mean": 0.4444444444444444,
+        "true_negative_mean": 0.8888888888888888,
+        "smd": -1.0297712609616438
+      },
+      {
+        "variable": "iu.has_water_overflowing",
+        "false_positive_mean": 0.6666666666666666,
+        "true_negative_mean": 1.0,
+        "smd": -0.9718253158075502
+      },
+      {
+        "variable": "iu.total",
+        "false_positive_mean": 11.5,
+        "true_negative_mean": 14.88888888888889,
+        "smd": -0.9527795650894247
+      },
+      {
+        "variable": "iu.proportion",
+        "false_positive_mean": 0.5,
+        "true_negative_mean": 0.6473429951690821,
+        "smd": -0.9527795650894243
+      },
+      {
+        "variable": "iu.has_curtain",
+        "false_positive_mean": 0.05555555555555555,
+        "true_negative_mean": 0.4444444444444444,
+        "smd": -0.9525793444156803
+      },
+      {
+        "variable": "iu.objects",
+        "false_positive_mean": 4.666666666666667,
+        "true_negative_mean": 6.777777777777778,
+        "smd": -0.9303847880708013
+      },
+      {
+        "variable": "iu.has_woman_unconcerned",
+        "false_positive_mean": 0.5,
+        "true_negative_mean": 0.1111111111111111,
+        "smd": 0.8971236915132695
+      },
+      {
+        "variable": "iu.actions",
+        "false_positive_mean": 3.2777777777777777,
+        "true_negative_mean": 4.222222222222222,
+        "smd": -0.8771541600894404
+      },
+      {
+        "variable": "age",
+        "false_positive_mean": 82.58823529411765,
+        "true_negative_mean": 74.22222222222223,
+        "smd": 0.8322912167162274
+      },
+      {
+        "variable": "sem.min_coherence",
+        "false_positive_mean": 0.8222533928023444,
+        "true_negative_mean": 0.7458264827728271,
+        "smd": 0.7937646428838662
+      },
+      {
+        "variable": "ling.content_word_ratio",
+        "false_positive_mean": 0.4095507480563145,
+        "true_negative_mean": 0.4328456306621947,
+        "smd": -0.7926651057702296
+      },
+      {
+        "variable": "ling.adv_rate",
+        "false_positive_mean": 0.04785948219611921,
+        "true_negative_mean": 0.031284182426119994,
+        "smd": 0.7262379691027474
+      },
+      {
+        "variable": "sem.global_coherence_sd",
+        "false_positive_mean": 0.042811639136254014,
+        "true_negative_mean": 0.05905948227365718,
+        "smd": -0.6734521807037802
+      },
+      {
+        "variable": "ling.det_rate",
+        "false_positive_mean": 0.1322411436293017,
+        "true_negative_mean": 0.15026309073889227,
+        "smd": -0.6636849874636833
+      },
+      {
+        "variable": "iu.places",
+        "false_positive_mean": 0.8888888888888888,
+        "true_negative_mean": 1.3333333333333333,
+        "smd": -0.6061711237540258
+      },
+      {
+        "variable": "ling.word_count",
+        "false_positive_mean": 93.77777777777777,
+        "true_negative_mean": 165.0,
+        "smd": -0.5930200865650479
+      },
+      {
+        "variable": "iu.has_boy_taking_cookie",
+        "false_positive_mean": 0.5,
+        "true_negative_mean": 0.7777777777777778,
+        "smd": -0.5797423788036726
+      },
+      {
+        "variable": "sem.local_coherence",
+        "false_positive_mean": 0.8243661483413867,
+        "true_negative_mean": 0.7924164901322055,
+        "smd": 0.5384936715767609
+      }
+    ],
+    "sex": {
+      "false_positive": {
+        "female": 12,
+        "male": 6
+      },
+      "true_negative": {
+        "female": 7,
+        "male": 2
+      }
+    }
+  },
+  "B2_severity_stratification": {
+    "cohort": "Pitt only",
+    "why": "Delaware has no MMSE column; Lu's is empty",
+    "n_with_mmse": 459,
+    "impaired_by_mmse_band": {
+      "severe <=10": {
+        "n": 15,
+        "mean_score": 0.7443646007307269,
+        "sensitivity_at_0.367": 1.0
+      },
+      "moderate 11-20": {
+        "n": 145,
+        "mean_score": 0.6882268887755039,
+        "sensitivity_at_0.367": 0.9517241379310345
+      },
+      "mild 21-25": {
+        "n": 68,
+        "mean_score": 0.5632048494664433,
+        "sensitivity_at_0.367": 0.8088235294117647
+      },
+      "normal-range >=26": {
+        "n": 46,
+        "mean_score": 0.4825360699500127,
+        "sensitivity_at_0.367": 0.6304347826086957
+      }
+    },
+    "spearman_score_vs_mmse_within_impaired": -0.5264522615108383
+  },
+  "A4_ablation_transfer": {
+    "method": "exploratory models trained on one cohort, scored on the other, with the top-k corpus-shifted features removed. NOT the deployed model; never applied to Lu.",
+    "caveat": "the feature ranking used both cohorts' controls, so these numbers are optimistic. Evidence for the next iteration only.",
+    "results": {
+      "Delaware->Pitt_k0": {
+        "auc": 0.7772110908722929,
+        "n_features": 64
+      },
+      "Delaware->Pitt_k10": {
+        "auc": 0.7912028604196182,
+        "n_features": 54
+      },
+      "Delaware->Pitt_k15": {
+        "auc": 0.7878297240774472,
+        "n_features": 49
+      },
+      "Delaware->Pitt_k5": {
+        "auc": 0.7884233960736693,
+        "n_features": 59
+      },
+      "Pitt->Delaware_k0": {
+        "auc": 0.6460349462365591,
+        "n_features": 64
+      },
+      "Pitt->Delaware_k10": {
+        "auc": 0.6420922939068101,
+        "n_features": 54
+      },
+      "Pitt->Delaware_k15": {
+        "auc": 0.6434139784946236,
+        "n_features": 49
+      },
+      "Pitt->Delaware_k5": {
+        "auc": 0.6424059139784946,
+        "n_features": 59
+      }
+    }
+  },
+  "_provenance": {
+    "model": "deployed model frozen; ablation models are throwaway",
+    "lock_state": "Lu features read descriptively; nothing scored, no locked file modified",
+    "script": "_bootstrap/partA45_driver.py",
+    "generated": "2026-08-22"
+  }
+}

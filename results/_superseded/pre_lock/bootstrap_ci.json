@@ -1,0 +1,43 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock bootstrap CIs, n=1040. The row 'Dementia (Pitt+Lu)' contains the locked external corpus in the training pool. Post-lock: combined 0.755 [0.719, 0.790] n=987; Pitt 0.809 [0.761, 0.855]; Delaware MCI 0.629 [0.570, 0.687].",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "Combined (all)": {
+    "auc": 0.7554450046186549,
+    "ci": [
+      0.719651044019892,
+      0.7906628277020536
+    ],
+    "n": 1040
+  },
+  "Dementia (Pitt+Lu)": {
+    "auc": 0.8051135727872887,
+    "ci": [
+      0.7574316436675376,
+      0.8484486670269094
+    ],
+    "n": 601
+  },
+  "MCI (Delaware)": {
+    "auc": 0.6395161290322581,
+    "ci": [
+      0.577916460646557,
+      0.6992162105781082
+    ],
+    "n": 439
+  }
+}

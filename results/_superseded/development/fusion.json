@@ -1,0 +1,28 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "lock_state": "pre-Lu-lock",
+    "reason": "feature-FAMILY fusion experiment; no committed script produces it and its baseline pool is unverifiable. Superseded by results/fusion/results.json",
+    "stamped": "2026-08-22 (marker added; no value changed)"
+  },
+  "baseline": {
+    "auc": 0.7539639379832187,
+    "sd": 0.006017896829629941
+  },
+  "branch_linguistic": {
+    "auc": 0.7429324764141226,
+    "sd": 0.0034957840932327735
+  },
+  "branch_information": {
+    "auc": 0.7097762946483748,
+    "sd": 0.004888133869267805
+  },
+  "branch_semantic": {
+    "auc": 0.5841209025117071,
+    "sd": 0.002443837514760564
+  },
+  "late_fusion_families": {
+    "auc": 0.7562600420219997,
+    "sd": 0.005026587350217364
+  }
+}

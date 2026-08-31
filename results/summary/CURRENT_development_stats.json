@@ -1,0 +1,130 @@
+{
+  "protocol": "Pitt + Delaware development set, Lu locked out. Participant-grouped 5-fold CV, calibrated ensemble.",
+  "n_recordings": 987,
+  "n_participants": 581,
+  "n_features": 64,
+  "combined": {
+    "auc": 0.7550158612450046,
+    "ci95": [
+      0.7191685596447916,
+      0.7901689631261094
+    ],
+    "n": 987
+  },
+  "pitt_dementia": {
+    "auc": 0.8094717668488158,
+    "ci95": [
+      0.7612403197890507,
+      0.8551574671615094
+    ],
+    "n": 548
+  },
+  "delaware_mci": {
+    "auc": 0.6290770609318996,
+    "ci95": [
+      0.5703440958878332,
+      0.6868212739102012
+    ],
+    "n": 439
+  },
+  "calibration": {
+    "brier": 0.19853576545440682,
+    "slope": 1.2763890437304815,
+    "intercept": 0.13478979825239526,
+    "max_gap": 0.1513101141664831,
+    "bins": [
+      {
+        "bin": "(0.0, 0.2]",
+        "n": 20,
+        "predicted": 0.189,
+        "observed": 0.1
+      },
+      {
+        "bin": "(0.2, 0.4]",
+        "n": 467,
+        "predicted": 0.3,
+        "observed": 0.291
+      },
+      {
+        "bin": "(0.4, 0.6]",
+        "n": 243,
+        "predicted": 0.493,
+        "observed": 0.49
+      },
+      {
+        "bin": "(0.6, 0.8]",
+        "n": 203,
+        "predicted": 0.695,
+        "observed": 0.764
+      },
+      {
+        "bin": "(0.8, 1.0]",
+        "n": 54,
+        "predicted": 0.83,
+        "observed": 0.981
+      }
+    ],
+    "_note": "SLOPE/INTERCEPT DISCREPANCY, resolved 2026-08-22. Re-running the committed calibration_block() on the stored OOF vector (oof_predictions.npy) reproduces brier, max_gap, all five bins and the AUC exactly, but returns slope 1.2886714739 and intercept 0.1376204067. ROOT CAUSE: the pair stored here is reproduced EXACTLY by an L2-PENALISED fit (sklearn's default LogisticRegression(), C=1.0), whereas the committed recipe uses C=1e9, i.e. unpenalised. A penalty shrinks the calibration slope toward zero and understates miscalibration, so the unpenalised pair is the correct one. CITE 1.289 / 0.138. The numbers in this file are left unaltered. Working: results/reconstruction/calibration_slope_resolution.json."
+  },
+  "operating_points": {
+    "high_sensitivity": {
+      "threshold": 0.275,
+      "sensitivity": 0.9010752688172043,
+      "specificity": 0.2835249042145594
+    },
+    "screening": {
+      "threshold": 0.367,
+      "sensitivity": 0.7569892473118279,
+      "specificity": 0.5881226053639846
+    },
+    "high_specificity": {
+      "threshold": 0.589,
+      "sensitivity": 0.46021505376344085,
+      "specificity": 0.9003831417624522
+    }
+  },
+  "ppv_npv": [
+    {
+      "prevalence": 0.01,
+      "ppv": 0.018226276870501126,
+      "npv": 0.9958436359877452
+    },
+    {
+      "prevalence": 0.05,
+      "ppv": 0.08819984361117071,
+      "npv": 0.9787156424115343
+    },
+    {
+      "prevalence": 0.077,
+      "ppv": 0.13294112927920565,
+      "npv": 0.9666781915737119
+    },
+    {
+      "prevalence": 0.11,
+      "ppv": 0.18510775615147926,
+      "npv": 0.9514120107913402
+    },
+    {
+      "prevalence": 0.15,
+      "ppv": 0.24490416104090665,
+      "npv": 0.9320383763225417
+    },
+    {
+      "prevalence": 0.25,
+      "ppv": 0.379896168660799,
+      "npv": 0.8789412438353127
+    },
+    {
+      "prevalence": 0.42,
+      "ppv": 0.5709798267183336,
+      "npv": 0.7696973618232696
+    }
+  ],
+  "_provenance": {
+    "dataset": "Pitt + Delaware (987 recordings, 581 participants); Lu locked out as external test set",
+    "model_version": "2.0-lu-locked",
+    "generated": "2026-08-18",
+    "seed": 42,
+    "cv": "StratifiedGroupKFold(5, shuffle=True, random_state=42) grouped by participant"
+  }
+}

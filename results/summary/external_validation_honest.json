@@ -1,0 +1,16 @@
+{
+  "_provenance": {
+    "purpose": "the project's own honesty record of which external figures are contaminated",
+    "written": "2026-08-18, immediately after the Lu lock",
+    "lock_state": "written at the lock; see post_lock_addendum for what changed after it",
+    "script": "inline (code not committed)",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "true_external_auc_lu": 0.821,
+  "note": "0.821 is the only uncontaminated external figure: a Pitt-trained model evaluated on Lu once, before any modelling decision was informed by it. The later 0.859 and 0.849 must NOT be reported as external validation -- 0.859 was obtained after using Lu to judge whether to add Delaware, and 0.849 is cross-validated performance within a model that includes Lu in training.",
+  "contaminated": {
+    "pitt_plus_delaware_on_lu": 0.859,
+    "cv_within_combined": 0.849
+  },
+  "post_lock_addendum": "Added 2026-08-22. The sentence above ('the only uncontaminated external figure') was written BEFORE the 18 August lock and is true only of the pre-lock period. Since the lock there is a second clean figure: the one-shot 0.853 [0.737, 0.946] in locked_external_validation.json, produced by a model that never saw Lu in training, at a threshold fixed in advance, scored once and reproduced once. Both are reported in the thesis: 0.821 validates external generalisation of a Pitt-only model with no Lu influence anywhere; 0.853 validates the deployed system on unseen data, with the caveat that its training pool's COMPOSITION was chosen using a Lu result. See docs/LU_EXPOSURE_TIMELINE.md and docs/THESIS_PLAN.md 3.9."
+}

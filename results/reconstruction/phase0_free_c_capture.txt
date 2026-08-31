@@ -1,0 +1,23 @@
+==============================================================================
+CHECK D -- where does the IU sex gap live?  (the word-count channel)
+==============================================================================
+  word-count column: []
+   iu.total: gap=+0.0828  (F=0.7367 M=0.6539)
+   iu.per_100_words: gap=+0.0064  (F=0.6029 M=0.5965)
+
+==============================================================================
+CHECK E -- decomposing the repeat-averaging gain: noise vs progression
+==============================================================================
+  n_part=149  mean visits per participant = 2.73
+  A first-visit only ................. AUC=0.7643
+  B average CONTROLS only ........... AUC=0.7719  (delta +0.0076)  <- pure noise reduction, no progression possible
+  C average IMPAIRED only ........... AUC=0.8208  (delta +0.0565)  <- noise reduction + disease progression
+  D average BOTH .................... AUC=0.8467  (delta +0.0823)
+
+  Spearman-Brown: test-retest r=0.465, k=2.73 -> reliability of mean = 0.704
+  d' observed(first visit) = 1.0186 ; implied true d' = 1.4938 ; d' of k-mean = 1.2530
+  PREDICTED AUC from noise reduction alone = 0.8122
+  OBSERVED AUC of the k-mean               = 0.8467
+  EXCESS over the noise-reduction prediction = +0.0345  <- attributable to progression / r underestimate
+  @thr=0.367: first visit     spec=0.5333 (n=75)  sens=0.7973 (n=74)
+  @thr=0.367: mean of visits  spec=0.4459 (n=74)  sens=0.9200 (n=75)

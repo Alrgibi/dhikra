@@ -1,0 +1,66 @@
+# Allow-list. Nothing is published unless it is named here, because the
+# repository exists to satisfy what the thesis cites — and nothing else.
+
+/*
+!/.gitignore
+!/README.md
+!/RUN_THE_APP.md
+!/requirements.txt
+!/START_WINDOWS.bat
+!/START_MAC.command
+!/corpus_paths.json
+!/app/
+!/src/
+!/scripts/
+!/models/
+!/results/
+!/docs/
+
+# ── docs: only the files the thesis or the README names ───────────────────
+docs/*
+!docs/NUMBERS.md
+!docs/RECONSTRUCTION.md
+!docs/ARABIC_CORPUS_GAP.md
+!docs/FIGURE_RECONCILIATION.md
+!docs/LU_EXPOSURE_TIMELINE.md
+!docs/LU_EVALUATION_PROTOCOL.md
+!docs/libyan_pilot_protocol.md
+!docs/figures/
+!docs/forms/
+!docs/scorer_check/
+!docs/chapters_backup_v2/
+
+# ── Never published: corpora and participant-level derivatives ────────────
+# Required by the TalkBank membership agreement and stated in Appendix J.
+data/
+*.csv
+*.npy
+*.npz
+*.wav
+*.cha
+results/_excluded_from_submission/
+results/_partial_stimulus_probe/
+results/reconstruction/lu_oneshot_reproduction.json
+results/reconstruction/sample_adequacy_probe.json
+# Aggregate only (degradation conditions x acoustic measures); cited by
+# Table (5.10) and Table (J.4), so it must stay reachable.
+!results/robustness/stability.csv
+
+# ── Scratch ───────────────────────────────────────────────────────────────
+**/__pycache__/
+*.pyc
+*.tmp
+~$*
+~WRL*
+*.tar.gz
+*.tgz
+
+# ── Corpus text: verbatim transcripts are the corpus itself ───────────────
+# scorer_check is re-included above only for the coding rules the thesis cites.
+docs/scorer_check/transcripts.md
+docs/scorer_check/ADEQUACY_BENCHMARK.md
+docs/forms/LETTER_OF_SUPPORT_template.md
+
+# ── Thesis-production machinery, not the system ───────────────────────────
+scripts/assembly/CUT_PLAN.md
+scripts/assembly/ASSEMBLY_NOTES.md

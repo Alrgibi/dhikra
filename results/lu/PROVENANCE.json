@@ -1,0 +1,14 @@
+{
+  "dataset": "Lu (DementiaBank) -- LOCKED EXTERNAL TEST SET",
+  "n_cha_files": 54,
+  "composition": {
+    "control": 27,
+    "impaired": 26,
+    "excluded_aphasia": 1
+  },
+  "label_logic": "reconstructed mapping in chat_parser.py (2026-08-20 header audit)",
+  "lock_state": "LOCKED. Parse only. Never for training or development decisions.",
+  "script": "scripts/build_lu.py",
+  "executed_via": "chunked driver (~/drive.py), per-file logic identical",
+  "generated": "2026-08-20"
+}

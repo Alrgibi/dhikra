@@ -1,0 +1,52 @@
+ORDER CHECK (labels+source align): True
+Pitt: 548 recordings, 290 participants
+
+== T1  Pitt by-sex AUC, participant-clustered bootstrap 2000, seed 42 ==
+  f: n=343  prevalence=0.55  AUC=0.8687
+  m: n=205  prevalence=0.57  AUC=0.7041
+  female: CI95 [0.8217, 0.9108]
+  male: CI95 [0.6027, 0.8064]
+  difference: CI95 [0.0535, 0.2736]
+  difference point = +0.1646; replicates female>male: 1998 of 2000
+
+== T2  severity composition (Pitt) ==
+  impaired MMSE: female 18.77 vs male 21.35  diff 2.58  MW p=0.0002
+  impaired age: female 72.59 vs male 69.72
+  control MMSE: female 29.26 vs male 28.94
+
+== T3  matched gap, committed matching (analyze_pitt), seeds 1-10 ==
+  female mean 0.8498 range [0.8284,0.8697]
+  male   mean 0.7098 range [0.6691,0.7476]
+  gap    mean 0.1400 range [0.0916,0.1906]
+
+== T4  sensitivity at 0.367 by MMSE band (Pitt impaired with MMSE) ==
+  <=15   f: 0.978 (n=45)   m: 1.000 (n=17)
+  16-20  f: 0.930 (n=71)   m: 0.963 (n=27)
+  21-25  f: 0.773 (n=44)   m: 0.875 (n=24)
+  26+    f: 0.733 (n=15)   m: 0.581 (n=31)
+
+== T5  operating point 0.367 by sex (Pitt) ==
+  f: specificity 0.5455  control mean 0.3819  impaired mean 0.6412  sensitivity 0.8836
+  m: specificity 0.4382  control mean 0.4467  impaired mean 0.5860  sensitivity 0.8103
+
+== T6  mechanism means (Pitt) ==
+  healthy  iu.total           men 13.01 vs women 14.14   MW p=0.0180
+  healthy  iu.actions         men 3.43 vs women 3.95   MW p=0.0075
+  healthy  iu.proportion      men 0.57 vs women 0.61   MW p=0.0180
+  impaired ling.word_count    men 103.87 vs women 90.58   MW p=0.3276
+  impaired iu.total           men 10.66 vs women 9.81   MW p=0.0935
+
+== T7  sex-stratified control-referenced thresholds, 80% specificity target (Pitt) ==
+  pooled-0.367 sensitivity: f 0.8836  m 0.8103  gap 0.0733
+  f: threshold 0.4813  specificity 0.7987  sensitivity 0.8307
+  m: threshold 0.6249  specificity 0.7978  sensitivity 0.4828
+
+== T8  Delaware by sex ==
+  f: AUC 0.6425 (n=315)
+  m: AUC 0.5958 (n=124)
+
+== T9  transcript-length quartiles (ling.word_count) ==
+  Pitt: 0.7809 / 0.8218 / 0.8200 / 0.7973
+  combined (diagnostic): 0.7339 / 0.7796 / 0.7521 / 0.7163
+
+DONE phase0_free_f

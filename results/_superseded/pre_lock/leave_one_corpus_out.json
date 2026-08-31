@@ -1,0 +1,43 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock four-corpus leave-one-corpus-out. Its Lu row IS exposure event E4 in docs/LU_EXPOSURE_TIMELINE.md -- one of the five pre-lock Lu scorings that informed the decision to add Delaware. It is therefore NOT an unaffected analysis, contrary to the old HANDOFF classification. The Lu-free replacement is results/reconstruction/cross_corpus_transfer.json.",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "Pitt": {
+    "n": 548,
+    "single": 0.772569655265466,
+    "multi": 0.7929029211360723,
+    "spec75": 0.6872427983539094
+  },
+  "Delaware": {
+    "n": 439,
+    "single": 0.6362679211469534,
+    "multi": 0.6369175627240143,
+    "spec75": 0.4121863799283154
+  },
+  "Lu": {
+    "n": 53,
+    "single": 0.8205128205128206,
+    "multi": 0.8504273504273505,
+    "spec75": 0.8518518518518519
+  },
+  "WLS": {
+    "n": 938,
+    "single": 0.576736663133722,
+    "multi": 0.5679705440734852,
+    "spec75": 0.36486486486486486
+  }
+}

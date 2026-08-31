@@ -1,0 +1,7 @@
+{
+  "_provenance_for": "ablation_pre_lock.json (a bare array)",
+  "STATUS": "SUPERSEDED -- NON-CITABLE",
+  "reason": "pre-lock ablation computed on the 1,040-recording Lu-inclusive pool; the per-row model is unknown code. Superseded by results/reconstruction/ablation_post_lock.json, which carries each row's pre_lock_auc and delta",
+  "lock_state": "pre-Lu-lock",
+  "stamped": "2026-08-22"
+}

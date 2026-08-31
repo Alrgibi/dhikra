@@ -1,0 +1,29 @@
+{
+ "aucs": {
+  "A0_age_only_combined_987": 0.6242251509902149,
+  "A1_age_only_raw_pitt_548": 0.7073728671796587,
+  "A2_age_only_matched_pitt": 0.5149468123081317,
+  "A3_speech_matched_pitt": 0.7982984698127128,
+  "matched_pairs": 90,
+  "matched_recordings": 368
+ },
+ "A4_age_recoverability": {
+  "r2_in_sample": 0.9992517501077653,
+  "r2_groupcv5": 0.9937757132297069,
+  "n": 548,
+  "method": "per-feature OLS residualisation on age, then RandomForestRegressor(500, rs=42) predicting age from residualised features (reconstructed method; original inline code lost)"
+ },
+ "narrative_reference_no_result_file": {
+  "age_raw": 0.714,
+  "age_matched": 0.46,
+  "speech_matched": 0.8,
+  "r2": 0.997
+ },
+ "protocol": "analyze_pitt.py sect 4 LogReg pipeline, StratifiedGroupKFold(5, shuffle, rs=42); matching = committed match_participants defaults (seed 1)",
+ "_provenance": {
+  "dataset": "locked pool inputs: results/pitt_cookie (548) + results/delaware cookie meta (439) for A0; Pitt 548 for A1-A4",
+  "lock_state": "post-Lu-lock; Lu untouched",
+  "script": "_bootstrap/ageleak_driver.py",
+  "generated": "2026-08-22"
+ }
+}

@@ -1,0 +1,19 @@
+/sessions/rcw-014aorer9cua6gj1xveecsut/mnt/Dhikra Cowork/dhikra/scripts/_bootstrap/phase0_free_d.py:16: RuntimeWarning: invalid value encountered in divide
+  nw=np.where(den>0, 100.0*tot/den, np.nan)
+  recovery check vs Delaware meta n_words: max abs err = 56.000000 on n=439
+==============================================================================
+CHECK D2 -- the word-count channel
+==============================================================================
+  f label0: words mean=  117.2 sd=  73.4  IU mean=14.60  n=363
+  f label1: words mean=   98.2 sd=  52.8  IU mean=11.25  n=295
+  m label0: words mean=  118.0 sd=  75.6  IU mean=13.87  n=159
+  m label1: words mean=  112.4 sd=  67.7  IU mean=11.52  n=170
+
+  n_words AUC(-w): all=0.5552  F=0.5716  M=0.5277  gap=+0.0439
+  n_words            healthy F= 117.17 vs M= 118.04 p=0.8539 | impaired F=  98.20 vs M= 112.36 p=0.1141
+  iu.total           healthy F=  14.60 vs M=  13.87 p=0.0289 | impaired F=  11.25 vs M=  11.52 p=0.4058
+  iu.per_100_words   healthy F=  15.07 vs M=  14.40 p=0.0804 | impaired F=  13.33 vs M=  12.53 p=0.1177
+
+  Two-feature check (rank-sum of z of IU and words), within sex:
+   f: IU alone=0.7367  words alone=0.5716  IU+words=0.6877  IU-words=0.6861
+   m: IU alone=0.6539  words alone=0.5277  IU+words=0.6044  IU-words=0.6602

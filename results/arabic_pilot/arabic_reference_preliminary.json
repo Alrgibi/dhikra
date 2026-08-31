@@ -1,0 +1,94 @@
+{
+  "_provenance": {
+    "dataset": "the 7 cognitively normal speakers of the 24-speaker Arabic pilot set",
+    "lock_state": "independent dataset; Lu never involved",
+    "script": "inline (code not committed)",
+    "caveat": "n = 7. NOT normative reference ranges and must never be used as such; the p-values are not all from the same test and the file does not name the test",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "n_arabic_controls": 7,
+  "n_english_controls": 240,
+  "note": "Preliminary Arabic normative values from 7 controls. Ranges are reported as median and observed min-max rather than percentiles, because 7 observations cannot support percentile estimation. Task differs between the two groups, so language and task effects are confounded.",
+  "measures": [
+    {
+      "measure": "ac.phonation_ratio",
+      "arabic_mean": 0.6164798697107854,
+      "arabic_median": 0.5055750158511904,
+      "arabic_min": 0.1961064004015109,
+      "arabic_max": 0.9967069190075736,
+      "english_mean": 0.5029066828786958,
+      "cohens_d": 0.43669311721355686,
+      "p": 0.37620539660932867
+    },
+    {
+      "measure": "ac.pause_rate_per_min",
+      "arabic_mean": 25.64640424665348,
+      "arabic_median": 34.523267243652754,
+      "arabic_min": 0.0,
+      "arabic_max": 41.33931050662928,
+      "english_mean": 34.68614216367714,
+      "cohens_d": -0.5996895660614795,
+      "p": 0.22889219607608444
+    },
+    {
+      "measure": "ac.pause_mean_s",
+      "arabic_mean": 0.6283814552107699,
+      "arabic_median": 0.6698666666666668,
+      "arabic_min": 0.0,
+      "arabic_max": 1.7613913043478258,
+      "english_mean": 1.0913666145454983,
+      "cohens_d": -0.3211444888221948,
+      "p": 0.10069534896661965
+    },
+    {
+      "measure": "ac.f0_mean_hz",
+      "arabic_mean": 157.06104023591806,
+      "arabic_median": 152.36348387180763,
+      "arabic_min": 98.80313668386025,
+      "arabic_max": 211.32383212510385,
+      "english_mean": 164.26036841383583,
+      "cohens_d": -0.19396590685670215,
+      "p": 0.6566882995835661
+    },
+    {
+      "measure": "ac.f0_cv",
+      "arabic_mean": 0.2954552026113639,
+      "arabic_median": 0.2587159340763724,
+      "arabic_min": 0.1653645665740612,
+      "arabic_max": 0.650373821654322,
+      "english_mean": 0.2889038187634475,
+      "cohens_d": 0.04700972157621472,
+      "p": 0.9201016527234247
+    },
+    {
+      "measure": "ac.jitter_local",
+      "arabic_mean": 0.025929603423474112,
+      "arabic_median": 0.026915171664361,
+      "arabic_min": 0.015104214220824,
+      "arabic_max": 0.0339131984038856,
+      "english_mean": 0.019164586825004437,
+      "cohens_d": 0.991594723863668,
+      "p": 0.04026697913577267
+    },
+    {
+      "measure": "ac.shimmer_local",
+      "arabic_mean": 0.1098152457059269,
+      "arabic_median": 0.1139061441992723,
+      "arabic_min": 0.0686697269392409,
+      "arabic_max": 0.1371166415457607,
+      "english_mean": 0.10951660658831695,
+      "cohens_d": 0.011488771431376742,
+      "p": 0.9764779655237107
+    },
+    {
+      "measure": "ac.hnr_db",
+      "arabic_mean": 11.682828900545664,
+      "arabic_median": 10.672735641363428,
+      "arabic_min": 8.370768410089996,
+      "arabic_max": 17.19916566097485,
+      "english_mean": 13.03444940340139,
+      "cohens_d": -0.4009487984205054,
+      "p": 0.2739824265333931
+    }
+  ]
+}

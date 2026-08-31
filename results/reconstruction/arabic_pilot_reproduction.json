@@ -1,0 +1,522 @@
+{
+ "grade": "MATCH",
+ "matching_variant": "V-wav",
+ "variant_grades": {
+  "V-wav": "MATCH",
+  "V-m4a": "MATCH"
+ },
+ "order_hypothesis_confirmed": "H1 sorted-by-id",
+ "s0": {
+  "H1 sorted-by-id": {
+   "auc": 0.621849,
+   "auc_dem": 0.662338,
+   "r_pearson": -0.201764,
+   "r_spearman": -0.187826,
+   "pass": true
+  },
+  "H2 walk-order": {
+   "auc": 0.621849,
+   "auc_dem": 0.662338,
+   "r_pearson": -0.201764,
+   "r_spearman": -0.187826,
+   "pass": true
+  }
+ },
+ "distribution": {
+  "Dementia": 11,
+  "MCI": 6,
+  "Normal": 7
+ },
+ "auc_from_stored_predictions": 0.6218487394957983,
+ "variants": {
+  "V-wav": {
+   "max_abs_delta": 0.0,
+   "grade": "MATCH",
+   "auc_reproduced": 0.6218487394957983,
+   "per_recording": [
+    {
+     "pid": "P001",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "be215b7a701befe4266f37b1f8de32d20eeb8439b1897006aa9857f255bbfb73",
+     "p_repro": 0.4679220332,
+     "p_stored": 0.4679220332,
+     "delta": 0.0
+    },
+    {
+     "pid": "P002",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "7bb684ca34498806ab5c777fa8b4138146bf6c9c6db78bb52f5c695810799c8c",
+     "p_repro": 0.2597345568,
+     "p_stored": 0.2597345568,
+     "delta": 0.0
+    },
+    {
+     "pid": "P006",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "4b6001143671769d15a5b1fabff786f03bf257672b1e4195c74480a61c9a06b0",
+     "p_repro": 0.4485990448,
+     "p_stored": 0.4485990448,
+     "delta": 0.0
+    },
+    {
+     "pid": "P007",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "ca034372d9bd639a687b9c55b37b80a6e3f3f92a2afabe1dfcc031f0e67c20a9",
+     "p_repro": 0.50122822,
+     "p_stored": 0.50122822,
+     "delta": 0.0
+    },
+    {
+     "pid": "P013",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "716a991a93793374e69a002da1338bb0d90299e8e77d2bc7a70d2ca0b71bc0c3",
+     "p_repro": 0.3956141099,
+     "p_stored": 0.3956141099,
+     "delta": 0.0
+    },
+    {
+     "pid": "P014",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "0317c5aa0db3ddfab9c8745435fb94afea6165b32ab7721716068d4e59c5f592",
+     "p_repro": 0.4556572771,
+     "p_stored": 0.4556572771,
+     "delta": 0.0
+    },
+    {
+     "pid": "P015",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "c087148d3e655d0be8db15330b4fceb518ec670fa55d829d5d18cea86ace4859",
+     "p_repro": 0.4779156036,
+     "p_stored": 0.4779156036,
+     "delta": 0.0
+    },
+    {
+     "pid": "P016",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "3ae649e7747c92c6d8d994f1d05829696144face1d672efcc527d3d5fb6acc25",
+     "p_repro": 0.338909692,
+     "p_stored": 0.338909692,
+     "delta": 0.0
+    },
+    {
+     "pid": "P017",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "254045d100a7d515f2f99aba1f5db58a6a515f998b5ff7b4d1c649625e4e81a7",
+     "p_repro": 0.4020329573,
+     "p_stored": 0.4020329573,
+     "delta": 0.0
+    },
+    {
+     "pid": "P018",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "eeb3d939c600498f7ce0706f268ff01102c5575fd0f334d0ee43f53c5f28d3a7",
+     "p_repro": 0.2162955068,
+     "p_stored": 0.2162955068,
+     "delta": 0.0
+    },
+    {
+     "pid": "P019",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "c4dbe0c750776fade41519a74141b9ac08e5392942a08b8b2746cfc10a390395",
+     "p_repro": 0.3669680581,
+     "p_stored": 0.3669680581,
+     "delta": 0.0
+    },
+    {
+     "pid": "P020",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "cd6204e757d3e5428e3470a28a87cfa3041b2cb5bd4b7ef0fc9c958452b642c9",
+     "p_repro": 0.396438199,
+     "p_stored": 0.396438199,
+     "delta": 0.0
+    },
+    {
+     "pid": "P021",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "116f0ebe2ca011ac81fd71904227584097dadc12deedd95bebefe2cff0bb5294",
+     "p_repro": 0.5389771983,
+     "p_stored": 0.5389771983,
+     "delta": 0.0
+    },
+    {
+     "pid": "P022",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "92fb3100062ad0df287d0bedb0f1fedd5dbf3002cb8a1f5f9d88b5cfa25be8ad",
+     "p_repro": 0.4716822476,
+     "p_stored": 0.4716822476,
+     "delta": 0.0
+    },
+    {
+     "pid": "P023",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "e15e77104051136b6f83f51755f77e4802e1c1c8db7ca71e739eb4411094057c",
+     "p_repro": 0.4744028312,
+     "p_stored": 0.4744028312,
+     "delta": 0.0
+    },
+    {
+     "pid": "P024",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "a6b14904bc04988759b7c060200350cbea71e21aa934c431b9b4f238fc984c7d",
+     "p_repro": 0.2532348671,
+     "p_stored": 0.2532348671,
+     "delta": 0.0
+    },
+    {
+     "pid": "P025",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "521daf2621cbe9b917e07a84ef1fdb00fb014767700cf66ad60680b12f6cbebf",
+     "p_repro": 0.2605510971,
+     "p_stored": 0.2605510971,
+     "delta": 0.0
+    },
+    {
+     "pid": "P026",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "ae736daecab5305a8246a8c06ad96ce87a73a06586c80285fd853e8e6ff4c84a",
+     "p_repro": 0.3208850991,
+     "p_stored": 0.3208850991,
+     "delta": 0.0
+    },
+    {
+     "pid": "P027",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "8f5fa14eb4fd053bacd186d3e397d3595a2220cfc6dc795bb1b46a63d85e02bd",
+     "p_repro": 0.3214175902,
+     "p_stored": 0.3214175902,
+     "delta": 0.0
+    },
+    {
+     "pid": "P028",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "94e7fe459f97fcad2d2ba8ea38e8e6cb6f4efda0b305f13a1c12bc5c7681b0f5",
+     "p_repro": 0.2850012993,
+     "p_stored": 0.2850012993,
+     "delta": 0.0
+    },
+    {
+     "pid": "P029",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "0c6d4a60653b994019dfac85cd1abaef89652ef512ec5068f9084738a7ec1c71",
+     "p_repro": 0.4716955297,
+     "p_stored": 0.4716955297,
+     "delta": 0.0
+    },
+    {
+     "pid": "P030",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "697bed69001a37ed8e34a8badb1f1d357b06d7534880ae36f278c8df33d16bce",
+     "p_repro": 0.3940881549,
+     "p_stored": 0.3940881549,
+     "delta": 0.0
+    },
+    {
+     "pid": "P031",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "4316d77eb0a6fe52332bf772b8190ee379ebf2fb371030500bfe2b0505bd31e3",
+     "p_repro": 0.5606137291,
+     "p_stored": 0.5606137291,
+     "delta": 0.0
+    },
+    {
+     "pid": "P032",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "a00c4905011f39180cac4f9c9a837ad77d835b23d4456f186930c3822136a15f",
+     "p_repro": 0.5146673501,
+     "p_stored": 0.5146673501,
+     "delta": 0.0
+    }
+   ]
+  },
+  "V-m4a": {
+   "max_abs_delta": 0.0,
+   "grade": "MATCH",
+   "auc_reproduced": 0.6218487394957983,
+   "per_recording": [
+    {
+     "pid": "P001",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "be215b7a701befe4266f37b1f8de32d20eeb8439b1897006aa9857f255bbfb73",
+     "p_repro": 0.4679220332,
+     "p_stored": 0.4679220332,
+     "delta": 0.0
+    },
+    {
+     "pid": "P002",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "7bb684ca34498806ab5c777fa8b4138146bf6c9c6db78bb52f5c695810799c8c",
+     "p_repro": 0.2597345568,
+     "p_stored": 0.2597345568,
+     "delta": 0.0
+    },
+    {
+     "pid": "P006",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "4b6001143671769d15a5b1fabff786f03bf257672b1e4195c74480a61c9a06b0",
+     "p_repro": 0.4485990448,
+     "p_stored": 0.4485990448,
+     "delta": 0.0
+    },
+    {
+     "pid": "P007",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "ca034372d9bd639a687b9c55b37b80a6e3f3f92a2afabe1dfcc031f0e67c20a9",
+     "p_repro": 0.50122822,
+     "p_stored": 0.50122822,
+     "delta": 0.0
+    },
+    {
+     "pid": "P013",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "716a991a93793374e69a002da1338bb0d90299e8e77d2bc7a70d2ca0b71bc0c3",
+     "p_repro": 0.3956141099,
+     "p_stored": 0.3956141099,
+     "delta": 0.0
+    },
+    {
+     "pid": "P014",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "0317c5aa0db3ddfab9c8745435fb94afea6165b32ab7721716068d4e59c5f592",
+     "p_repro": 0.4556572771,
+     "p_stored": 0.4556572771,
+     "delta": 0.0
+    },
+    {
+     "pid": "P015",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "c087148d3e655d0be8db15330b4fceb518ec670fa55d829d5d18cea86ace4859",
+     "p_repro": 0.4779156036,
+     "p_stored": 0.4779156036,
+     "delta": 0.0
+    },
+    {
+     "pid": "P016",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "3ae649e7747c92c6d8d994f1d05829696144face1d672efcc527d3d5fb6acc25",
+     "p_repro": 0.338909692,
+     "p_stored": 0.338909692,
+     "delta": 0.0
+    },
+    {
+     "pid": "P017",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "254045d100a7d515f2f99aba1f5db58a6a515f998b5ff7b4d1c649625e4e81a7",
+     "p_repro": 0.4020329573,
+     "p_stored": 0.4020329573,
+     "delta": 0.0
+    },
+    {
+     "pid": "P018",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "eeb3d939c600498f7ce0706f268ff01102c5575fd0f334d0ee43f53c5f28d3a7",
+     "p_repro": 0.2162955068,
+     "p_stored": 0.2162955068,
+     "delta": 0.0
+    },
+    {
+     "pid": "P019",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "c4dbe0c750776fade41519a74141b9ac08e5392942a08b8b2746cfc10a390395",
+     "p_repro": 0.3669680581,
+     "p_stored": 0.3669680581,
+     "delta": 0.0
+    },
+    {
+     "pid": "P020",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "cd6204e757d3e5428e3470a28a87cfa3041b2cb5bd4b7ef0fc9c958452b642c9",
+     "p_repro": 0.396438199,
+     "p_stored": 0.396438199,
+     "delta": 0.0
+    },
+    {
+     "pid": "P021",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "116f0ebe2ca011ac81fd71904227584097dadc12deedd95bebefe2cff0bb5294",
+     "p_repro": 0.5389771983,
+     "p_stored": 0.5389771983,
+     "delta": 0.0
+    },
+    {
+     "pid": "P022",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "92fb3100062ad0df287d0bedb0f1fedd5dbf3002cb8a1f5f9d88b5cfa25be8ad",
+     "p_repro": 0.4716822476,
+     "p_stored": 0.4716822476,
+     "delta": 0.0
+    },
+    {
+     "pid": "P023",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "e15e77104051136b6f83f51755f77e4802e1c1c8db7ca71e739eb4411094057c",
+     "p_repro": 0.4744028312,
+     "p_stored": 0.4744028312,
+     "delta": 0.0
+    },
+    {
+     "pid": "P024",
+     "group": "MCI",
+     "file": "language_fluency.wav",
+     "sha256": "a6b14904bc04988759b7c060200350cbea71e21aa934c431b9b4f238fc984c7d",
+     "p_repro": 0.2532348671,
+     "p_stored": 0.2532348671,
+     "delta": 0.0
+    },
+    {
+     "pid": "P025",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "521daf2621cbe9b917e07a84ef1fdb00fb014767700cf66ad60680b12f6cbebf",
+     "p_repro": 0.2605510971,
+     "p_stored": 0.2605510971,
+     "delta": 0.0
+    },
+    {
+     "pid": "P026",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "ae736daecab5305a8246a8c06ad96ce87a73a06586c80285fd853e8e6ff4c84a",
+     "p_repro": 0.3208850991,
+     "p_stored": 0.3208850991,
+     "delta": 0.0
+    },
+    {
+     "pid": "P027",
+     "group": "Normal",
+     "file": "language_fluency.wav",
+     "sha256": "8f5fa14eb4fd053bacd186d3e397d3595a2220cfc6dc795bb1b46a63d85e02bd",
+     "p_repro": 0.3214175902,
+     "p_stored": 0.3214175902,
+     "delta": 0.0
+    },
+    {
+     "pid": "P028",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "94e7fe459f97fcad2d2ba8ea38e8e6cb6f4efda0b305f13a1c12bc5c7681b0f5",
+     "p_repro": 0.2850012993,
+     "p_stored": 0.2850012993,
+     "delta": 0.0
+    },
+    {
+     "pid": "P029",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "0c6d4a60653b994019dfac85cd1abaef89652ef512ec5068f9084738a7ec1c71",
+     "p_repro": 0.4716955297,
+     "p_stored": 0.4716955297,
+     "delta": 0.0
+    },
+    {
+     "pid": "P030",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "697bed69001a37ed8e34a8badb1f1d357b06d7534880ae36f278c8df33d16bce",
+     "p_repro": 0.3940881549,
+     "p_stored": 0.3940881549,
+     "delta": 0.0
+    },
+    {
+     "pid": "P031",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "4316d77eb0a6fe52332bf772b8190ee379ebf2fb371030500bfe2b0505bd31e3",
+     "p_repro": 0.5606137291,
+     "p_stored": 0.5606137291,
+     "delta": 0.0
+    },
+    {
+     "pid": "P032",
+     "group": "Dementia",
+     "file": "language_fluency.wav",
+     "sha256": "a00c4905011f39180cac4f9c9a837ad77d835b23d4456f186930c3822136a15f",
+     "p_repro": 0.5146673501,
+     "p_stored": 0.5146673501,
+     "delta": 0.0
+    }
+   ]
+  }
+ },
+ "registered": {
+  "protocol_registered": "2026-08-21, layout amendments 2026-08-22 (pre-run)",
+  "locked": {
+   "auc_impaired_vs_normal": 0.622,
+   "auc_dementia_vs_normal": 0.662,
+   "r_moca_noncriterial": -0.202,
+   "distribution": {
+    "Dementia": 11,
+    "MCI": 6,
+    "Normal": 7
+   }
+  },
+  "tolerances": {
+   "s0_stats": 0.0005,
+   "s1_match": 1e-06,
+   "s1_partial": 0.005
+  },
+  "thresholds": {
+   "normal_min": 26,
+   "mci_min": 18
+  },
+  "excluded_keys": [
+   "memory_1",
+   "memory_2",
+   "*registration*"
+  ],
+  "audio_variants": {
+   "V-wav": "largest file first",
+   "V-m4a": ".m4a preferred, fallback .wav"
+  }
+ },
+ "_provenance": {
+  "dataset": "arabic-moca-ai-dataset (public GitHub), local clone: /sessions/rcw-01uhphtwasiryn5uv69z9h9w/mnt/DementiaBank/arabic-moca/arabic-moca-ai-dataset-master",
+  "source_paper": "Rabaya et al., Front. Psychol. 2026;17:1833118; ethics AAUP IRB Ramallah R-2026/A/98/N",
+  "lock_state": "post-Lu-lock; Lu untouched; originals in results/arabic_pilot/ unmodified",
+  "model": "models/dhikra_acoustic_model.pkl (27 features, sigmoid cv=5 RF)",
+  "environment": {
+   "sklearn": "1.8.0",
+   "numpy": "2.4.4"
+  },
+  "script": "_bootstrap/arpilot_driver.py",
+  "generated": "2026-08-22"
+ }
+}

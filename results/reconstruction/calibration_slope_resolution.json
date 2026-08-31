@@ -1,0 +1,55 @@
+{
+  "question": "Which calibration slope/intercept is correct for the deployed model: the 1.2764/0.1348 stored in CURRENT_development_stats.json, or the 1.2887/0.1376 in oof_vector_diagnostic.json?",
+  "method": "Re-ran the committed calibration_block() from scripts/train_development.py (logit transform then LogisticRegression(C=1e9, max_iter=5000)) directly on the stored out-of-fold vector results/summary/oof_predictions.npy against oof_labels.npy (n=987). The function is deterministic.",
+  "re_derived_from_stored_vector": {
+    "slope": 1.2886714739148792,
+    "intercept": 0.13762040667464606
+  },
+  "stored_in_CURRENT_development_stats": {
+    "slope": 1.2763890437304815,
+    "intercept": 0.13478979825239526
+  },
+  "stored_in_oof_vector_diagnostic": {
+    "slope": 1.2886714739148792,
+    "intercept": 0.13762040667464606
+  },
+  "everything_else_reproduces_exactly": {
+    "auc_combined": 0.7550158612450046,
+    "brier": 0.19853576545440682,
+    "max_gap": 0.1513101141664831,
+    "calibration_bins": "all five rows identical to CURRENT"
+  },
+  "alternative_fits_tried": {
+    "committed_recipe_C1e9": {
+      "slope": 1.2886714739148792,
+      "intercept": 0.13762040667464606
+    },
+    "C=1.0 (sklearn default)": {
+      "slope": 1.2763890437304815,
+      "intercept": 0.13478979825239523
+    },
+    "penalty=None": {
+      "slope": 1.2886714739273297,
+      "intercept": 0.1376204066775208
+    },
+    "C=1e6": {
+      "slope": 1.2886714614767016,
+      "intercept": 0.13762040380289645
+    },
+    "C=1e12": {
+      "slope": 1.2886714739273173,
+      "intercept": 0.13762040667751785
+    }
+  },
+  "VERDICT": "The stored OOF vector reproduces EVERY figure in CURRENT_development_stats.json exactly -- AUC to 16 digits, Brier, max_gap and all five bin rows -- EXCEPT the calibration slope and intercept, and that difference is now fully explained: penalised (C=1.0) versus unpenalised (C=1e9) logistic fit. oof_vector_diagnostic.json was right.",
+  "conclusion": "CITE slope 1.289 and intercept 0.138 (1.2886714739 / 0.1376204067), and say they come from an unpenalised fit of the stored out-of-fold vector using the committed calibration_block(). Note in the thesis that the previously stored 1.276 / 0.135 came from a penalised fit, which shrinks the slope and understates miscalibration. NOTHING SUBSTANTIVE CHANGES: under either pair the slope exceeds 1, Brier is 0.199, and the single material deviation is the top band (predicted 0.830 vs observed 0.981, n=54) where the model understates risk rather than overstating it.",
+  "no_values_altered": "results/summary/CURRENT_development_stats.json was NOT edited by this resolution; a pointer note was added to its calibration block and its numbers left exactly as they were.",
+  "_provenance": {
+    "dataset": "stored OOF vector for the locked 987-recording development pool",
+    "lock_state": "post-Lu-lock; Lu untouched",
+    "script": "inline re-derivation, recorded here in full",
+    "generated": "2026-08-22"
+  },
+  "ROOT_CAUSE_FOUND": "The two pairs differ because of REGULARISATION, and the search is exhaustive rather than suggestive. Fitting the calibration line with sklearn's DEFAULT LogisticRegression() -- i.e. C=1.0, an L2-penalised fit -- reproduces the CURRENT pair 1.2763890437 / 0.1347897983 EXACTLY, to every digit. Fitting it with the committed calibration_block() recipe (C=1e9), or equivalently C=1e12 or penalty=None, gives 1.2886714739 / 0.1376204067. So the original inline run called LogisticRegression() with its default penalty; the committed code deliberately switches the penalty off.",
+  "WHICH_IS_CORRECT": "The UNREGULARISED pair, 1.2886714739 / 0.1376204067. A calibration slope is a maximum-likelihood estimate of how a model's log-odds map onto observed log-odds; an L2 penalty shrinks that coefficient toward zero, so the penalised fit systematically UNDERSTATES the miscalibration. That is why the committed calibration_block() sets C=1e9. The stored CURRENT pair is not wrong arithmetic -- it is the answer to a slightly different question, and the more flattering one."
+}

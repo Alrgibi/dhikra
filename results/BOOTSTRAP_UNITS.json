@@ -1,0 +1,51 @@
+{
+  "_what": "Resampling unit for every confidence interval in this project. Written 2026-08-25 after TRANSPORT_AND_REPORTING.md was found quoting intervals 1.09-1.31x narrower than every other document, because its source resampled RECORDINGS rather than PARTICIPANTS.",
+  "_why_it_matters": "Pitt and Delaware contain repeat visits. Resampling recordings ignores within-participant clustering and UNDERSTATES uncertainty - the one kind of error that makes a result look better than it is.",
+  "_the_diagnostic": "Lu has exactly one recording per participant, so the two units must agree there. They do, to four decimal places. They diverge only where clustering exists. That is how the defect was identified.",
+  "_no_result_file_was_modified": "This is an audit artefact. Every file below is unchanged; this registry states what each one did.",
+
+  "participant_level_verified": {
+    "results/summary/CURRENT_development_stats.json": "Verified EMPIRICALLY, not from provenance text: a participant-clustered recomputation reproduced its AUC intervals to within 0.002 (bootstrap RNG state). Declares 'Participant-grouped 5-fold CV'. THE authoritative source for the three development AUC intervals.",
+    "scripts/rdi_english_probe.py -> rdi_english_probe.json": "Docstring: 'BOOTSTRAP. Participant-level, 2000 resamples, seed 42.'",
+    "scripts/task_battery_probe.py -> task_battery_probe.json": "Docstring: '2000 resamples of PEOPLE'; code resamples pids.",
+    "scripts/instrument_properties.py -> instrument_properties.json": "Code: pids = np.unique(g); rng.choice(pids, ...).",
+    "results/reconstruction/cross_corpus_transfer.json": "Participant bootstrap, declared.",
+    "results/reconstruction/ablation_post_lock.json": "Participant bootstrap, declared.",
+    "results/reconstruction/lu_oneshot_reproduction.json": "Participant bootstrap, declared.",
+    "results/reconstruction/metric_suite_participant_ci.json": "Written 2026-08-25 expressly to supersede metric_suite.json's clustered-cohort intervals.",
+    "results/delaware/task_comparison_test.json": "Participant bootstrap, declared.",
+    "results/reconstruction/discriminating_sigmoid_cv3.json": "Participant bootstrap, declared."
+  },
+
+  "units_coincide_by_construction": {
+    "_rule": "The analysis set holds exactly ONE recording per participant, so resampling recordings and resampling participants are the same operation. These intervals are correct under either reading and need no annotation beyond this line.",
+    "results/summary/locked_external_validation.json": "Lu: 53 recordings, 53 participants.",
+    "results/reconstruction/task_count_curve.json": "Cross-sectional: earliest visit common to all five tasks, one row per participant.",
+    "results/reconstruction/rdi_cross_task_probe.json": "Same 288-participant cross-sectional set.",
+    "results/reconstruction/minimal_probe.json": "Same set.",
+    "results/reconstruction/selection_optimism.json": "Same set.",
+    "results/reconstruction/apparatus_value.json": "MCI arm on the same set; development arm uses participant-grouped folds.",
+    "results/reconstruction/feature_by_task_auc.json": "Same set; point estimates only."
+  },
+
+  "not_a_bootstrap": {
+    "results/reconstruction/control_threshold_precision.json": "Exact Beta(k, n+1-k) quantiles (Wilks 1941). Distribution-free and analytic; no resampling occurs.",
+    "results/reconstruction/repeat_sampling_analysis.json": "Deterministic arithmetic on a published SEM. No resampling.",
+    "results/reconstruction/sample_adequacy_probe.json": "Whole-set proportions at a fixed threshold. No resampling."
+  },
+
+  "recording_level_SUPERSEDED": {
+    "results/reconstruction/metric_suite.json": "Resampled recordings. Its Pitt / Delaware / Development-combined AUC, sensitivity and specificity intervals are SUPERSEDED by metric_suite_participant_ci.json and by CURRENT_development_stats.json. Its Lu row needed no correction. File left unaltered on disk; TRANSPORT_AND_REPORTING.md carries the correction notice."
+  },
+
+  "unverifiable_script_not_committed": {
+    "_status": "The generating script is not in the repository, so the resampling unit CANNOT be established. These are NOT corrected and NOT quietly trusted: they are declared unverifiable wherever they are cited, and none of them is a headline figure.",
+    "results/reconstruction/relative_threshold_rules.json": "_bootstrap/partA_driver.py absent. Cited in TRANSPORT_AND_REPORTING.md (secondary analysis; explicitly not an operating threshold).",
+    "results/reconstruction/threshold_transportability.json": "_bootstrap/transport_driver.py absent. Same document, same status.",
+    "results/fusion/results.json": "Fusion arms; negative results 4 and 5, quoted as point differences (-0.047, -0.008) rather than intervals.",
+    "results/arabic_pilot/findings.json": "n = 24 feasibility pilot; the interval spans chance and is reported as feasibility-only.",
+    "results/reconstruction/acoustic_regen_verification.json": "Reproduction check; the claim is a MATCH to 6e-05, which does not rest on an interval."
+  },
+
+  "conclusion": "One defect found, in one file, corrected. Every headline figure in this thesis is participant-clustered or comes from an analysis set where the distinction does not arise. Five secondary files have an unverifiable unit because their generating code was never committed; that is declared rather than repaired, and none of them carries a headline claim."
+}

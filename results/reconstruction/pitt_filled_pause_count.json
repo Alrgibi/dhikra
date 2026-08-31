@@ -1,0 +1,24 @@
+{
+  "script": "scripts/pitt_filled_pause_count.py",
+  "purpose": "provenance recovery: recommit the raw filled-pause count of THESIS_PLAN section 3.2.3 by running the committed parser over the 548 Pittsburgh cookie transcripts",
+  "governance": "descriptive; parser token counting only, no model, nothing scored",
+  "criteria": "fixed in the module docstring before execution; report-and-stop",
+  "n_files": 548,
+  "graded": {
+    "P1_total_tokens": {
+      "claimed": 1881,
+      "recomputed": 1881,
+      "tolerance": "1%",
+      "reproduced": true
+    },
+    "P2_nonzero_share_pct": {
+      "claimed": 81.8,
+      "recomputed": 81.75182481751825,
+      "tolerance": "0.5 pp",
+      "reproduced": true
+    }
+  },
+  "n_reproduced": 2,
+  "n_claims": 2,
+  "VERDICT": "REPRODUCED"
+}

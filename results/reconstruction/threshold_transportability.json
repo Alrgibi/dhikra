@@ -1,0 +1,395 @@
+{
+  "specification": "owner-specified, recorded in the driver docstring",
+  "governance": "No model trained or refitted; Lu read from the stored one-shot predictions. NOTHING HERE IS AN OPERATING THRESHOLD -- see the docstring. 0.367 stands.",
+  "score_distributions": {
+    "Pitt": {
+      "impaired": {
+        "n": 305,
+        "mean": 0.6202464996748993,
+        "sd": 0.17753616138502606,
+        "min": 0.17590195335729533,
+        "p25": 0.5149144831246856,
+        "median": 0.6536120752856185,
+        "p75": 0.7672858317821362,
+        "max": 0.8690232135861783
+      },
+      "healthy": {
+        "n": 243,
+        "mean": 0.4056367138037629,
+        "sd": 0.1562864517624242,
+        "min": 0.19274559617681353,
+        "p25": 0.28182181644924637,
+        "median": 0.3644445257702393,
+        "p75": 0.4884201919567439,
+        "max": 0.8756556558283873
+      },
+      "separation_mean_diff": 0.21460978587113638,
+      "auc": 0.8094717668488158,
+      "brier": 0.18149843219773468
+    },
+    "Delaware": {
+      "impaired": {
+        "n": 160,
+        "mean": 0.4088744004612847,
+        "sd": 0.14560976725554642,
+        "min": 0.15361051004611473,
+        "p25": 0.29100081985586534,
+        "median": 0.3819596749278328,
+        "p75": 0.5156599447470216,
+        "max": 0.7815144781573261
+      },
+      "healthy": {
+        "n": 279,
+        "mean": 0.3456866624760843,
+        "sd": 0.11804000846196183,
+        "min": 0.1632481437352156,
+        "p25": 0.2526067637325189,
+        "median": 0.3219661707293249,
+        "p75": 0.4115557910307148,
+        "max": 0.7725828024464049
+      },
+      "separation_mean_diff": 0.06318773798520039,
+      "auc": 0.6290770609318996,
+      "brier": 0.21980332496387456
+    },
+    "Lu": {
+      "impaired": {
+        "n": 26,
+        "mean": 0.7054197864976549,
+        "sd": 0.13799721316181277,
+        "min": 0.33679625726280227,
+        "p25": 0.6481921011294658,
+        "median": 0.7351615733527803,
+        "p75": 0.809851314510028,
+        "max": 0.843638146965374
+      },
+      "healthy": {
+        "n": 27,
+        "mean": 0.47052537814351814,
+        "sd": 0.17178394781950798,
+        "min": 0.25232739858129255,
+        "p25": 0.3234954519034626,
+        "median": 0.411520667085946,
+        "p75": 0.5877089774041334,
+        "max": 0.8035629278006001
+      },
+      "separation_mean_diff": 0.23489440835413677,
+      "auc": 0.8532763532763533,
+      "brier": 0.17881490982446221
+    }
+  },
+  "joint_rule": {
+    "floor_0.75": {
+      "threshold": 0.286,
+      "worst_specificity": 0.18518518518518517,
+      "per_cohort": {
+        "Pitt": {
+          "sensitivity": 0.940983606557377,
+          "specificity": 0.2674897119341564
+        },
+        "Delaware": {
+          "sensitivity": 0.7625,
+          "specificity": 0.35842293906810035
+        },
+        "Lu": {
+          "sensitivity": 1.0,
+          "specificity": 0.18518518518518517
+        }
+      },
+      "n_thresholds_satisfying_floor": 291,
+      "satisfying_range": [
+        0.001,
+        0.291
+      ]
+    },
+    "floor_0.80": {
+      "threshold": 0.266,
+      "worst_specificity": 0.07407407407407407,
+      "per_cohort": {
+        "Pitt": {
+          "sensitivity": 0.9606557377049181,
+          "specificity": 0.20164609053497942
+        },
+        "Delaware": {
+          "sensitivity": 0.80625,
+          "specificity": 0.3010752688172043
+        },
+        "Lu": {
+          "sensitivity": 1.0,
+          "specificity": 0.07407407407407407
+        }
+      },
+      "n_thresholds_satisfying_floor": 269,
+      "satisfying_range": [
+        0.001,
+        0.269
+      ]
+    },
+    "floor_0.85": {
+      "threshold": 0.253,
+      "worst_specificity": 0.037037037037037035,
+      "per_cohort": {
+        "Pitt": {
+          "sensitivity": 0.980327868852459,
+          "specificity": 0.1728395061728395
+        },
+        "Delaware": {
+          "sensitivity": 0.86875,
+          "specificity": 0.25448028673835127
+        },
+        "Lu": {
+          "sensitivity": 1.0,
+          "specificity": 0.037037037037037035
+        }
+      },
+      "n_thresholds_satisfying_floor": 256,
+      "satisfying_range": [
+        0.001,
+        0.256
+      ]
+    }
+  },
+  "deployed_0.367": {
+    "Pitt": {
+      "threshold": 0.367,
+      "sensitivity": 0.8557377049180328,
+      "specificity": 0.5061728395061729,
+      "confusion_tn_fp_fn_tp": [
+        123,
+        120,
+        44,
+        261
+      ]
+    },
+    "Delaware": {
+      "threshold": 0.367,
+      "sensitivity": 0.56875,
+      "specificity": 0.6594982078853047,
+      "confusion_tn_fp_fn_tp": [
+        184,
+        95,
+        69,
+        91
+      ]
+    },
+    "Lu": {
+      "threshold": 0.367,
+      "sensitivity": 0.9615384615384616,
+      "specificity": 0.3333333333333333,
+      "confusion_tn_fp_fn_tp": [
+        9,
+        18,
+        1,
+        25
+      ]
+    },
+    "worst_specificity": 0.3333333333333333,
+    "worst_sensitivity": 0.56875
+  },
+  "threshold_each_cohort_would_choose_alone": {
+    "Pitt_floor_0.75": {
+      "threshold": 0.51,
+      "sensitivity": 0.7540983606557377,
+      "specificity": 0.7695473251028807
+    },
+    "Pitt_floor_0.80": {
+      "threshold": 0.446,
+      "sensitivity": 0.8032786885245902,
+      "specificity": 0.6707818930041153
+    },
+    "Pitt_floor_0.85": {
+      "threshold": 0.376,
+      "sensitivity": 0.8524590163934426,
+      "specificity": 0.5473251028806584
+    },
+    "Delaware_floor_0.75": {
+      "threshold": 0.291,
+      "sensitivity": 0.75,
+      "specificity": 0.3763440860215054
+    },
+    "Delaware_floor_0.80": {
+      "threshold": 0.267,
+      "sensitivity": 0.80625,
+      "specificity": 0.3046594982078853
+    },
+    "Delaware_floor_0.85": {
+      "threshold": 0.255,
+      "sensitivity": 0.8625,
+      "specificity": 0.26881720430107525
+    },
+    "Lu_floor_0.75": {
+      "threshold": 0.607,
+      "sensitivity": 0.8076923076923077,
+      "specificity": 0.7777777777777778
+    },
+    "Lu_floor_0.80": {
+      "threshold": 0.607,
+      "sensitivity": 0.8076923076923077,
+      "specificity": 0.7777777777777778
+    },
+    "Lu_floor_0.85": {
+      "threshold": 0.537,
+      "sensitivity": 0.8846153846153846,
+      "specificity": 0.7037037037037037
+    }
+  },
+  "bootstrap_of_the_selected_threshold": {
+    "floor_0.75": {
+      "n_resamples": 2000,
+      "n_with_a_solution": 2000,
+      "n_with_no_solution": 0,
+      "threshold_median": 0.282,
+      "threshold_ci95": [
+        0.001,
+        0.308
+      ],
+      "threshold_iqr": [
+        0.279,
+        0.286
+      ],
+      "threshold_min": 0.001,
+      "threshold_max": 0.33,
+      "worst_specificity_median": 0.16129032258064516,
+      "worst_specificity_ci95": [
+        0.0,
+        0.3169008088548317
+      ]
+    },
+    "floor_0.80": {
+      "n_resamples": 2000,
+      "n_with_a_solution": 2000,
+      "n_with_no_solution": 0,
+      "threshold_median": 0.253,
+      "threshold_ci95": [
+        0.001,
+        0.286
+      ],
+      "threshold_iqr": [
+        0.253,
+        0.279
+      ],
+      "threshold_min": 0.001,
+      "threshold_max": 0.31,
+      "worst_specificity_median": 0.07142857142857142,
+      "worst_specificity_ci95": [
+        0.0,
+        0.24681113737851323
+      ]
+    },
+    "floor_0.85": {
+      "n_resamples": 2000,
+      "n_with_a_solution": 2000,
+      "n_with_no_solution": 0,
+      "threshold_median": 0.253,
+      "threshold_ci95": [
+        0.001,
+        0.266
+      ],
+      "threshold_iqr": [
+        0.001,
+        0.253
+      ],
+      "threshold_min": 0.001,
+      "threshold_max": 0.291,
+      "worst_specificity_median": 0.03125,
+      "worst_specificity_ci95": [
+        0.0,
+        0.13043478260869565
+      ]
+    },
+    "_diagnostic": {
+      "note": "The 2.5th percentile of the bootstrapped threshold sits at the grid floor (0.001) at every floor. That is not noise in the threshold -- it is the rule reporting that no threshold with ANY specificity satisfies the sensitivity floor in all three cohorts. When the best achievable worst-specificity is 0 across the whole satisfying range, the argmax falls to the first grid point.",
+      "resamples_in_which_the_best_achievable_worst_specificity_is_exactly_zero": {
+        "floor_0.75": "77/2000 (3.9%)",
+        "floor_0.80": "401/2000 (20.1%)",
+        "floor_0.85": "964/2000 (48.2%)"
+      },
+      "reading": "At a 0.85 sensitivity floor, in nearly half of resamples the only way to meet the floor in every cohort is to refer everyone. At 0.75 the rule usually has a real solution (IQR 0.279-0.286) but it buys a worst-case specificity of about 0.16."
+    }
+  },
+  "recalibration": {
+    "method": "intercept-slope (Platt) logistic recalibration, unpenalised (C=1e9); logit(p) -> a + b*logit(p) -> sigmoid. NOT isotonic.",
+    "fitted_on": "development out-of-fold predictions only (Pitt 548 + Delaware 439 = 987). Lu played no part in the fit.",
+    "fitted_parameters": {
+      "slope_b": 1.2886714739148792,
+      "intercept_a": 0.13762040667464606
+    },
+    "note": "Pitt and Delaware are IN-SAMPLE for this fit, so their 'after' numbers are optimistic by construction. Lu is genuinely out-of-sample and is the informative row. AUC is unchanged in every cohort because the map is monotone.",
+    "per_cohort": {
+      "Pitt": {
+        "before": {
+          "slope": 1.5158982235758411,
+          "intercept": 0.14768906702534815,
+          "brier": 0.18149843219773468,
+          "mean_predicted": 0.5250819413415304,
+          "observed_rate": 0.5565693430656934
+        },
+        "after": {
+          "slope": 1.1763771083131658,
+          "intercept": -0.013814314017216828,
+          "brier": 0.17675336501919953,
+          "mean_predicted": 0.5549269055624559,
+          "observed_rate": 0.5565693430656934
+        },
+        "auc_unchanged": 0.8094717668488158,
+        "in_sample_for_the_fit": true
+      },
+      "Delaware": {
+        "before": {
+          "slope": 0.8231650993215214,
+          "intercept": -0.11059657536186393,
+          "brier": 0.21980332496387456,
+          "mean_predicted": 0.36871636196955143,
+          "observed_rate": 0.36446469248291574
+        },
+        "after": {
+          "slope": 0.6382676112137516,
+          "intercept": -0.19940839362763446,
+          "brier": 0.2221797340893664,
+          "mean_predicted": 0.3665656569506857,
+          "observed_rate": 0.36446469248291574
+        },
+        "auc_unchanged": 0.6290770609318996,
+        "in_sample_for_the_fit": true
+      },
+      "Lu": {
+        "before": {
+          "slope": 1.8855638458915311,
+          "intercept": -0.8639454371189997,
+          "brier": 0.17881490982446221,
+          "mean_predicted": 0.5857565973361135,
+          "observed_rate": 0.49056603773584906
+        },
+        "after": {
+          "slope": 1.4639899390498827,
+          "intercept": -1.0662473285776373,
+          "brier": 0.18240759480156274,
+          "mean_predicted": 0.6266036168883176,
+          "observed_rate": 0.49056603773584906
+        },
+        "auc_unchanged": 0.8532763532763533,
+        "in_sample_for_the_fit": false
+      }
+    }
+  },
+  "_provenance": {
+    "inputs": [
+      "results/summary/oof_predictions.npy + oof_labels.npy + oof_source.npy (987 development out-of-fold predictions)",
+      "results/reconstruction/lu_oneshot_reproduction.json -> predictions (the 53 stored one-shot Lu predictions)"
+    ],
+    "model": "FROZEN. No training, no refitting, no re-scoring of any recording.",
+    "lock_state": "Lu not re-evaluated; the locked result files were not modified",
+    "script": "_bootstrap/transport_driver.py",
+    "bootstrap": "2000 resamples within each cohort, seed 42",
+    "generated": "2026-08-22",
+    "python": "3.12.11"
+  },
+  "interpretation": {
+    "1_the_cohorts_do_not_share_a_score_scale": "Delaware's IMPAIRED mean score is 0.409, essentially identical to Pitt's HEALTHY mean of 0.406 and below Lu's HEALTHY mean of 0.471. A single cut-point therefore cannot mean the same thing in all three. This is the mechanism behind the specificity collapse reported in the locked external evaluation, and it is visible without touching Lu at all.",
+    "2_the_deployed_threshold": "At 0.367: Pitt 0.856/0.506, Delaware 0.569/0.659, Lu 0.962/0.333. The worst sensitivity across cohorts is 0.569 -- i.e. at the deployed threshold the Delaware cohort does not meet even the 0.75 screening floor the threshold was chosen to satisfy on the pooled development set.",
+    "3_what_each_cohort_would_choose_alone": "At a 0.75 floor the three cohorts choose 0.510 (Pitt), 0.291 (Delaware) and 0.607 (Lu) -- a spread of 0.32 on a 0-1 scale. Each is defensible in its own cohort (specificity 0.770, 0.376, 0.778). There is no single number near all three.",
+    "4_the_joint_rule_is_the_wrong_shape_for_this_problem": "Forcing one threshold to satisfy every cohort drives it down to 0.286 / 0.266 / 0.253 and the worst specificity to 0.185 / 0.074 / 0.037. A screening tool that clears 4% of healthy people is not a screening tool. The finding is not 'pick 0.286' -- it is that a single global threshold is the wrong instrument, and per-deployment threshold setting on local data is required.",
+    "5_recalibration_cannot_rescue_it_either": "The two development cohorts are miscalibrated in OPPOSITE directions -- Pitt slope 1.516, Delaware slope 0.823 -- so the single intercept-slope map fitted on their pooled out-of-fold predictions (slope 1.289, intercept 0.138) improves Pitt (1.516 -> 1.176, Brier 0.181 -> 0.177) and makes Delaware WORSE (0.823 -> 0.638, Brier 0.220 -> 0.222). On Lu, which is genuinely out-of-sample for the fit, the slope moves toward 1 (1.886 -> 1.464) but the intercept moves further from 0 (-0.864 -> -1.066) and the Brier score worsens (0.179 -> 0.182): the model already over-predicts on Lu (mean 0.586 against an observed rate of 0.491) and the development-fitted map pushes scores further up, to 0.627. AUC is unchanged everywhere, as a monotone map requires.",
+    "6_what_this_supports": "Per-deployment threshold and calibration setting on local data, and the staged design recorded in the future-work section: development pool -> a dedicated calibration cohort -> freeze everything -> ONE evaluation on a corpus that has never been touched."
+  }
+}

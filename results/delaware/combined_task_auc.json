@@ -1,0 +1,34 @@
+{
+  "_provenance": {
+    "dataset": "Delaware corpus, tasks combined",
+    "lock_state": "Delaware only; Lu never involved",
+    "script": "inline (code not committed)",
+    "caveat": "produced by an inline command; the exact code is not recoverable",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "cookie only": {
+    "auc": 0.5745925711715185,
+    "sd": 0.018778118525736572,
+    "n_features": 74
+  },
+  "cinderella only": {
+    "auc": 0.6176357560568085,
+    "sd": 0.01731883242038806,
+    "n_features": 43
+  },
+  "cookie + cinderella": {
+    "auc": 0.6390733243364822,
+    "sd": 0.01282102460485391,
+    "n_features": 117
+  },
+  "cinderella + sandwich": {
+    "auc": 0.6683429728166571,
+    "sd": 0.012963265936736223,
+    "n_features": 86
+  },
+  "all 5 tasks": {
+    "auc": 0.6880566801619433,
+    "sd": 0.00249153190697984,
+    "n_features": 246
+  }
+}

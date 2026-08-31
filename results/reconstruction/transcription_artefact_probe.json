@@ -1,0 +1,29 @@
+{
+  "generated": "2026-08-23",
+  "preregistration": "criteria fixed in this script's docstring before the model was run",
+  "n": 548,
+  "deployed_pitt_auc": 0.8095,
+  "corrected_transcript_auc": 0.7996,
+  "delta": -0.0099,
+  "GRADE": "ARTEFACT-NEGLIGIBLE",
+  "artefact_rates_per_100_words": {
+    "pitt_control": 1.44,
+    "pitt_impaired": 3.18,
+    "pitt_auc_of_artefact_alone": 0.6908,
+    "delaware_control": 0.123,
+    "delaware_impaired": 0.183,
+    "delaware_auc_of_artefact_alone": 0.522
+  },
+  "single_feature_effect": {
+    "iu.total": {
+      "raw": 0.7538,
+      "corrected": 0.7465
+    },
+    "iu.actions": {
+      "raw": 0.7332,
+      "corrected": 0.7155
+    }
+  },
+  "scope": "REPORTED EXPERIMENT, NOT A DEPLOYMENT CHANGE. Correcting the extractor would change the features the frozen model receives and forfeit the locked external validation. Lu not read.",
+  "deployment_note": "faster-whisper emits standard orthography, so the artefact cannot occur at inference. The corrected figure is closer to what the deployed system actually receives than the reported one."
+}

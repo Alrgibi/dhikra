@@ -1,0 +1,86 @@
+{
+  "generated": "2026-08-23",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "governance": "no model refit; Lu not re-scored, only its released predictions read; Lu DID NOT enter the decision, by pre-registration",
+  "development_pooled": {
+    "raw": {
+      "slope": 1.2887,
+      "intercept": 0.1376,
+      "brier": 0.1985,
+      "abs_slope_error": 0.2887
+    },
+    "coefficients_fitted_here": {
+      "intercept": 0.1376,
+      "slope": 1.2887
+    },
+    "corrected_IN_SAMPLE": {
+      "slope": 1.0003,
+      "intercept": -0.0001,
+      "brier": 0.197,
+      "abs_slope_error": 0.0003
+    },
+    "note": "the corrected row is CIRCULAR by construction -- the coefficients were fitted on these same points. Shown only to confirm the arithmetic, never as evidence."
+  },
+  "decision_arms_development_only": {
+    "Pitt->Delaware": {
+      "coefficients_from_source": {
+        "intercept": 0.1477,
+        "slope": 1.5159
+      },
+      "target_raw": {
+        "slope": 0.8232,
+        "intercept": -0.1106,
+        "brier": 0.2198,
+        "abs_slope_error": 0.1768
+      },
+      "target_corrected": {
+        "slope": 0.5431,
+        "intercept": -0.1911,
+        "brier": 0.2251,
+        "abs_slope_error": 0.4569
+      },
+      "slope_moved_toward_1": false,
+      "brier_not_worse_by_0.005": false
+    },
+    "Delaware->Pitt": {
+      "coefficients_from_source": {
+        "intercept": -0.1106,
+        "slope": 0.8232
+      },
+      "target_raw": {
+        "slope": 1.5159,
+        "intercept": 0.1477,
+        "brier": 0.1815,
+        "abs_slope_error": 0.5159
+      },
+      "target_corrected": {
+        "slope": 1.8409,
+        "intercept": 0.3512,
+        "brier": 0.1888,
+        "abs_slope_error": 0.8409
+      },
+      "slope_moved_toward_1": false,
+      "brier_not_worse_by_0.005": false
+    }
+  },
+  "GRADE": "CORRECTION-DOES-NOT-TRANSFER",
+  "DECISION": "DO NOT APPLY. Report the defect, its magnitude, its direction, its containment, and that the obvious correction was tested and did not transfer",
+  "lu_descriptive_post_hoc": {
+    "DECLARED_BEFORE_EXECUTION": "does not enter the decision, whatever it shows",
+    "n": 53,
+    "raw": {
+      "slope": 1.8856,
+      "intercept": -0.8639,
+      "brier": 0.1788,
+      "abs_slope_error": 0.8856
+    },
+    "corrected_with_development_coefficients": {
+      "slope": 1.464,
+      "intercept": -1.0662,
+      "brier": 0.1824,
+      "abs_slope_error": 0.464
+    },
+    "classification_at_0.367_unchanged": true,
+    "note": "monotone transform, so AUC, sensitivity and specificity are invariant by construction"
+  }
+}

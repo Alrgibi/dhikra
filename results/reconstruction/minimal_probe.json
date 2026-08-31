@@ -1,0 +1,15 @@
+{
+  "n": 288,
+  "n_impaired": 115,
+  "raw_total_words_two_discourse_tasks": {
+    "auc": 0.641970344307615,
+    "ci95": [
+      0.5785549612205703,
+      0.705159285450906
+    ]
+  },
+  "raw_total_utterances": 0.624880623272179,
+  "raw_words_per_utterance": 0.5516461422467956,
+  "raw_total_words_three_picture_tasks": 0.5680070369439558,
+  "note": "hand-computable minimal probe; Delaware, cross-sectional earliest common visit; English; no external validation"
+}

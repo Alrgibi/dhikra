@@ -1,0 +1,92 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock findings digest. deployed_model is n=1040 at threshold 0.38; external_delaware_mci 0.636 is superseded by 0.629; the Arabic estimates 0.782/0.805 are non-citable; internal_pitt.auc_speech_only 0.804 is in fact the ten-seed TEXT+ACOUSTIC mean (matched speech-only is 0.7983); and the age_adjustment_gain block reports the improvement that was later shown to BE age leakage (age recoverable at R2 0.994).",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "internal_pitt": {
+    "auc_speech_only": 0.804,
+    "auc_with_age_adjustment": 0.863,
+    "sensitivity": 0.76,
+    "specificity_at_80_sens": 0.758,
+    "n": 373,
+    "note": "age/sex matched, participant-grouped CV, tree ensemble"
+  },
+  "external_lu": {
+    "auc": 0.821,
+    "n": 53,
+    "target": "dementia/AD vs control",
+    "note": "0.821: a Pitt-only model scored on Lu BEFORE any modelling decision was informed by Lu -- the only uncontaminated external figure; specificity 78% at 75% sensitivity. Lu was not in that model's training data. Later pre-lock Lu scorings DID inform development (see docs/LU_EXPOSURE_TIMELINE.md); the locked one-shot figure is 0.853 in locked_external_validation.json. Note corrected 2026-08-22 -- 'model never saw it' was true only of training."
+  },
+  "external_delaware_mci": {
+    "auc": 0.636,
+    "n": 439,
+    "target": "MCI vs control",
+    "note": "independent corpus; MCI is a substantially harder target than dementia"
+  },
+  "external_wls": {
+    "auc": 0.565,
+    "n": 938,
+    "note": "2011 speech vs 2020 diagnosis; also affected by transcription-convention mismatch"
+  },
+  "delaware_multitask": {
+    "cookie": 0.594,
+    "cinderella": 0.671,
+    "cat": 0.587,
+    "rockwell": 0.571,
+    "sandwich": 0.586,
+    "all_five_combined": 0.688,
+    "note": "MCI detection; first test of whether non-picture tasks can DETECT rather than only grade severity"
+  },
+  "corpus_effects": {
+    "pitt_vs_wls_controls": 0.93,
+    "pitt_vs_delaware_controls": 0.872,
+    "note": "healthy speakers from different studies are highly separable; naive merging is invalid"
+  },
+  "prospective_wls": {
+    "auc": 0.548,
+    "n": 938,
+    "note": "nine-year-ahead prediction does not work"
+  },
+  "arabic_estimate": {
+    "floor_acoustic_only": 0.708,
+    "estimate_construct_matched": 0.782,
+    "ceiling_full_english": 0.805,
+    "retention_pct": 97,
+    "method": "construct-matched ablation on English data",
+    "interpretation": "0.782 is an OPTIMISTIC upper bound; realistic range 0.71-0.78"
+  },
+  "deployed_model": {
+    "auc": 0.755,
+    "sensitivity": 0.754,
+    "specificity": 0.587,
+    "threshold": 0.38,
+    "n": 1040
+  },
+  "age_adjustment_gain": {
+    "pitt_only": {
+      "before": 0.831,
+      "after": 0.863,
+      "spec80_before": 0.704,
+      "spec80_after": 0.758
+    },
+    "combined": {
+      "before": 0.755,
+      "after": 0.765,
+      "spec75_before": 0.588,
+      "spec75_after": 0.659
+    }
+  }
+}

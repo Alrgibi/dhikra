@@ -1,0 +1,29 @@
+{
+  "_provenance": {
+    "dataset": "Delaware corpus, one model per task, participant-grouped CV",
+    "lock_state": "Delaware only; Lu never involved",
+    "script": "inline (code not committed)",
+    "caveat": "produced by an inline command; the exact code is not recoverable",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "cookie": {
+    "auc": 0.5935968234981394,
+    "sd": 0.008702364931888204
+  },
+  "cinderella": {
+    "auc": 0.6710044172277612,
+    "sd": 0.007037062112683974
+  },
+  "cat": {
+    "auc": 0.5874937976253766,
+    "sd": 0.009311292067954646
+  },
+  "rockwell": {
+    "auc": 0.570603702463209,
+    "sd": 0.007634301545472594
+  },
+  "sandwich": {
+    "auc": 0.5861275088547816,
+    "sd": 0.0030652084864932765
+  }
+}

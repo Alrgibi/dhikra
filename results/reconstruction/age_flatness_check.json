@@ -1,0 +1,86 @@
+{
+  "script": "scripts/age_flatness_check.py",
+  "purpose": "provenance recovery: recompute the section 3.12 age-flatness figures from the stored out-of-fold vector; frozen model untouched, nothing rescored",
+  "criteria": "fixed in the module docstring before execution; report-and-stop",
+  "alignment": "oof_labels.npy == concat(meta labels) asserted element for element",
+  "values": {
+    "pooled_corr": 0.09078266780769056,
+    "pooled_p": 0.004312358437438839,
+    "control_corr": -0.08423306344459425,
+    "control_p": 0.05444171518304659,
+    "impaired_corr": 0.024871825149662827,
+    "impaired_p": 0.592669395299389,
+    "control_slope_per_year": -0.006978425948805357,
+    "lr_factor_20y": 0.8697334279187507,
+    "age_alone_auc": 0.6308099534462159,
+    "n": 987,
+    "n_controls": 522,
+    "n_impaired": 465,
+    "cox_on_stored_vector": {
+      "slope": 1.2891184926007893,
+      "intercept": 0.13760988411290262,
+      "note": "descriptive third witness; criteria carried by a1-a6 only"
+    }
+  },
+  "graded": {
+    "pooled_corr": {
+      "claimed": 0.091,
+      "recomputed": 0.09078266780769056,
+      "delta": -0.0002173321923094329,
+      "tolerance": 0.005,
+      "reproduced": true
+    },
+    "control_corr": {
+      "claimed": -0.084,
+      "recomputed": -0.08423306344459425,
+      "delta": -0.000233063444594242,
+      "tolerance": 0.004,
+      "reproduced": true
+    },
+    "control_p": {
+      "claimed": 0.054,
+      "recomputed": 0.05444171518304659,
+      "delta": 0.000441715183046594,
+      "tolerance": 0.02,
+      "reproduced": true
+    },
+    "impaired_corr": {
+      "claimed": 0.025,
+      "recomputed": 0.024871825149662827,
+      "delta": -0.00012817485033717393,
+      "tolerance": 0.004,
+      "reproduced": true
+    },
+    "impaired_p": {
+      "claimed": 0.593,
+      "recomputed": 0.592669395299389,
+      "delta": -0.00033060470061097025,
+      "tolerance": 0.05,
+      "reproduced": true
+    },
+    "control_slope_per_year": {
+      "claimed": -0.007,
+      "recomputed": -0.006978425948805357,
+      "delta": 2.157405119464304e-05,
+      "tolerance": 0.0005,
+      "reproduced": true
+    },
+    "lr_factor_20y": {
+      "claimed": 0.87,
+      "recomputed": 0.8697334279187507,
+      "delta": -0.00026657208124925,
+      "tolerance": 0.01,
+      "reproduced": true
+    },
+    "age_alone_auc": {
+      "claimed": 0.6308,
+      "recomputed": 0.6308099534462159,
+      "delta": 9.953446215904549e-06,
+      "tolerance": 0.003,
+      "reproduced": true
+    }
+  },
+  "n_reproduced": 8,
+  "n_claims": 8,
+  "VERDICT": "REPRODUCED"
+}

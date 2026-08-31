@@ -1,0 +1,24 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "quarantined": "2026-08-22",
+    "reason": "Pre-lock calibration of the Lu-inclusive 1,040-recording model. max_gap 0.0688 and verdict 'probability' are BOTH superseded: the post-lock values are slope 1.276, intercept 0.135, Brier 0.199, max_gap 0.151, and the output is a SCREENING SCORE, not a clinical probability.",
+    "pool": "pre-Lu-lock (Lu locked out 2026-08-18T17:37); most values computed on the 1,040-recording / 634-participant pool that included Lu",
+    "authority_now": [
+      "results/summary/CURRENT_development_stats.json",
+      "results/summary/locked_external_validation.json",
+      "results/reconstruction/*.json"
+    ],
+    "see_also": [
+      "docs/FIGURE_RECONCILIATION.md",
+      "docs/LU_EXPOSURE_TIMELINE.md",
+      "results/_superseded/pre_lock/README.md"
+    ],
+    "values_unchanged": "No number in this file was altered by the quarantine."
+  },
+  "brier": 0.19762156628266664,
+  "slope": 1.189836894500306,
+  "intercept": 0.0586707082692997,
+  "max_gap": 0.068797484179704,
+  "verdict": "probability"
+}

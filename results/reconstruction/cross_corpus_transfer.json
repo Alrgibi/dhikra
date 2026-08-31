@@ -1,0 +1,102 @@
+{
+  "registration": "see the module docstring of _bootstrap/xcdrive.py (committed before any arm was executed)",
+  "R_pitt_within": {
+    "auc": 0.8136814410038453,
+    "ci95": [
+      0.7677405235550784,
+      0.8587601440821903
+    ],
+    "n": 548,
+    "n_participants": 290,
+    "protocol": "StratifiedGroupKFold(5, shuffle, rs=42) inside this corpus only"
+  },
+  "R_delaware_within": {
+    "auc": 0.5474462365591398,
+    "ci95": [
+      0.4847175119737615,
+      0.6048514484031455
+    ],
+    "n": 439,
+    "n_participants": 291,
+    "protocol": "StratifiedGroupKFold(5, shuffle, rs=42) inside this corpus only"
+  },
+  "pitt_to_delaware": {
+    "auc": 0.6460349462365591,
+    "ci95": [
+      0.5870453247318842,
+      0.7044633682124141
+    ],
+    "n_train": 548,
+    "n_test": 439,
+    "C1_above_chance": true,
+    "C2_retention_vs_within": 1.1800883869383745,
+    "C2_band": "strong",
+    "reference_within_auc": 0.5474462365591398,
+    "descriptive_at_threshold_0.367": {
+      "sensitivity": 0.63125,
+      "specificity": 0.5663082437275986,
+      "confusion_tn_fp_fn_tp": [
+        158,
+        121,
+        59,
+        101
+      ],
+      "note": "descriptive only; no decision follows; 0.367 is fixed"
+    }
+  },
+  "delaware_to_pitt": {
+    "auc": 0.7772110908722929,
+    "ci95": [
+      0.729952790339275,
+      0.8261465853318682
+    ],
+    "n_train": 439,
+    "n_test": 548,
+    "C1_above_chance": true,
+    "C2_retention_vs_within": 0.9551785891951048,
+    "C2_band": "strong",
+    "reference_within_auc": 0.8136814410038453,
+    "descriptive_at_threshold_0.367": {
+      "sensitivity": 0.8655737704918033,
+      "specificity": 0.4567901234567901,
+      "confusion_tn_fp_fn_tp": [
+        111,
+        132,
+        41,
+        264
+      ],
+      "note": "descriptive only; no decision follows; 0.367 is fixed"
+    }
+  },
+  "grade": "TRANSFER-CONFIRMED",
+  "criteria": {
+    "C1": "participant-bootstrap 95% CI lower bound > 0.5",
+    "C2_bands": ">=0.90 strong; 0.75-0.90 partial; <0.75 weak (declared convention, not derived)",
+    "interpretive_asymmetry": "Pitt = dementia vs control; Delaware = MCI vs control (harder target). A weaker pitt_to_delaware is expected. Failure means 'not shown to be mutually informative', not 'pooling is wrong'.",
+    "scope": "This does NOT reproduce the 18 Aug Pitt-only vs Pitt+Delaware comparison, which needs a third both-class corpus (WLS is 100% controls; Lu is locked). It tests a weaker proposition: mutual informativeness."
+  },
+  "context_not_recomputed": {
+    "locked_combined_auc": 0.7550158612450046,
+    "source": "results/summary/CURRENT_development_stats.json"
+  },
+  "_provenance": {
+    "dataset": "Pitt cookie 548 + Delaware cookie 439, 64 locked features (model_card feature_order); Lu never read",
+    "lock_state": "post-Lu-lock; Lu untouched; results/summary/ not modified",
+    "model": "CalibratedClassifierCV(sigmoid, cv=3) over committed ens() -- the architecture verified 7/7 in docs/RECONSTRUCTION.md sect 2.8",
+    "bootstrap": "participant-level, 2000 resamples, seed 42",
+    "script": "_bootstrap/xcdrive.py",
+    "generated": "2026-08-22",
+    "python": "3.12.11"
+  },
+  "post_execution_notes": {
+    "added": "2026-08-22, AFTER the arms were scored. Adds no number, changes no number, and revises no registered criterion. Recorded because a reader of this file alone would otherwise be misled by the C2 band on pitt_to_delaware.",
+    "C2_defect": "C2 was registered as a RETENTION ratio, which silently assumes the within-corpus reference exceeds the transfer figure. For pitt_to_delaware it does not: the denominator (R_delaware_within = 0.5474, CI [0.4847, 0.6049]) is itself indistinguishable from chance, so the ratio 1.180 and its 'strong' band are UNINTERPRETABLE as retention. What the pair actually shows is that a Pitt-trained model ranks Delaware's participants better than a Delaware-trained model does. The band is reported exactly as the registered rule produced it; this note states the defect rather than rewriting the rule.",
+    "sample_size_confound": "pitt_to_delaware trains on 548 recordings; R_delaware_within trains on ~351 per fold. Part of the 0.646 vs 0.547 gap may be training-set size rather than corpus content. The two are not separable within this design.",
+    "locked_context_quoted_not_recomputed": {
+      "pooled_987_model_on_delaware_subset": 0.6290770609318996,
+      "pooled_987_model_on_pitt_subset": 0.8094717668488158,
+      "source": "results/summary/CURRENT_development_stats.json",
+      "caveat": "different protocol -- out-of-fold inside the COMBINED folds, not a corpus-held-out fit. Indicative, not a controlled comparison with the arms above."
+    }
+  }
+}

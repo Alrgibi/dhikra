@@ -1,0 +1,49 @@
+{
+  "_provenance": {
+    "dataset": "public Arabic MoCA dataset (Rabaya et al. 2026, Front. Psychol. 17:1833118), 24 speakers of letter-fluency audio; DERIVED DISTRIBUTION 7 cognitively normal / 6 MCI / 11 dementia",
+    "lock_state": "independent dataset; Lu never involved",
+    "script": "inline (code not committed)",
+    "model": "the ENGLISH-trained language-independent ACOUSTIC model applied to Arabic audio -- both the language AND the task differ from training",
+    "verification": "reproduced 2026-08-22 from a fresh clone under a pre-registered protocol: the 24 re-extracted predictions matched predictions.npy with max |delta p| = 0.0; grade MATCH (results/reconstruction/arabic_pilot_reproduction.json), whose distribution block records Dementia 11 / MCI 6 / Normal 7",
+    "caveat": "0.622 [0.378, 0.857] -- the interval SPANS CHANCE. Feasibility only, never a validation. The Arabic linguistic engine and the referential deficit index were NOT evaluated here",
+    "stamped": "2026-08-22 (provenance added; no value changed)",
+    "CORRECTION_2026-08-23": "This file previously described the split in prose as '11 normal / 6 MCI / 7 dementia' while its own groups block, the reproduction record and arabic_reference_preliminary.json all said the opposite. CLOSED 2026-08-23: the owner confirmed against the development transcript, which records 7 normal / 6 MCI / 11 dementia and states that the derivation matched the published paper exactly. The distribution is 7 NORMAL, 6 MCI, 11 DEMENTIA. CONSEQUENCE: the pilot compares SEVENTEEN impaired speakers against SEVEN controls and must be described that way everywhere. AUC 0.622 [0.378, 0.857] rests on seven controls."
+  },
+  "source": "Arabic MoCA AI Dataset, Rabaya et al., Frontiers in Psychology 2026",
+  "url": "https://github.com/yarajehadrabaya/arabic-moca-ai-dataset",
+  "n": 24,
+  "groups": {
+    "Normal": 7,
+    "MCI": 6,
+    "Dementia": 11
+  },
+  "labels_derived": "MoCA totals summed from task scores using official v8.1 structure (registration trials excluded); maximum exactly 30. Derived distribution: 7 normal, 6 MCI, 11 dementia, matching the published paper. NOTE: the repository README states 10/8/6, which disagrees with both this derivation and the paper.",
+  "task_used": "language_fluency (letter fluency), the only task comparable to the present battery",
+  "model_applied": "English-trained language-independent acoustic model (AUC 0.708 on English)",
+  "result_auc": 0.622,
+  "ci95": [
+    0.378,
+    0.857
+  ],
+  "dementia_vs_normal_auc": 0.662,
+  "moca_correlation": {
+    "r": -0.202,
+    "p": 0.344
+  },
+  "significant_features": 6,
+  "total_features": 53,
+  "honest_interpretation": "First measured Arabic result for this system, but NOT a validation. The confidence interval spans chance. The transfer is doubly hard: a model trained on English picture-description was applied to Arabic letter-fluency recordings, so both language and task differ. The healthy comparison group is SEVEN people. Reported as a feasibility signal, not evidence of Arabic accuracy.",
+  "training_attempts": {
+    "english_transferred": 0.622,
+    "arabic_only_logistic": 0.655,
+    "arabic_only_trees": 0.42,
+    "english_plus_arabic_LOO": 0.538,
+    "conclusion": "Configuration choice swung the result between 0.420 and 0.655 -- a range wider than any plausible real effect. Twenty-four participants cannot train or meaningfully fine-tune a model. Combining with English data made performance worse, most likely because the Arabic task (letter fluency) differs from the English task (picture description), so the added samples conflict rather than reinforce."
+  },
+  "normative_comparison": {
+    "n_arabic_controls": 7,
+    "n_english_controls": 240,
+    "only_significant_difference": "jitter (d=+0.99, p=0.040)",
+    "caveat": "Task differs between groups, so language and task effects cannot be separated. With 7 controls this is indicative only."
+  }
+}

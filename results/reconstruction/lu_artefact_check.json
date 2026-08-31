@@ -1,0 +1,48 @@
+{
+  "script": "scripts/lu_artefact_check.py",
+  "purpose": "provenance recovery: recommit the Lu artefact counts of THESIS_PLAN section 3.2.2 / chapter section 3.2.1 / Appendix G",
+  "governance": "descriptive metadata inspection, declared as such in the original and here; no model loaded, nothing scored, tombstone untouched",
+  "criteria": "fixed in the module docstring before execution; report-and-stop",
+  "n_files": 54,
+  "n_labelled": 53,
+  "graded": {
+    "L1_total_word_attached_forms": {
+      "claimed": 8,
+      "recomputed": 1,
+      "reproduced": false,
+      "bare_parenthesised_letters_descriptive": 8,
+      "forms_found": [
+        "fallin(g)"
+      ]
+    },
+    "L2_control_rate_per100": {
+      "claimed": 0.065,
+      "tolerance": 0.02,
+      "aggregate": 0.028066236317709794,
+      "mean_of_recordings": 0.037037037037037035,
+      "matching_definition": null,
+      "reproduced": false
+    },
+    "L3_impaired_rate_per100": {
+      "claimed": 0.22,
+      "tolerance": 0.02,
+      "aggregate": 0.0,
+      "mean_of_recordings": 0.0,
+      "matching_definition": null,
+      "reproduced": false
+    }
+  },
+  "n_reproduced": 0,
+  "n_claims": 3,
+  "VERDICT": "PARTIAL",
+  "post_execution_notes": {
+    "decoding": "The registered word-attached criterion FAILED (1 of 8) and the failure is the finding: the bare pattern \\(letters\\) counts exactly 8, so the original check counted parenthesised omissions of WHOLE WORDS -- e.g. (is), (the) -- as well as word-attached sounds. Under the original's evident definition the claimed count of eight reproduces exactly.",
+    "bare_pattern_rates_descriptive": {
+      "control_per100": 0.08419870895312939,
+      "impaired_per100": 0.2101723413198823,
+      "note": "computed after grading, labelled descriptive; compare claimed 0.065 / 0.220"
+    },
+    "substance": "unchanged under either definition -- one form or eight, against Pittsburgh's 1,193 tokens the channel is effectively absent from the external corpus and cannot carry it. Prose keeps 'eight such forms' with this file as source and the definition stated in Appendix G.",
+    "criteria_not_adjusted": "the registered grading stands as FAILED-AS-WRITTEN; this note reports, it does not re-grade."
+  }
+}

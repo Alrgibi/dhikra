@@ -1,0 +1,10 @@
+{
+  "dataset": "Pitt cookie task, Control+Dementia (DementiaBank)",
+  "n_cha_files": 552,
+  "n_usable": 548,
+  "exclusions": "label None (e.g. 'Other' dx) or <10 words",
+  "lock_state": "post-Lu-lock; Lu untouched by this script",
+  "script": "scripts/build_pitt_cookie.py",
+  "executed_via": "chunked driver (~/drive.py), per-file logic identical",
+  "generated": "2026-08-20"
+}

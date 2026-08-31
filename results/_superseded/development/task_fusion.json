@@ -1,0 +1,11 @@
+{
+  "_SUPERSEDED": {
+    "STATUS": "SUPERSEDED -- NON-CITABLE",
+    "lock_state": "pre-Lu-lock",
+    "reason": "early task-level fusion run, n=288. Superseded by results/fusion/results.json (task_level_fusion 0.6377, concatenated_all_tasks 0.6844)",
+    "stamped": "2026-08-22 (marker added; no value changed)"
+  },
+  "task_fusion": 0.6618525546419284,
+  "concatenation": 0.6858001265022139,
+  "n": 288
+}

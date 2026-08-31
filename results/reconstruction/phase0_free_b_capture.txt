@@ -1,0 +1,27 @@
+==============================================================================
+CHECK  A2 -- is iu.proportion a duplicate of iu.total?
+==============================================================================
+  spearman = 1.000000   pearson = 1.000000
+  ratio proportion/total: unique values = [0.04347826]  (n unique=1)
+
+==============================================================================
+CHECK  B -- repeat-averaging x sex  (Pitt longitudinal visits)
+==============================================================================
+  Pitt: 290 participants, 149 with >=2 recordings, 407 recordings among repeaters
+  repeaters by sex: {'f': 94, 'm': 55}
+  ALL n_rec= 407 n_part=149 | recording-level AUC=0.7764 | first-visit-only AUC=0.7643 | mean-of-visits AUC=0.8467 | gain over first-visit=+0.0823
+  F   n_rec= 254 n_part= 94 | recording-level AUC=0.8491 | first-visit-only AUC=0.8487 | mean-of-visits AUC=0.9252 | gain over first-visit=+0.0764
+  M   n_rec= 153 n_part= 55 | recording-level AUC=0.6494 | first-visit-only AUC=0.6141 | mean-of-visits AUC=0.7056 | gain over first-visit=+0.0915
+
+==============================================================================
+CHECK  C -- within-sex normative z-scoring of iu.total (free proxy, IN-SAMPLE)
+==============================================================================
+  control f: mean=14.595 sd=3.529 n=363
+  impaired f: mean=11.254 sd=3.924 n=295
+  control m: mean=13.868 sd=3.506 n=159
+  impaired m: mean=11.518 sd=4.361 n=170
+  RAW  : all=0.7096  F=0.7367  M=0.6539  gap=+0.0828
+  Z-SEX: all=0.7080  F=0.7367  M=0.6539  gap=+0.0828
+  delta pooled = -0.0015
+  MODEL raw  : all=0.7550  F=0.7917  M=0.6776  gap=+0.1141
+  MODEL z-sex: all=0.7498  delta pooled = -0.0052

@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="A Libyan family kitchen scene">
+<title>مشهد المطبخ — Kitchen scene</title>
+<desc>An original picture-description stimulus showing a family kitchen: a woman at the sink with water overflowing, a boy on a tipping stool reaching for a jar on a high shelf, a girl reaching up towards him, a cat, a teapot steaming on the stove, a dish cloth draped over the counter edge, and a curtained window showing a palm tree.</desc>
+
+<defs>
+  <style>
+    .ln{fill:none;stroke:#1f2d3a;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+    .th{fill:none;stroke:#1f2d3a;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+    .fn{fill:none;stroke:#1f2d3a;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .wall{fill:#fdfcf7}
+    .floorc{fill:#f0ece1}
+    .wood{fill:#e8d9c0}
+    .water{fill:#cfe8f0}
+    .cloth{fill:#f3e2e2}
+    .cloth2{fill:#dfeae4}
+    .skin{fill:#f6e2cf}
+    .sky{fill:#d9edf7}
+  </style>
+</defs>
+
+<!-- ===== room ===== -->
+<rect x="0" y="0" width="900" height="600" class="wall"/>
+<rect x="0" y="430" width="900" height="170" class="floorc"/>
+<line x1="0" y1="430" x2="900" y2="430" class="th"/>
+<!-- floor tiles -->
+<g class="fn" opacity=".5">
+  <line x1="60" y1="430" x2="10" y2="600"/><line x1="200" y1="430" x2="175" y2="600"/>
+  <line x1="340" y1="430" x2="340" y2="600"/><line x1="480" y1="430" x2="505" y2="600"/>
+  <line x1="620" y1="430" x2="670" y2="600"/><line x1="760" y1="430" x2="835" y2="600"/>
+  <line x1="0" y1="480" x2="900" y2="480"/><line x1="0" y1="535" x2="900" y2="535"/>
+</g>
+
+<!-- ===== window with palm tree ===== -->
+<rect x="600" y="70" width="215" height="165" rx="6" class="sky"/>
+<rect x="600" y="70" width="215" height="165" rx="6" class="th"/>
+<line x1="707" y1="70" x2="707" y2="235" class="ln"/>
+<line x1="600" y1="152" x2="815" y2="152" class="ln"/>
+<!-- palm -->
+<path d="M755 235 q6 -55 2 -85" class="th"/>
+<g class="ln">
+  <path d="M757 150 q-38 -26 -60 -8"/><path d="M757 150 q-30 -38 -8 -58"/>
+  <path d="M757 150 q30 -34 56 -20"/><path d="M757 150 q34 -20 40 4"/>
+  <path d="M757 150 q-6 -40 16 -52"/>
+</g>
+<circle cx="658" cy="105" r="15" class="fn"/>
+
+<!-- ===== curtains at the window ===== -->
+<line x1="582" y1="62" x2="833" y2="62" class="th"/>
+<circle cx="578" cy="62" r="4.5" fill="#e8d9c0"/><circle cx="578" cy="62" r="4.5" class="ln"/>
+<circle cx="837" cy="62" r="4.5" fill="#e8d9c0"/><circle cx="837" cy="62" r="4.5" class="ln"/>
+<!-- left panel -->
+<path d="M590 64 h38 v168 q-9 8 -19 0 q-10 -8 -19 0 z" class="cloth2"/>
+<path d="M590 64 h38 v168 q-9 8 -19 0 q-10 -8 -19 0 z" class="ln"/>
+<g class="fn"><path d="M603 66 v167"/><path d="M616 66 v166"/></g>
+<!-- right panel -->
+<path d="M787 64 h38 v168 q-9 8 -19 0 q-10 -8 -19 0 z" class="cloth2"/>
+<path d="M787 64 h38 v168 q-9 8 -19 0 q-10 -8 -19 0 z" class="ln"/>
+<g class="fn"><path d="M800 66 v167"/><path d="M813 66 v166"/></g>
+
+<!-- ===== high shelf / cupboard with jar ===== -->
+<rect x="150" y="120" width="250" height="18" class="wood"/>
+<rect x="150" y="120" width="250" height="18" class="th"/>
+<line x1="168" y1="138" x2="168" y2="158" class="ln"/>
+<line x1="382" y1="138" x2="382" y2="158" class="ln"/>
+<!-- the jar (target object) -->
+<g>
+  <rect x="243" y="72" width="56" height="48" rx="6" fill="#f7ecd2"/>
+  <rect x="243" y="72" width="56" height="48" rx="6" class="th"/>
+  <rect x="238" y="62" width="66" height="12" rx="4" class="wood"/>
+  <rect x="238" y="62" width="66" height="12" rx="4" class="ln"/>
+  <circle cx="258" cy="96" r="5" class="fn"/><circle cx="272" cy="103" r="5" class="fn"/>
+  <circle cx="286" cy="94" r="5" class="fn"/>
+</g>
+<!-- second jar / tin -->
+<rect x="325" y="86" width="40" height="34" rx="4" fill="#eef1ea"/>
+<rect x="325" y="86" width="40" height="34" rx="4" class="ln"/>
+<!-- bread loaves on shelf -->
+<ellipse cx="190" cy="108" rx="26" ry="13" fill="#e9cfa4"/>
+<ellipse cx="190" cy="108" rx="26" ry="13" class="ln"/>
+<line x1="176" y1="104" x2="204" y2="104" class="fn"/>
+
+<!-- ===== boy on tipping stool ===== -->
+<g transform="translate(232,196) rotate(-9)">
+  <!-- stool -->
+  <rect x="14" y="150" width="86" height="12" rx="3" class="wood"/>
+  <rect x="14" y="150" width="86" height="12" rx="3" class="th"/>
+  <line x1="24" y1="162" x2="16" y2="216" class="th"/>
+  <line x1="90" y1="162" x2="98" y2="216" class="th"/>
+  <line x1="22" y1="190" x2="92" y2="190" class="ln"/>
+  <!-- body -->
+  <path d="M57 62 l0 58" class="th"/>
+  <path d="M57 120 l-16 32 M57 120 l17 32" class="th"/>
+  <path d="M41 152 l-4 -2 M74 152 l5 -2" class="ln"/>
+  <!-- shirt -->
+  <path d="M38 74 q19 -12 38 0 l6 44 q-25 10 -50 0 z" class="cloth2"/>
+  <path d="M38 74 q19 -12 38 0 l6 44 q-25 10 -50 0 z" class="ln"/>
+  <!-- arms: one reaching up to jar -->
+  <path d="M40 80 q-26 -34 -12 -74" class="th"/>
+  <path d="M28 6 q-4 -8 4 -12" class="ln"/>
+  <path d="M76 82 q22 12 20 34" class="th"/>
+  <!-- head -->
+  <circle cx="57" cy="44" r="20" class="skin"/>
+  <circle cx="57" cy="44" r="20" class="th"/>
+  <path d="M40 34 q17 -14 34 0" class="ln"/>
+  <circle cx="50" cy="44" r="2.2" fill="#1f2d3a"/><circle cx="64" cy="44" r="2.2" fill="#1f2d3a"/>
+  <path d="M52 54 q5 4 10 0" class="fn"/>
+</g>
+<!-- motion lines showing the stool tipping -->
+<g class="fn" opacity=".75">
+  <path d="M340 392 q16 -8 24 -22"/><path d="M352 404 q22 -8 34 -26"/>
+</g>
+
+<!-- ===== girl reaching up ===== -->
+<g transform="translate(392,296)">
+  <path d="M40 66 l0 52" class="th"/>
+  <path d="M40 118 l-14 28 M40 118 l15 28" class="th"/>
+  <!-- dress -->
+  <path d="M22 76 q18 -12 36 0 l14 46 q-32 12 -64 0 z" class="cloth"/>
+  <path d="M22 76 q18 -12 36 0 l14 46 q-32 12 -64 0 z" class="ln"/>
+  <!-- one arm raised, one out -->
+  <path d="M24 82 q-26 -30 -18 -62" class="th"/>
+  <path d="M6 20 q-2 -8 6 -10" class="ln"/>
+  <path d="M58 84 q24 8 26 26" class="th"/>
+  <!-- head + hair -->
+  <circle cx="40" cy="48" r="19" class="skin"/>
+  <circle cx="40" cy="48" r="19" class="th"/>
+  <path d="M22 44 q18 -22 36 0 q4 22 -6 26 q-14 -18 -24 0 q-10 -4 -6 -26z" fill="#3d2f28"/>
+  <circle cx="34" cy="50" r="2.2" fill="#1f2d3a"/><circle cx="47" cy="50" r="2.2" fill="#1f2d3a"/>
+  <path d="M34 60 q7 5 13 0" class="fn"/>
+</g>
+
+<!-- ===== woman at the sink, back turned, unaware ===== -->
+<g transform="translate(596,206)">
+  <!-- dress -->
+  <path d="M12 60 q30 -16 60 0 l16 124 q-46 16 -92 0 z" class="cloth"/>
+  <path d="M12 60 q30 -16 60 0 l16 124 q-46 16 -92 0 z" class="th"/>
+  <!-- arms down into the basin -->
+  <path d="M16 74 q-24 34 -12 66" class="th"/>
+  <path d="M76 74 q24 34 12 66" class="th"/>
+  <!-- head + headscarf -->
+  <circle cx="42" cy="34" r="24" class="skin"/>
+  <circle cx="42" cy="34" r="24" class="th"/>
+  <path d="M16 32 q26 -34 52 0 q6 26 -6 34 l-40 0 q-12 -8 -6 -34z" fill="#c9d8d2"/>
+  <path d="M16 32 q26 -34 52 0 q6 26 -6 34 l-40 0 q-12 -8 -6 -34z" class="ln"/>
+  <path d="M22 62 q20 12 40 0" class="fn"/>
+</g>
+
+<!-- ===== sink counter with overflowing water ===== -->
+<rect x="520" y="330" width="330" height="100" class="wood"/>
+<rect x="520" y="330" width="330" height="100" class="th"/>
+<line x1="520" y1="356" x2="850" y2="356" class="ln"/>
+<!-- basin -->
+<path d="M600 330 h150 v46 a12 12 0 0 1 -12 12 h-126 a12 12 0 0 1 -12 -12 z" class="water"/>
+<path d="M600 330 h150 v46 a12 12 0 0 1 -12 12 h-126 a12 12 0 0 1 -12 -12 z" class="th"/>
+<!-- tap -->
+<path d="M700 330 v-46 q0 -14 16 -14 h26" class="th"/>
+<path d="M742 270 v16" class="th"/>
+<!-- water running -->
+<g class="ln" opacity=".85">
+  <path d="M739 290 q-2 26 0 52"/><path d="M747 290 q2 26 0 52"/>
+</g>
+<!-- a plate being washed in the basin -->
+<ellipse cx="648" cy="352" rx="32" ry="10" fill="#eef1ea"/>
+<ellipse cx="648" cy="352" rx="32" ry="10" class="ln"/>
+<ellipse cx="648" cy="352" rx="17" ry="5" class="fn"/>
+
+<!-- overflow: water coming over the near rim of the basin -->
+<path d="M630 376 q36 16 72 0 q-4 28 6 54 h-84 q10 -26 6 -54 z" class="water"/>
+<path d="M630 376 q36 16 72 0 q-4 28 6 54 h-84 q10 -26 6 -54 z" class="ln"/>
+<g class="fn" opacity=".7"><path d="M652 394 v34"/><path d="M666 396 v32"/><path d="M680 394 v34"/></g>
+<!-- puddle on floor -->
+<ellipse cx="664" cy="452" rx="68" ry="17" class="water"/>
+<ellipse cx="664" cy="452" rx="68" ry="17" class="ln"/>
+<ellipse cx="686" cy="470" rx="40" ry="10" class="water"/>
+<ellipse cx="686" cy="470" rx="40" ry="10" class="fn"/>
+<!-- ===== dish cloth draped over the near edge of the counter ===== -->
+<path d="M800 330 q24 -10 48 0 v56 q0 20 -8 30 q-7 10 -16 10 q-9 0 -16 -10 q-8 -10 -8 -30 z" class="cloth"/>
+<path d="M800 330 q24 -10 48 0 v56 q0 20 -8 30 q-7 10 -16 10 q-9 0 -16 -10 q-8 -10 -8 -30 z" class="th"/>
+<g class="fn"><path d="M816 330 v84"/><path d="M832 330 v82"/></g>
+
+<!-- dishes stacked -->
+<g transform="translate(786,318)">
+  <ellipse cx="0" cy="14" rx="30" ry="8" fill="#eef1ea"/><ellipse cx="0" cy="14" rx="30" ry="8" class="ln"/>
+  <ellipse cx="0" cy="5" rx="30" ry="8" fill="#eef1ea"/><ellipse cx="0" cy="5" rx="30" ry="8" class="ln"/>
+  <ellipse cx="0" cy="-4" rx="30" ry="8" fill="#eef1ea"/><ellipse cx="0" cy="-4" rx="30" ry="8" class="ln"/>
+</g>
+
+
+<!-- ===== stove with a steaming teapot (NOT a second hazard: exactly one unnoticed hazard per scene) ===== -->
+<rect x="60" y="368" width="150" height="62" class="wood"/>
+<rect x="60" y="368" width="150" height="62" class="th"/>
+<circle cx="100" cy="382" r="12" class="fn"/><circle cx="170" cy="382" r="12" class="fn"/>
+<!-- teapot -->
+<g transform="translate(96,306)">
+  <path d="M14 34 q30 -14 60 0 l-6 44 q-24 10 -48 0z" fill="#e6ded2"/>
+  <path d="M14 34 q30 -14 60 0 l-6 44 q-24 10 -48 0z" class="th"/>
+  <path d="M74 44 q22 6 14 24 q-4 10 -14 8" class="th"/>
+  <path d="M14 44 q-20 4 -18 16" class="th"/>
+  <path d="M34 32 q10 -10 20 0" class="ln"/>
+  <circle cx="44" cy="26" r="5" class="ln"/>
+</g>
+<!-- steam -->
+<g class="fn" opacity=".8">
+  <path d="M140 300 q-10 -16 2 -28 q10 -12 0 -24"/>
+  <path d="M158 302 q-9 -14 2 -26"/>
+</g>
+
+<!-- ===== cat ===== -->
+<g transform="translate(742,470)">
+  <ellipse cx="30" cy="14" rx="34" ry="17" fill="#e2d6c6"/>
+  <ellipse cx="30" cy="14" rx="34" ry="17" class="ln"/>
+  <circle cx="66" cy="0" r="14" fill="#e2d6c6"/><circle cx="66" cy="0" r="14" class="ln"/>
+  <path d="M58 -10 l-3 -12 l11 7z M74 -10 l4 -12 l-11 7z" class="ln" fill="#e2d6c6"/>
+  <path d="M-4 10 q-22 -6 -18 -26" class="th"/>
+  <circle cx="62" cy="0" r="1.9" fill="#1f2d3a"/><circle cx="71" cy="0" r="1.9" fill="#1f2d3a"/>
+  <path d="M62 6 q4 3 8 0" class="fn"/>
+</g>
+
+<!-- ===== table with glasses ===== -->
+<rect x="272" y="452" width="180" height="12" rx="3" class="wood"/>
+<rect x="272" y="452" width="180" height="12" rx="3" class="th"/>
+<line x1="288" y1="464" x2="282" y2="530" class="th"/>
+<line x1="436" y1="464" x2="442" y2="530" class="th"/>
+<g>
+  <path d="M312 452 l4 -26 h20 l4 26z" fill="#e4f0f4"/><path d="M312 452 l4 -26 h20 l4 26z" class="ln"/>
+  <path d="M356 452 l4 -26 h20 l4 26z" fill="#e4f0f4"/><path d="M356 452 l4 -26 h20 l4 26z" class="ln"/>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "training_prior_987": 0.47112462006079026,
+  "n_impaired": 465,
+  "n_total": 987,
+  "supersedes": {
+    "value": 0.4721,
+    "basis": "491/1040, pre-lock pool including Lu"
+  },
+  "_provenance": {
+    "dataset": "Pitt cookie (548) + Delaware cookie (439), Lu locked out",
+    "lock_state": "post-Lu-lock",
+    "script": "scripts/compute_training_prior.py",
+    "generated": "2026-08-20"
+  }
+}

@@ -1,0 +1,78 @@
+============================================================================
+PROVENANCE OF THE INPUTS (quoted, not recomputed)
+============================================================================
+  SEM (controls, visit gap <=1.5y, n=123 pairs) = 0.1032
+  SD of change = 0.1459   MDC95 as published = 0.286
+  impaired group drift = 0.0447 per visit (SD 0.196), mean gap 1.2 y
+
+  control score SD (development) = 0.1403
+  implied reliability r = 1 - (SEM/SD)^2 = 0.4587   <- cross-check against the published r = 0.465
+
+============================================================================
+Q1  --  does averaging cut SEM by sqrt(k)?
+============================================================================
+  MDC95 = 1.96 * sqrt(2) * SEM   (two occasions compared)
+  check: 1.96*sqrt(2)*0.1032 = 0.2861  vs published 0.286  -> arithmetic confirmed
+
+    k    SEM_k    MDC95   reduction
+    1   0.1032   0.2861        0.0%
+    2   0.0730   0.2023       29.3%
+    3   0.0596   0.1652       42.3%
+    4   0.0516   0.1430       50.0%
+    6   0.0421   0.1168       59.2%
+   10   0.0326   0.0905       68.4%
+
+  ANSWER: yes -- IF the k recordings are independent measurements of the same state.
+  k=2 gives MDC 0.202, i.e. 0.286 -> 0.202. The stated arithmetic holds.
+  CEILING CAVEAT: sqrt(k) assumes INDEPENDENT errors. Two recordings taken minutes
+  apart share room, prompt delivery, fatigue and mood, so their errors are positively
+  correlated and the real reduction is SMALLER than sqrt(k). With error correlation rho,
+  the variance of the mean of 2 is SEM^2*(1+rho)/2, so:
+    rho=0.0 -> SEM_2=0.0730, MDC=0.202
+    rho=0.2 -> SEM_2=0.0799, MDC=0.222
+    rho=0.4 -> SEM_2=0.0863, MDC=0.239
+    rho=0.6 -> SEM_2=0.0923, MDC=0.256
+  Pitt has NO within-session repeats, so rho CANNOT be estimated from this data.
+  0.202 is therefore an UPPER BOUND on the benefit, not a measured value.
+
+============================================================================
+Q2  --  what MDC would individual TRACKING require?
+============================================================================
+  observed progression among the impaired: 0.0447 per visit = 0.0372 per year
+  (individual variation is large: SD of per-visit change = 0.196)
+
+    k     MDC  years to detect  min detectable rate/y  x group mean
+    1   0.286              7.7                  0.286           7.7
+    2   0.202              5.4                  0.202           5.4
+    4   0.143              3.8                  0.143           3.8
+   10   0.090              2.4                  0.090           2.4
+   41   0.045              1.2                  0.045           1.2
+
+  To detect ONE YEAR of average progression you need MDC <= 0.0372.
+  Required k = (MDC_1/0.0372)^2 = 59 recordings per timepoint.
+   over 1 year(s): need MDC <= 0.037  ->  k = 58.9
+   over 2 year(s): need MDC <= 0.074  ->  k = 14.7
+   over 3 year(s): need MDC <= 0.112  ->  k = 6.5
+   over 5 year(s): need MDC <= 0.186  ->  k = 2.4
+
+  ANSWER: averaging two recordings takes the minimum individually-detectable
+  progression from 7.7 years to 5.4 years. Both are far outside clinical use.
+  The 'screening test, not monitoring test' conclusion SURVIVES repeat-averaging.
+
+============================================================================
+Q3  --  decision stability, which is a THIRD use case
+============================================================================
+  P(a repeat recording falls on the SAME side of the threshold), averaged over 987 recordings:
+    single recording  : 0.8355   -> 16.5% of decisions would flip
+    mean of two       : 0.8759   -> 12.4% would flip
+
+  GREY ZONE = within +-1 SEM (0.103) of the threshold: 410 of 987 recordings (41.5%)
+    reproducibility inside the grey zone, single recording : 0.6690
+    reproducibility outside                                : 0.9538
+
+  TARGETED RULE -- second recording only inside the grey zone:
+    second recording needed for 41.5% of people
+    population reproducibility 0.8355 -> 0.8582  (universal repeat would give 0.8759)
+    i.e. 56% of the benefit of repeating everyone, at 42% of the cost
+
+written: results/reconstruction/repeat_sampling_analysis.json

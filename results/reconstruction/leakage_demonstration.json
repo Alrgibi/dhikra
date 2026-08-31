@@ -1,0 +1,28 @@
+{
+  "generated": "2026-08-23",
+  "WARNING": "the ungrouped figure is INFLATED BY CONSTRUCTION and is not a performance result. Never quote it without the word 'ungrouped'.",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "cohort": {
+    "n_recordings": 548,
+    "n_participants": 290,
+    "recordings_per_participant": 1.89
+  },
+  "arms": {
+    "grouped": {
+      "auc": 0.8228,
+      "test_recordings_sharing_a_participant_with_training": 0.0
+    },
+    "ungrouped": {
+      "auc": 0.8203,
+      "test_recordings_sharing_a_participant_with_training": 0.6843
+    }
+  },
+  "difference_ungrouped_minus_grouped": -0.0025,
+  "reproduction_check": {
+    "grouped_arm": 0.8228,
+    "committed_within_pitt": 0.8137,
+    "delta": 0.0091,
+    "void_if_abs_delta_over_0.02": false
+  },
+  "GRADE": "NOT-DEMONSTRATED"
+}

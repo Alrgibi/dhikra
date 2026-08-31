@@ -1,0 +1,61 @@
+{
+  "_provenance": {
+    "purpose": "log of corrections made after the first external review (2026-08-18)",
+    "lock_state": "PRE-LOCK log. Its 'now' fields describe what was true on 18 August, not today -- two of them are annotated inline as superseded",
+    "script": "inline (code not committed)",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "corrections_after_external_review": [
+    {
+      "item": "Arabic corpus claim",
+      "was": "No Arabic dementia speech corpus exists anywhere in the world.",
+      "now": "Arabic AD speech datasets exist but are not publicly available: a Tunisian Arabic database (IEEE 2023, syllable/DDK task, Alzheimer Family Assistance centre) and an Arabic transcript dataset (IEEE 2024, linguistic and acoustic features). The defensible claim is: no PUBLICLY AVAILABLE Libyan Arabic connected-speech corpus for dementia screening has been published.",
+      "severity": "high - a false global negative"
+    },
+    {
+      "item": "Bayesian prior constant",
+      "was": "TRAINING_PRIOR = 0.50 (assumed balance)",
+      "now": "TRAINING_PRIOR = 0.4721 (measured: 491 impaired of 1040). The likelihood-ratio formula was already correct; only the constant was wrong. [SUPERSEDED 2026-08-21: recomputed on the locked 987-recording development set as 465/987 = 0.471125, which is the constant now in risk_adjustment.py -- results/reconstruction/training_prior.json.]",
+      "severity": "medium - small numerical bias"
+    },
+    {
+      "item": "Cinderella vs Cookie Theft",
+      "was": "Story retelling beats the field-standard picture task.",
+      "now": "Paired bootstrap on 290 shared participants: +0.069, 95% CI [-0.017, +0.157], p=0.122. State as observed in this cohort, NOT as proven superiority.",
+      "severity": "high - unsupported comparative claim"
+    },
+    {
+      "item": "Arabic reference ranges",
+      "was": "English-derived empirical ranges applied to Arabic sessions.",
+      "now": "Arabic sessions report raw measurements with ranges marked not established; band forced to insufficient.",
+      "severity": "high - would manufacture false abnormality"
+    },
+    {
+      "item": "Quran probe framing",
+      "was": "Material memorised in childhood survives Alzheimer's far longer.",
+      "now": "Exploratory culturally-adapted elicitation task. General sparing of overlearned memory is established; its extension to Quranic recitation is not. Six confounders documented.",
+      "severity": "medium - overstated evidence"
+    },
+    {
+      "item": "Corpus-combination rule",
+      "was": "Corpora may be combined only when each contributes both classes.",
+      "now": "Datasets where corpus is strongly associated with class should not be naively pooled; source effects must be quantified and controlled regardless of class balance.",
+      "severity": "medium - not mathematically sufficient"
+    }
+  ],
+  "bootstrap_ci_added": {
+    "combined": [
+      0.72,
+      0.791
+    ],
+    "dementia": [
+      0.757,
+      0.848
+    ],
+    "mci": [
+      0.578,
+      0.699
+    ]
+  },
+  "bootstrap_ci_added_NOTE": "SUPERSEDED 2026-08-22: these are the pre-lock 1,040-recording intervals ('dementia' is the Pitt+Lu interval). Current: combined [0.719, 0.790], Pitt [0.761, 0.855], Delaware MCI [0.570, 0.687] -- results/summary/CURRENT_development_stats.json."
+}

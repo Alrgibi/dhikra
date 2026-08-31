@@ -1,0 +1,59 @@
+{
+ "purpose": "Documents the sensitivity-floor choice behind the FIXED operating threshold 0.367. This sweep does not revisit the threshold.",
+ "method": "committed rule src/dhikra/model.py::screening_threshold (highest threshold with sensitivity >= floor, maximising specificity; thresholds quantised to 3 dp) applied to the locked development OOF vector results/summary/oof_predictions.npy / oof_labels.npy",
+ "sweep": [
+  {
+   "sensitivity_floor": 0.7,
+   "threshold": 0.401,
+   "sensitivity": 0.701075,
+   "specificity": 0.670498,
+   "healthy_referred_per_100": 33.0
+  },
+  {
+   "sensitivity_floor": 0.75,
+   "threshold": 0.367,
+   "sensitivity": 0.756989,
+   "specificity": 0.588123,
+   "healthy_referred_per_100": 41.2
+  },
+  {
+   "sensitivity_floor": 0.8,
+   "threshold": 0.345,
+   "sensitivity": 0.802151,
+   "specificity": 0.521073,
+   "healthy_referred_per_100": 47.9
+  },
+  {
+   "sensitivity_floor": 0.85,
+   "threshold": 0.304,
+   "sensitivity": 0.851613,
+   "specificity": 0.371648,
+   "healthy_referred_per_100": 62.8
+  },
+  {
+   "sensitivity_floor": 0.9,
+   "threshold": 0.275,
+   "sensitivity": 0.901075,
+   "specificity": 0.283525,
+   "healthy_referred_per_100": 71.6
+  },
+  {
+   "sensitivity_floor": 0.95,
+   "threshold": 0.235,
+   "sensitivity": 0.950538,
+   "specificity": 0.141762,
+   "healthy_referred_per_100": 85.8
+  }
+ ],
+ "anchor_floor_0.75_reproduces_locked_operating_point": true,
+ "code_conflict_documented": {
+  "observation": "screening_threshold's DEFAULT min_sensitivity is 0.85 (src/dhikra/model.py), while the deployed threshold 0.367 corresponds to floor 0.75 (confirmed docs/RECONSTRUCTION.md sect 2.8).",
+  "resolution": "The 0.85 default predates the development-time choice of 0.75; the deployed invocation passed 0.75 explicitly. Documented here and in a code comment; the default and the operating threshold are unchanged."
+ },
+ "_provenance": {
+  "dataset": "Pitt+Delaware locked development pool, 987 recordings, 581 participants",
+  "lock_state": "post-Lu-lock; OOF vector is the locked one (reproduces every sect 2.7 signature)",
+  "script": "inline sweep via committed screening_threshold; recorded in results/reconstruction/",
+  "generated": "2026-08-22"
+ }
+}

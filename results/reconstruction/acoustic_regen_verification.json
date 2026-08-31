@@ -1,0 +1,161 @@
+{
+ "phase": "acoustic & multimodal regeneration + verification (owner-approved autonomous run)",
+ "audio_census": {
+  "unique_ids": 546,
+  "readable_mp3": 522,
+  "wav_stub_failures": 24,
+  "failures_equal_wav_only_stub_set": true,
+  "meta_ids_with_readable_audio": 518,
+  "note": "537 .wav files of 11 bytes are download artefacts (truncated ID3 header)"
+ },
+ "extraction": {
+  "tool": "scripts/extract_audio_features.py feature code via _bootstrap/chunk_extract2.py scheduling harness (committed extractor unmodified)",
+  "output": "results/acoustic_features.csv (522 rows x 56 cols)",
+  "decode_path": "librosa.load -> audioread -> /usr/bin/ffmpeg (PySoundFile lacks mp3 in this wheel)"
+ },
+ "merge_and_match": {
+  "C1_subset_518": true,
+  "n_subset": 518,
+  "C2_mask_identical": true,
+  "mask_sum": 373,
+  "orig_mask_sum": 373,
+  "n_pairs": 90,
+  "n_features": 127
+ },
+ "modality_aucs": {
+  "auc_ac": {
+   "arm": "acoustic only",
+   "n_features": 53,
+   "auc": 0.6562558922558923,
+   "sd": 0.044333734420968426,
+   "locked": 0.6562558922558923,
+   "delta": 0.0,
+   "tier": "BIT-FAITHFUL"
+  },
+  "auc_tx": {
+   "arm": "transcript only",
+   "n_features": 74,
+   "auc": 0.7823198653198653,
+   "sd": 0.04424449000706949,
+   "locked": 0.7823198653198653,
+   "delta": 0.0,
+   "tier": "BIT-FAITHFUL"
+  },
+  "auc_all": {
+   "arm": "transcript + acoustic",
+   "n_features": 127,
+   "auc": 0.7751582491582492,
+   "sd": 0.04281082564613965,
+   "locked": 0.7750067340067341,
+   "delta": 0.0001515151515150137,
+   "tier": "CONFIRMED-WITHIN-TOLERANCE"
+  }
+ },
+ "fusion_q2": {
+  "acoustic_only": {
+   "regen_auc": 0.7280475619504396,
+   "locked_auc": 0.7282024380495603,
+   "delta": -0.00015487609912068212,
+   "tier": "CONFIRMED-WITHIN-TOLERANCE",
+   "ci_within_0.005": true,
+   "regen": {
+    "auc": 0.7280475619504396,
+    "sd": 0.010085897301519087,
+    "ci": [
+     0.6672097017400175,
+     0.7605488750505586
+    ],
+    "n_features": 53
+   }
+  },
+  "linguistic_only": {
+   "regen_auc": 0.8075789368505196,
+   "locked_auc": 0.8075789368505196,
+   "delta": 0.0,
+   "tier": "BIT-FAITHFUL",
+   "ci_within_0.005": true,
+   "regen": {
+    "auc": 0.8075789368505196,
+    "sd": 0.002664898264944271,
+    "ci": [
+     0.7612871450719985,
+     0.8543687475780978
+    ],
+    "n_features": 64
+   }
+  },
+  "pooled_(current)": {
+   "regen_auc": 0.8380145883293366,
+   "locked_auc": 0.8379946043165468,
+   "delta": 1.9984012789797667e-05,
+   "tier": "CONFIRMED-WITHIN-TOLERANCE",
+   "ci_within_0.005": true,
+   "regen": {
+    "auc": 0.8380145883293366,
+    "sd": 0.005370454793195819,
+    "ci": [
+     0.7853964498190691,
+     0.8728694392012645
+    ],
+    "n_features": 117
+   }
+  },
+  "late_fusion": {
+   "regen_auc": 0.8298910871302958,
+   "locked_auc": 0.8299510391686651,
+   "delta": -5.995203836928198e-05,
+   "tier": "CONFIRMED-WITHIN-TOLERANCE",
+   "ci_within_0.005": true,
+   "regen": {
+    "auc": 0.8298910871302958,
+    "sd": 0.006817774488286582,
+    "ci": [
+     0.7749339810202878,
+     0.8673698916730671
+    ]
+   }
+  }
+ },
+ "acoustic_signature": {
+  "S1_auc": 0.7078624813153962,
+  "embedded": 0.7079222720478326,
+  "delta": -5.9790732436448835e-05,
+  "grade": "MATCH",
+  "n": 373,
+  "hypothesis": "StratifiedGroupKFold(5, shuffle=True, random_state=42), grouped by participant, matched-373 cohort from the ORIGINAL multimodal mask, recovered model config, 27 pkl features",
+  "registered_interpretation": "failure = protocol not confirmed, not model wrong",
+  "_provenance": {
+   "dataset": "Pitt cookie audio subset, matched 373; Lu never read; results/summary untouched",
+   "lock_state": "post-Lu-lock verification run",
+   "script": "_bootstrap/acsig_driver.py"
+  }
+ },
+ "promoted_files": {
+  "results/pitt_cookie/features_multimodal.csv": "95a94302af3fba573defffbb9d64b3551ef733f6a4fdd4f0ddbc8a71c65f204a",
+  "results/pitt_cookie/meta_multimodal.csv": "52a830481955d3218f44893b81c28b7be7da88dc610bb2341671eb48b71cd589",
+  "results/acoustic_features.csv": "63cff692f07b95a63a67077146f1af740dc0a5f927afe5788279f5c67eca0a89"
+ },
+ "originals_untouched": [
+  "results/fusion/results.json",
+  "results/pitt_cookie/modality_comparison.csv",
+  "results/pitt_cookie/multimodal_mask.npy",
+  "results/pitt_cookie/acoustic_group_comparison.csv",
+  "results/pitt_cookie/acoustic_mmse_correlation.csv",
+  "results/pitt_cookie/multimodal_model_comparison.csv",
+  "results/summary/* (never written)",
+  "Lu (never read)"
+ ],
+ "_provenance": {
+  "dataset": "Pitt cookie audio (522 readable mp3, local only; TalkBank terms \u2014 audio never left the machine); development pool unchanged (987, 581 participants)",
+  "lock_state": "post-Lu-lock; Lu untouched throughout",
+  "environment": "python 3.12.11, sklearn 1.8.0, numpy 2.4.4, pandas 3.0.2, scipy 1.17.1, librosa 0.11.0, parselmouth 0.4.7, soundfile 0.14.0 (libsndfile 1.2.2), ffmpeg system 4.x via audioread",
+  "scripts": [
+   "_bootstrap/chunk_extract2.py",
+   "_bootstrap/acmerge_driver.py",
+   "_bootstrap/fu2drive.py",
+   "_bootstrap/acsig_driver.py"
+  ],
+  "registered_criteria": "in each driver docstring, fixed before execution",
+  "generated": "2026-08-21"
+ }
+}

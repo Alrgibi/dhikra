@@ -1,0 +1,35 @@
+# Regenerated 2026-08-18 by AST parse of every import in src/, scripts/ and app/
+
+arabic-reshaper
+flask
+imageio-ffmpeg
+librosa
+numpy
+pandas
+praat-parselmouth
+pyarabic
+python-bidi
+qalsadi
+reportlab
+
+# PINNED, and this pin is load-bearing. models/dhikra_model.pkl is a pickled
+# scikit-learn object built under 1.8.0. scikit-learn does not guarantee that a
+# model pickled by one version loads under another; a newer version may refuse
+# it or, worse, load it with changed behaviour. The model is FROZEN and cannot
+# be rebuilt without a new external validation, so the library is pinned to it
+# rather than the other way round. Verified 26 August 2026: a clean install of
+# this file on Python 3.11 loads the model and reproduces a report.
+scikit-learn==1.8.0
+
+scipy
+soundfile
+spacy
+tashaphyne
+
+# spaCy language models — install separately:
+#   python -m spacy download en_core_web_sm
+#   python -m spacy download en_core_web_md   # REQUIRED for semantic features
+
+# Optional (automatic transcription; the app falls back to typed transcripts):
+#   faster-whisper
+#   openai-whisper

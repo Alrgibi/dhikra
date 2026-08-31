@@ -1,0 +1,19 @@
+{
+  "_provenance": {
+    "dataset": "Delaware, 290 shared participants; paired participant-level bootstrap",
+    "lock_state": "Delaware only; Lu never involved",
+    "script": "inline (code not committed)",
+    "note": "the interval INCLUDES zero (+0.069 [-0.017, +0.157], p = 0.122), so report Cinderella-vs-Cookie as OBSERVED, never as proven superiority",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "cookie_auc": 0.5587713808927827,
+  "cinderella_auc": 0.6277117229870671,
+  "difference": 0.06894034209428446,
+  "ci": [
+    -0.01712149122807025,
+    0.1565746795515583
+  ],
+  "p": 0.122,
+  "n_shared": 290,
+  "wording": "State as \"in the Delaware cohort, Cinderella produced higher discrimination than Cookie Theft\" unless the interval excludes zero."
+}

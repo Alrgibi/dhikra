@@ -1,0 +1,71 @@
+{
+  "_provenance": {
+    "dataset": "Pitt cookie, 518 recordings with audio (unmatched) for the acoustic and fusion arms; Delaware task arms on the Delaware cookie/multitask set",
+    "lock_state": "POST-Lu-lock, Lu-free. Rerun 2026-08-18 17:54 after the lock; the script's own governance note (lines 28-33) records why",
+    "script": "scripts/fusion_experiments.py",
+    "verification": "acoustic_only and linguistic_only reproduced end-to-end 2026-08-22 after the Pitt audio was recovered: linguistic bit-faithful (delta 0.0), acoustic within delta -1.5e-4 (results/reconstruction/acoustic_regen_verification.json)",
+    "caveat": "acoustic_only (0.728) is computed on the UNMATCHED 518-recording pool, so the age confound is not controlled in it",
+    "note": "fusion_weights are the meta-layer's raw learned coefficients; they are not normalised and do not sum to 1",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "concatenated_all_tasks": {
+    "auc": 0.6843558853928395,
+    "sd": 0.0011398965208867745,
+    "ci": [
+      0.61797613021036,
+      0.7423752788799013
+    ],
+    "n_features": 246
+  },
+  "task_level_fusion": {
+    "auc": 0.6376811594202899,
+    "sd": 0.009092549879616786,
+    "ci": [
+      0.5726323729219949,
+      0.6972838793628032
+    ],
+    "n_features": 5
+  },
+  "fusion_weights": {
+    "score_cookie": 0.056,
+    "score_cinderella": 0.392,
+    "score_cat": 0.227,
+    "score_rockwell": 0.01,
+    "score_sandwich": 0.126
+  },
+  "acoustic_only": {
+    "auc": 0.7282024380495603,
+    "sd": 0.010057943412798883,
+    "ci": [
+      0.6673877320152701,
+      0.7607763657709068
+    ],
+    "n_features": 53
+  },
+  "linguistic_only": {
+    "auc": 0.8075789368505196,
+    "sd": 0.002664898264944271,
+    "ci": [
+      0.7612871450719985,
+      0.8543687475780978
+    ],
+    "n_features": 64
+  },
+  "pooled_(current)": {
+    "auc": 0.8379946043165468,
+    "sd": 0.005366684217278678,
+    "ci": [
+      0.7853680834627346,
+      0.8729460517722123
+    ],
+    "n_features": 117
+  },
+  "late_fusion": {
+    "auc": 0.8299510391686651,
+    "sd": 0.006821946780975011,
+    "ci": [
+      0.7749407773002656,
+      0.8673671314964156
+    ]
+  }
+}

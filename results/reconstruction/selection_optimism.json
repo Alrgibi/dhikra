@@ -1,0 +1,21 @@
+{
+  "n": 288,
+  "in_sample_best": {
+    "feature": "ling.word_count",
+    "auc": 0.6472983161598391
+  },
+  "nested_best_auc": 0.601764526924247,
+  "selection_optimism": 0.04553378923559215,
+  "word_count_auc": 0.6472983161598391,
+  "ensemble_same_tasks": 0.6379,
+  "ensemble_minus_insample": -0.009398316159839104,
+  "ensemble_minus_nested": 0.036135473075753044,
+  "mean_abs_rho_top7_with_wordcount": 0.6318830871508007,
+  "folds_picked": [
+    "ling.word_count",
+    "sem.progression",
+    "ling.word_count",
+    "sem.content_dispersion",
+    "ling.word_count"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "dataset": "Wisconsin Longitudinal Study; 938 participants for the prospective arm, WLS controls vs Pitt controls for the corpus-effect arm",
+    "lock_state": "Lu never involved in any WLS analysis",
+    "script": "scripts/early_detection.py",
+    "note": "WLS was NEVER pooled into the training set. The 0.930 corpus effect is the reason: two groups that are both healthy separate at 0.930 on transcription convention alone. This file is the evidence for negative results 1 and 2",
+    "stamped": "2026-08-22 (provenance added; no value changed)"
+  },
+  "prospective_2011_to_2020": {
+    "n": 938,
+    "auc": 0.548,
+    "sd": 0.011,
+    "note": "2011 speech predicting 2020 diagnosis; essentially chance"
+  },
+  "prospective_dementia_only": {
+    "n": 729,
+    "auc": 0.552
+  },
+  "prospective_consensus_subset": {
+    "n": 187,
+    "auc": 0.482
+  },
+  "corpus_effect_pitt_vs_wls_controls": {
+    "all_features": 0.93,
+    "no_chat": 0.783,
+    "robust_only": 0.713,
+    "note": "both groups healthy; separability indicates transcription-convention differences"
+  },
+  "external_validation_pitt_model_on_wls": {
+    "auc": 0.565,
+    "specificity_at_0.35": 0.502,
+    "sensitivity_at_0.35": 0.629,
+    "specificity_at_0.50": 0.736,
+    "note": "WLS labels are 9 years post-recording, so not comparable to concurrent Pitt figures"
+  }
+}

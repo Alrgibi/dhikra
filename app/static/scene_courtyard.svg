@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="A courtyard scene">
+<title>مشهد الفناء — Courtyard scene</title>
+<desc>A house courtyard: a man watering flowers who has left the hose running and flooding the ground unnoticed, a woman hanging laundry on a line, a boy kicking a ball towards a window, a bird, a tree, a bucket, a basket, and the open sky above the courtyard wall.</desc>
+<defs><style>
+.ln{fill:none;stroke:#1f2d3a;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.th{fill:none;stroke:#1f2d3a;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+.fn{fill:none;stroke:#1f2d3a;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.skin{fill:#f6e2cf}.cl1{fill:#f3e2e2}.cl2{fill:#dfeae4}.cl3{fill:#e6e0f0}
+.wall{fill:#f4f0e6}.water{fill:#cfe8f0}.leaf{fill:#dfeadb}.wood{fill:#e8d9c0}
+.sky{fill:#d9edf7}.cope{fill:#e6ddc9}
+</style></defs>
+
+<rect width="900" height="600" fill="#fdfcf7"/>
+<!-- open sky: this is a COURTYARD, not a room. The wall is a boundary wall
+     with sky above it, and it must read that way at a glance. -->
+<rect x="0" y="0" width="900" height="104" class="sky"/>
+<g class="fn" opacity=".45">
+ <path d="M96 52 q18 -16 40 -6 q16 -18 40 -4 q22 -2 24 14 h-108 q-8 -2 4 -4z"/>
+ <path d="M640 38 q16 -14 36 -6 q14 -16 36 -4 q20 -2 22 12 h-98 q-8 -2 4 -2z"/>
+</g>
+<!-- back wall of the house, with a coping course along its top -->
+<rect x="0" y="104" width="900" height="296" class="wall"/>
+<rect x="0" y="92" width="900" height="16" class="cope"/>
+<line x1="0" y1="92" x2="900" y2="92" class="th"/>
+<line x1="0" y1="108" x2="900" y2="108" class="ln"/>
+<line x1="0" y1="400" x2="900" y2="400" class="th"/>
+<g class="fn" opacity=".35">
+ <line x1="0" y1="164" x2="900" y2="164"/><line x1="0" y1="242" x2="900" y2="242"/>
+ <line x1="0" y1="320" x2="900" y2="320"/>
+</g>
+<rect y="400" width="900" height="200" fill="#f0ece1"/>
+<g class="fn" opacity=".4">
+ <line x1="0" y1="466" x2="900" y2="466"/><line x1="0" y1="532" x2="900" y2="532"/>
+ <line x1="180" y1="400" x2="150" y2="600"/><line x1="440" y1="400" x2="440" y2="600"/>
+ <line x1="700" y1="400" x2="740" y2="600"/>
+</g>
+
+<!-- door -->
+<rect x="620" y="196" width="104" height="204" rx="4" class="wood"/>
+<rect x="620" y="196" width="104" height="204" rx="4" class="th"/>
+<circle cx="706" cy="300" r="5" class="ln"/>
+<line x1="672" y1="196" x2="672" y2="400" class="fn"/>
+
+<!-- window (the ball is heading here) -->
+<rect x="330" y="150" width="150" height="120" rx="4" fill="#dceef5"/>
+<rect x="330" y="150" width="150" height="120" rx="4" class="th"/>
+<line x1="405" y1="150" x2="405" y2="270" class="ln"/>
+<line x1="330" y1="210" x2="480" y2="210" class="ln"/>
+
+<!-- tree -->
+<g transform="translate(790,180)">
+ <path d="M40 220 q6 -80 0 -120" class="th"/>
+ <ellipse cx="40" cy="66" rx="66" ry="52" class="leaf"/>
+ <ellipse cx="40" cy="66" rx="66" ry="52" class="ln"/>
+ <path d="M8 60 q30 -22 62 4 M14 84 q28 -14 54 2" class="fn"/>
+ <path d="M40 150 l-24 -26 M40 168 l26 -30" class="ln"/>
+</g>
+<!-- bird on the branch -->
+<g transform="translate(806,204)">
+ <ellipse cx="0" cy="0" rx="16" ry="10" fill="#e2d6c6"/><ellipse cx="0" cy="0" rx="16" ry="10" class="ln"/>
+ <circle cx="14" cy="-8" r="8" fill="#e2d6c6"/><circle cx="14" cy="-8" r="8" class="ln"/>
+ <path d="M21 -8 l8 3 l-8 3z" fill="#e8b96a" class="fn"/>
+ <path d="M-14 -2 q-14 -6 -18 -14" class="ln"/>
+ <circle cx="16" cy="-10" r="1.6" fill="#1f2d3a"/>
+</g>
+
+<!-- laundry line -->
+<line x1="70" y1="120" x2="330" y2="146" class="th"/>
+<g>
+ <path d="M104 128 l-8 62 h44 l-8 -60z" class="cl2"/><path d="M104 128 l-8 62 h44 l-8 -60z" class="ln"/>
+ <path d="M170 134 l-10 58 h46 l-8 -56z" class="cl1"/><path d="M170 134 l-10 58 h46 l-8 -56z" class="ln"/>
+ <path d="M240 140 l-8 50 h40 l-8 -48z" class="cl3"/><path d="M240 140 l-8 50 h40 l-8 -48z" class="ln"/>
+</g>
+
+<!-- WOMAN hanging laundry -->
+<g transform="translate(96,236)">
+ <path d="M12 60 q28 -14 56 0 l14 104 q-42 14 -84 0z" class="cl1"/>
+ <path d="M12 60 q28 -14 56 0 l14 104 q-42 14 -84 0z" class="th"/>
+ <path d="M16 72 q-16 -40 4 -64" class="th"/>
+ <path d="M20 8 q-4 -8 4 -10" class="ln"/>
+ <path d="M72 74 q28 20 14 48" class="th"/>
+ <circle cx="40" cy="34" r="22" class="skin"/><circle cx="40" cy="34" r="22" class="th"/>
+ <path d="M18 32 q22 -30 44 0 q6 22 -4 30 l-36 0 q-10 -8 -4 -30z" fill="#cbd5cf"/>
+ <path d="M18 32 q22 -30 44 0 q6 22 -4 30 l-36 0 q-10 -8 -4 -30z" class="ln"/>
+ <circle cx="32" cy="38" r="2.2" fill="#1f2d3a"/><circle cx="48" cy="38" r="2.2" fill="#1f2d3a"/>
+ <path d="M33 48 q7 5 14 0" class="fn"/>
+</g>
+<!-- laundry basket -->
+<g transform="translate(58,414)">
+ <path d="M0 0 h72 l-10 46 h-52z" class="wood"/><path d="M0 0 h72 l-10 46 h-52z" class="th"/>
+ <path d="M8 14 h56 M12 30 h48" class="fn"/>
+</g>
+
+<!-- MAN watering, hose left running (HAZARD) -->
+<g transform="translate(470,262)">
+ <path d="M10 58 q28 -14 56 0 l10 88 q-38 12 -76 0z" class="cl2"/>
+ <path d="M10 58 q28 -14 56 0 l10 88 q-38 12 -76 0z" class="th"/>
+ <path d="M14 72 q-36 10 -50 18" class="th"/>
+ <path d="M-36 90 q-8 4 -12 -2" class="ln"/>
+ <path d="M70 72 q26 16 20 38" class="th"/>
+ <circle cx="38" cy="32" r="22" class="skin"/><circle cx="38" cy="32" r="22" class="th"/>
+ <path d="M16 26 q22 -22 44 0" class="ln"/>
+ <circle cx="30" cy="36" r="2.2" fill="#1f2d3a"/><circle cx="46" cy="36" r="2.2" fill="#1f2d3a"/>
+ <path d="M31 46 q7 5 14 0" class="fn"/>
+ <path d="M28 12 q10 -8 20 0" class="fn"/>
+</g>
+<!-- he is turned to the flowers; the hose has been dropped BEHIND HIM ON THE
+     GROUND. It must run below the floor line or it reads as a cable on the wall. -->
+<path d="M552 398 q56 28 100 14 q44 -14 76 12" class="th"/>
+<path d="M728 424 q10 6 12 14" class="th"/>
+<!-- water gushing from the dropped hose, as a spreading sheet -->
+<path d="M726 432 q18 10 26 6 q6 20 14 34 h-52 q10 -20 12 -40 z" class="water"/>
+<path d="M726 432 q18 10 26 6 q6 20 14 34 h-52 q10 -20 12 -40 z" class="ln"/>
+<g class="fn" opacity=".7">
+ <path d="M730 444 v24"/><path d="M740 446 v22"/><path d="M750 444 v24"/>
+</g>
+<ellipse cx="742" cy="470" rx="92" ry="22" class="water"/>
+<ellipse cx="742" cy="470" rx="92" ry="22" class="ln"/>
+<ellipse cx="676" cy="504" rx="56" ry="14" class="water"/>
+<ellipse cx="676" cy="504" rx="56" ry="14" class="fn"/>
+
+<!-- flower pots he is watering -->
+<g transform="translate(384,364)">
+ <path d="M0 22 h48 l-6 34 h-36z" fill="#e0b39a"/><path d="M0 22 h48 l-6 34 h-36z" class="th"/>
+ <path d="M24 22 q-4 -22 -16 -28 M24 22 q4 -22 16 -26 M24 22 v-26" class="ln"/>
+ <circle cx="8" cy="-8" r="6" fill="#f0c3cf"/><circle cx="8" cy="-8" r="6" class="fn"/>
+ <circle cx="40" cy="-6" r="6" fill="#f0c3cf"/><circle cx="40" cy="-6" r="6" class="fn"/>
+ <circle cx="24" cy="-6" r="6" fill="#f0c3cf"/><circle cx="24" cy="-6" r="6" class="fn"/>
+</g>
+<!-- bucket -->
+<g transform="translate(300,430)">
+ <path d="M0 0 h50 l-7 40 h-36z" fill="#dfe6e4"/><path d="M0 0 h50 l-7 40 h-36z" class="th"/>
+ <path d="M2 0 q23 -26 46 0" class="ln"/>
+</g>
+
+<!-- BOY kicking ball towards the window -->
+<g transform="translate(180,318)">
+ <path d="M22 56 l0 44" class="th"/>
+ <path d="M22 100 l-16 22 M22 100 l20 14" class="th"/>
+ <path d="M6 64 q16 -12 32 0 l8 40 q-24 8 -48 0z" class="cl3"/>
+ <path d="M6 64 q16 -12 32 0 l8 40 q-24 8 -48 0z" class="ln"/>
+ <path d="M8 70 q-20 14 -18 34" class="th"/>
+ <path d="M40 70 q22 10 22 30" class="th"/>
+ <circle cx="22" cy="40" r="17" class="skin"/><circle cx="22" cy="40" r="17" class="th"/>
+ <path d="M7 34 q15 -14 30 0" class="ln"/>
+ <circle cx="16" cy="40" r="2" fill="#1f2d3a"/><circle cx="28" cy="40" r="2" fill="#1f2d3a"/>
+ <path d="M17 48 q5 4 10 0" class="fn"/>
+</g>
+<!-- ball in flight toward the window -->
+<circle cx="286" cy="300" r="19" fill="#eef1ea"/><circle cx="286" cy="300" r="19" class="th"/>
+<path d="M272 292 q14 8 28 0 M286 281 v38" class="fn"/>
+<g class="fn" opacity=".7">
+ <path d="M248 326 q10 -12 22 -18"/><path d="M240 344 q16 -18 32 -26"/>
+</g>
+</svg>

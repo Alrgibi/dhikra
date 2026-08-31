@@ -1,0 +1,65 @@
+{
+  "method": "participant-clustered bootstrap, 2000 resamples, seed 42, threshold 0.367",
+  "why": "metric_suite.json resampled RECORDINGS, which ignores within-participant clustering and understates uncertainty; the thesis states participant-level bootstrap throughout",
+  "diagnostic": "Lu has one recording per participant, so the two methods agree there and diverge only where clustering exists",
+  "cohorts": {
+    "Pitt": {
+      "auc": 0.809471766848816,
+      "auc_ci95": [
+        0.7623741037905901,
+        0.8570252871941861
+      ],
+      "sensitivity": 0.8557377049180328,
+      "sensitivity_ci95": [
+        0.8096695975833423,
+        0.9003218104709917
+      ],
+      "specificity": 0.5061728395061729,
+      "specificity_ci95": [
+        0.4309595611145731,
+        0.5769366197183098
+      ],
+      "n": 548,
+      "n_participants": 290
+    },
+    "Delaware": {
+      "auc": 0.6290770609318996,
+      "auc_ci95": [
+        0.5696268662148155,
+        0.6850096803407237
+      ],
+      "sensitivity": 0.56875,
+      "sensitivity_ci95": [
+        0.4890079365079365,
+        0.6470682503770739
+      ],
+      "specificity": 0.6594982078853047,
+      "specificity_ci95": [
+        0.5979020979020979,
+        0.71875
+      ],
+      "n": 439,
+      "n_participants": 291
+    },
+    "Development combined": {
+      "auc": 0.7550158612450047,
+      "auc_ci95": [
+        0.7191338946201126,
+        0.7904535785439704
+      ],
+      "sensitivity": 0.7569892473118279,
+      "sensitivity_ci95": [
+        0.7170099163375376,
+        0.8012414144150442
+      ],
+      "specificity": 0.5881226053639846,
+      "specificity_ci95": [
+        0.5386027813993916,
+        0.6330678212585933
+      ],
+      "n": 987,
+      "n_participants": 438
+    }
+  },
+  "supersedes": "results/reconstruction/metric_suite.json AUC/sens/spec intervals for Pitt, Delaware and Development combined; Lu unchanged"
+}

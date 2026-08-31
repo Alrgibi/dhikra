@@ -1,0 +1,573 @@
+{
+  "registration": "module docstring, committed before execution",
+  "n_participants": 288,
+  "n_impaired": 120,
+  "curve": {
+    "1": {
+      "tasks": [
+        "cinderella"
+      ],
+      "auc": 0.6104166666666667,
+      "ci95": [
+        0.5411719954253891,
+        0.6770656672581357
+      ]
+    },
+    "2": {
+      "tasks": [
+        "cinderella",
+        "sandwich"
+      ],
+      "auc": 0.6425595238095239,
+      "ci95": [
+        0.5769462827072303,
+        0.7068347630011241
+      ]
+    },
+    "3": {
+      "tasks": [
+        "cinderella",
+        "cat",
+        "sandwich"
+      ],
+      "auc": 0.6419146825396825,
+      "ci95": [
+        0.5781328679828446,
+        0.7045072538946248
+      ]
+    },
+    "4": {
+      "tasks": [
+        "cinderella",
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "auc": 0.6333333333333333,
+      "ci95": [
+        0.570335025919546,
+        0.6966999592505158
+      ]
+    },
+    "5": {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "auc": 0.6101190476190477,
+      "ci95": [
+        0.5476155131335335,
+        0.6772592397617245
+      ]
+    }
+  },
+  "reference_cookie_full74": {
+    "auc": 0.5302579365079365,
+    "ci95": [
+      0.4615573417106099,
+      0.5989423990539514
+    ]
+  },
+  "all_subsets": [
+    {
+      "tasks": [
+        "cinderella",
+        "sandwich"
+      ],
+      "k": 2,
+      "auc": 0.6425595238095239
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "cat",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.6419146825396825
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 4,
+      "auc": 0.6333333333333333
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.6317460317460317
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "cat"
+      ],
+      "k": 2,
+      "auc": 0.6194444444444445
+    },
+    {
+      "tasks": [
+        "cat",
+        "sandwich"
+      ],
+      "k": 2,
+      "auc": 0.6151289682539682
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "cat",
+        "rockwell"
+      ],
+      "k": 3,
+      "auc": 0.6135416666666667
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.6134920634920635
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "cat",
+        "sandwich"
+      ],
+      "k": 4,
+      "auc": 0.6129960317460318
+    },
+    {
+      "tasks": [
+        "cinderella"
+      ],
+      "k": 1,
+      "auc": 0.6104166666666667
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 5,
+      "auc": 0.6101190476190477
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 4,
+      "auc": 0.6086805555555556
+    },
+    {
+      "tasks": [
+        "cinderella",
+        "rockwell"
+      ],
+      "k": 2,
+      "auc": 0.6058531746031746
+    },
+    {
+      "tasks": [
+        "sandwich"
+      ],
+      "k": 1,
+      "auc": 0.6056051587301587
+    },
+    {
+      "tasks": [
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.6026785714285714
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "cat"
+      ],
+      "k": 3,
+      "auc": 0.5946428571428571
+    },
+    {
+      "tasks": [
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 2,
+      "auc": 0.593452380952381
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "cat",
+        "rockwell"
+      ],
+      "k": 4,
+      "auc": 0.591220238095238
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella"
+      ],
+      "k": 2,
+      "auc": 0.5888392857142857
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cinderella",
+        "rockwell"
+      ],
+      "k": 3,
+      "auc": 0.5884920634920635
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cat",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.5709325396825397
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cat",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 4,
+      "auc": 0.5683531746031746
+    },
+    {
+      "tasks": [
+        "cat",
+        "rockwell"
+      ],
+      "k": 2,
+      "auc": 0.5663690476190476
+    },
+    {
+      "tasks": [
+        "cat"
+      ],
+      "k": 1,
+      "auc": 0.5645337301587302
+    },
+    {
+      "tasks": [
+        "cookie",
+        "rockwell",
+        "sandwich"
+      ],
+      "k": 3,
+      "auc": 0.5579861111111111
+    },
+    {
+      "tasks": [
+        "cookie",
+        "sandwich"
+      ],
+      "k": 2,
+      "auc": 0.5561507936507937
+    },
+    {
+      "tasks": [
+        "rockwell"
+      ],
+      "k": 1,
+      "auc": 0.55
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cat",
+        "rockwell"
+      ],
+      "k": 3,
+      "auc": 0.5342261904761905
+    },
+    {
+      "tasks": [
+        "cookie",
+        "cat"
+      ],
+      "k": 2,
+      "auc": 0.531795634920635
+    },
+    {
+      "tasks": [
+        "cookie",
+        "rockwell"
+      ],
+      "k": 2,
+      "auc": 0.5160218253968254
+    },
+    {
+      "tasks": [
+        "cookie"
+      ],
+      "k": 1,
+      "auc": 0.5017361111111112
+    }
+  ],
+  "saturation_point": 2,
+  "grade": "BATTERY-NOT-CONFIRMED",
+  "cookie_status": "COOKIE-DISPENSABLE",
+  "five_vs_one": {
+    "delta": -0.00029761904761904656,
+    "ci95": [
+      -0.044823448132789115,
+      0.044618548342701965
+    ]
+  },
+  "caveats": [
+    "best-at-k selected on the same data that evaluates it: the curve is an UPPER BOUND",
+    "score-level averaging holds dimensionality constant; supersedes combined_task_auc.json which confounded task count with column count",
+    "Delaware only; Lu not read; not externally validated; specified-successor material, not Chapter 5"
+  ],
+  "governance": "deployed model, feature set and threshold unchanged",
+  "paired_contrasts": {
+    "cinderella_minus_cookie": {
+      "delta": 0.10868055555555556,
+      "ci95": [
+        0.025935447591962396,
+        0.18983207413079314
+      ],
+      "excludes_zero": true
+    },
+    "sandwich_minus_cookie": {
+      "delta": 0.10386904761904758,
+      "ci95": [
+        0.019937112235217908,
+        0.18895684766901222
+      ],
+      "excludes_zero": true
+    },
+    "cat_minus_cookie": {
+      "delta": 0.06279761904761905,
+      "ci95": [
+        -0.013183375820464633,
+        0.1402400187511975
+      ],
+      "excludes_zero": false
+    },
+    "rockwell_minus_cookie": {
+      "delta": 0.048263888888888884,
+      "ci95": [
+        -0.032948458969386564,
+        0.12971934260429827
+      ],
+      "excludes_zero": false
+    },
+    "bestpair_minus_cookie": {
+      "delta": 0.1408234126984127,
+      "ci95": [
+        0.06015706336944,
+        0.21774208975095022
+      ],
+      "excludes_zero": true
+    },
+    "bestpair_minus_deployed74": {
+      "delta": 0.11230158730158735,
+      "ci95": [
+        0.035385537675608196,
+        0.1883086164160847
+      ],
+      "excludes_zero": true
+    },
+    "four_without_minus_five_with": {
+      "delta": 0.023214285714285632,
+      "ci95": [
+        0.002986099387507732,
+        0.04308769446200303
+      ],
+      "excludes_zero": true
+    },
+    "cinderella_minus_deployed74": {
+      "delta": 0.08015873015873021,
+      "ci95": [
+        -0.002681554103122821,
+        0.16584789956736867
+      ],
+      "excludes_zero": false
+    },
+    "cookie43_minus_cookie74": {
+      "delta": -0.02852182539682535,
+      "ci95": [
+        -0.059440355296227494,
+        0.004071205742400575
+      ],
+      "excludes_zero": false
+    }
+  },
+  "AMENDMENT_3_crosssectional": {
+    "disclosure": "label rule under-specified in the registration; corrected AFTER the max-label output was seen",
+    "n": 288,
+    "n_impaired": 115,
+    "curve": {
+      "1": {
+        "tasks": [
+          "sandwich"
+        ],
+        "auc": 0.6070872078411661,
+        "ci95": [
+          0.5387588236903547,
+          0.6747078005175698
+        ]
+      },
+      "2": {
+        "tasks": [
+          "cinderella",
+          "sandwich"
+        ],
+        "auc": 0.6379492334757477,
+        "ci95": [
+          0.5702958840755973,
+          0.7013092247796487
+        ]
+      },
+      "3": {
+        "tasks": [
+          "cinderella",
+          "cat",
+          "sandwich"
+        ],
+        "auc": 0.637848705704951,
+        "ci95": [
+          0.5713099861998894,
+          0.7015603155336512
+        ]
+      },
+      "4": {
+        "tasks": [
+          "cinderella",
+          "cat",
+          "rockwell",
+          "sandwich"
+        ],
+        "auc": 0.6371952751947726,
+        "ci95": [
+          0.5701463066915348,
+          0.6992154713520983
+        ]
+      },
+      "5": {
+        "tasks": [
+          "cookie",
+          "cinderella",
+          "cat",
+          "rockwell",
+          "sandwich"
+        ],
+        "auc": 0.6172907765770294,
+        "ci95": [
+          0.5515980110894293,
+          0.6815716112168855
+        ]
+      }
+    },
+    "singles": {
+      "cookie": 0.5060567981905001,
+      "cinderella": 0.5998994722292034,
+      "cat": 0.5710480020105554,
+      "rockwell": 0.5779341543101282,
+      "sandwich": 0.6070872078411661
+    },
+    "paired_contrasts": {
+      "cinderella_minus_cookie": {
+        "delta": 0.09384267403870328,
+        "ci95": [
+          0.010610591673148354,
+          0.17389607352209124
+        ],
+        "excludes_zero": true
+      },
+      "sandwich_minus_cookie": {
+        "delta": 0.10103040965066601,
+        "ci95": [
+          0.019244081265957915,
+          0.18469717102626035
+        ],
+        "excludes_zero": true
+      },
+      "bestpair_minus_cookie": {
+        "delta": 0.13189243528524763,
+        "ci95": [
+          0.05406391089560498,
+          0.21470359674574319
+        ],
+        "excludes_zero": true
+      },
+      "four_without_minus_five_with": {
+        "delta": 0.019904498617743238,
+        "ci95": [
+          -0.0014545623113129595,
+          0.04083619968442849
+        ],
+        "excludes_zero": false
+      }
+    },
+    "saturation": 1,
+    "grade": "BATTERY-NOT-CONFIRMED",
+    "label_instability": "18 of 288 complete-case participants change label across visits (6.25%), including MCI->Control reversion"
+  },
+  "genre_contrast": {
+    "picture": [
+      "cookie",
+      "cat",
+      "rockwell"
+    ],
+    "discourse": [
+      "cinderella",
+      "sandwich"
+    ],
+    "mean_discourse": 0.6034933400351847,
+    "mean_picture": 0.5516796515037279,
+    "delta": 0.05181368853145685,
+    "ci95": [
+      -0.0013631534817702792,
+      0.10622609987765792
+    ],
+    "excludes_zero": false,
+    "battery_2disc_vs_3pic": {
+      "disc": 0.6379492334757477,
+      "pic": 0.5591354611711485,
+      "delta": 0.07881377230459918,
+      "ci95": [
+        0.004174858549664715,
+        0.15790579906371402
+      ],
+      "excludes_zero": true
+    },
+    "note": "genre is a structural property of the five tasks declared before the contrast was computed; it is not selected from the ranking"
+  }
+}

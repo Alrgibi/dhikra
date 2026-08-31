@@ -1,0 +1,116 @@
+{
+  "script": "scripts/make_fig_calibration.py",
+  "purpose": "committed generator reconstructed for fig_calibration.png; original left untouched",
+  "inputs": [
+    "results/summary/oof_predictions.npy (+labels/source, order asserted)",
+    "results/reconstruction/lu_oneshot_reproduction.json -> predictions (53, stored)"
+  ],
+  "bands": "0.2-wide, bands with n < 5 omitted",
+  "curves": {
+    "Pitt": [
+      {
+        "band": "(0.0, 0.2]",
+        "n": 5,
+        "mean_predicted": 0.19212587949018153,
+        "observed_rate": 0.2
+      },
+      {
+        "band": "(0.2, 0.4]",
+        "n": 193,
+        "mean_predicted": 0.3065495023451121,
+        "observed_rate": 0.26424870466321243
+      },
+      {
+        "band": "(0.4, 0.6]",
+        "n": 124,
+        "mean_predicted": 0.5034738793745008,
+        "observed_rate": 0.5241935483870968
+      },
+      {
+        "band": "(0.6, 0.8]",
+        "n": 172,
+        "mean_predicted": 0.6997686373700762,
+        "observed_rate": 0.7848837209302325
+      },
+      {
+        "band": "(0.8, 1.0]",
+        "n": 54,
+        "mean_predicted": 0.8301713673149984,
+        "observed_rate": 0.9814814814814815
+      }
+    ],
+    "Delaware": [
+      {
+        "band": "(0.0, 0.2]",
+        "n": 15,
+        "mean_predicted": 0.18815079042629748,
+        "observed_rate": 0.06666666666666667
+      },
+      {
+        "band": "(0.2, 0.4]",
+        "n": 274,
+        "mean_predicted": 0.29520765373211894,
+        "observed_rate": 0.3102189781021898
+      },
+      {
+        "band": "(0.4, 0.6]",
+        "n": 119,
+        "mean_predicted": 0.4824924774164849,
+        "observed_rate": 0.453781512605042
+      },
+      {
+        "band": "(0.6, 0.8]",
+        "n": 31,
+        "mean_predicted": 0.6690554552605261,
+        "observed_rate": 0.6451612903225806
+      }
+    ],
+    "Lu": [
+      {
+        "band": "(0.2, 0.4]",
+        "n": 14,
+        "mean_predicted": 0.3241311319618047,
+        "observed_rate": 0.14285714285714285
+      },
+      {
+        "band": "(0.4, 0.6]",
+        "n": 11,
+        "mean_predicted": 0.5060957121143564,
+        "observed_rate": 0.2727272727272727
+      },
+      {
+        "band": "(0.6, 0.8]",
+        "n": 18,
+        "mean_predicted": 0.7071408801786926,
+        "observed_rate": 0.6666666666666666
+      },
+      {
+        "band": "(0.8, 1.0]",
+        "n": 10,
+        "mean_predicted": 0.821167513487436,
+        "observed_rate": 0.9
+      }
+    ]
+  },
+  "slope_intercept_context": {
+    "caption_register": {
+      "slope": 1.289,
+      "intercept": 0.138
+    },
+    "CURRENT_development_stats (NUMBERS canonical, sec 5.4)": {
+      "slope": 1.2764,
+      "intercept": 0.1348
+    },
+    "recalibration_decision.json development_pooled.raw": {
+      "slope": 1.2887,
+      "intercept": 0.1376
+    },
+    "oof_vector_diagnostic.json stored_vector": {
+      "slope": 1.2887,
+      "intercept": 0.1376
+    },
+    "note": "the caption pair rounds from the twice-witnessed stored-vector fit, not from the canonical summary; BLOCKING for section 5.4 (Session B)"
+  },
+  "VERDICT": "MATCH -- the reconstruction reproduces the committed PNG point for point: identical bands survive the n>=5 filter and every (mean predicted, observed) position matches at reading precision in all three cohorts. The committed figure was therefore drawn from the stored out-of-fold vector (Pitt/Delaware) and the 53 stored Lu predictions, and its caption's slope 1.289 / intercept 0.138 round from the stored-vector fit (1.2887/0.1376), not from CURRENT_development_stats.json's 1.2764/0.1348.",
+  "blocking_for_session_B": "Section 5.4 must not print 1.2764 beside this figure without resolving the pair: three witnesses (recalibration_decision.json, oof_vector_diagnostic.json, age_flatness_check.json cox refit 1.2891/0.1376) agree on ~1.289/0.1376 from the stored vector; the canonical 1.2764/0.1348 in CURRENT_development_stats.json has no second witness and its producing fit is unrecorded. Either regenerate the canonical pair from the stored vector via its generator, or cite the witnessed pair with FIGURE_RECONCILIATION carrying the entry."
+}

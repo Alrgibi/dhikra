@@ -1,0 +1,46 @@
+{
+  "inputs": {
+    "SEM": 0.1032,
+    "MDC95": 0.286,
+    "sd_change": 0.1459,
+    "n_pairs": 123,
+    "drift_per_visit": 0.0447,
+    "drift_sd": 0.196,
+    "gap_mean_y": 1.2,
+    "threshold": 0.367,
+    "control_score_sd": 0.1402714998121568,
+    "implied_r": 0.4587218284138548
+  },
+  "Q1": {
+    "mdc_by_k": {
+      "1": 0.28605580568833067,
+      "2": 0.20227199999999998,
+      "3": 0.165154396417413,
+      "4": 0.14302790284416533,
+      "6": 0.11678179364952399,
+      "10": 0.09045878838896748
+    },
+    "caveat": "sqrt(k) assumes independent errors; within-session rho unestimable from Pitt; 0.202 is an upper bound",
+    "mdc_under_rho": {
+      "0.0": 0.202272,
+      "0.2": 0.22157787430336992,
+      "0.4": 0.2393314579774251,
+      "0.6": 0.25585609075103133
+    }
+  },
+  "Q2": {
+    "rate_per_year": 0.03725,
+    "years_to_detect_k1": 7.677852348993288,
+    "years_to_detect_k2": 5.4301208053691274,
+    "k_needed_for_1y": 58.94941669294175,
+    "conclusion": "screening not monitoring; survives averaging"
+  },
+  "Q3": {
+    "reproducibility_k1": 0.8354929962237554,
+    "reproducibility_k2": 0.8759112598432834,
+    "grey_zone_frac": 0.4154002026342452,
+    "reproducibility_targeted": 0.8582136254977815,
+    "benefit_fraction": 0.5621376882466722
+  },
+  "governance": "Lu not read; no model, feature or threshold changed; arithmetic on published SEM + stored OOF"
+}

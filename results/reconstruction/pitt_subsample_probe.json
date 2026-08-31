@@ -1,0 +1,39 @@
+{
+  "generated": "2026-08-23",
+  "question": "does training-set size explain Delaware's within-cohort 0.547?",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "reference": {
+    "pitt_within_full_548": 0.8137,
+    "delaware_within_439": 0.5474,
+    "pitt_trained_on_delaware": 0.646
+  },
+  "subsamples": [
+    {
+      "seed": 11,
+      "n": 439,
+      "n_participants": 230,
+      "prevalence": 0.5444191343963554,
+      "auc": 0.8113
+    },
+    {
+      "seed": 22,
+      "n": 439,
+      "n_participants": 231,
+      "prevalence": 0.5330296127562643,
+      "auc": 0.8182
+    },
+    {
+      "seed": 33,
+      "n": 439,
+      "n_participants": 230,
+      "prevalence": 0.5671981776765376,
+      "auc": 0.7953
+    }
+  ],
+  "mean_auc": 0.8083,
+  "range": [
+    0.7953,
+    0.8182
+  ],
+  "GRADE": "SIZE-RULED-OUT"
+}

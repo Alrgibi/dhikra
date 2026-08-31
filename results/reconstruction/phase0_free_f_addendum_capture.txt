@@ -1,0 +1,4 @@
+pooled control-referenced threshold (80% target, all Pitt controls): 0.5500
+  f: specificity 0.8571  sensitivity 0.7619
+  m: specificity 0.6966  sensitivity 0.5862
+pooled-threshold sensitivity gap (f - m): 0.1757   [plan target: 0.176]

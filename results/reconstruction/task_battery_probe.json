@@ -1,0 +1,36 @@
+{
+  "generated": "2026-08-23",
+  "preregistration": "criteria fixed in this script's docstring before execution",
+  "cohort": {
+    "n_participants_with_all_five_tasks": 288,
+    "n_impaired": 102,
+    "n_control": 186
+  },
+  "cookie": {
+    "auc": 0.5687,
+    "ci95": [
+      0.4998,
+      0.6393
+    ],
+    "n_features": 64
+  },
+  "battery": {
+    "auc": 0.6455,
+    "ci95": [
+      0.5763,
+      0.7154
+    ],
+    "n_features": 320
+  },
+  "paired_difference_battery_minus_cookie": {
+    "point": 0.0769,
+    "ci95": [
+      0.0015,
+      0.1505
+    ],
+    "p_two_sided_approx": 0.046
+  },
+  "GRADE": "BATTERY-BETTER",
+  "confound_to_report": "BATTERY carries five times the features of COOKIE. Any advantage is an advantage of the battery AS A DESIGN, not of task variety at matched dimensionality, and this test does not separate the two.",
+  "governance": "Delaware only; Lu not read; exploratory fits never applied to anything"
+}

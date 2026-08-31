@@ -1,0 +1,162 @@
+{
+  "script": "scripts/feature_health_audit.py",
+  "purpose": "provenance recovery: recompute the feature-health figures of THESIS_PLAN section 3.2.3 from committed files",
+  "criteria": "fixed in the module docstring before execution; report-and-stop",
+  "primary_population": "development pool, 987 recordings (Pitt 548 + Delaware cookie 439)",
+  "secondary_population": "Pitt only, 548 recordings (reported because the original audit did not record its population)",
+  "primary": {
+    "values": {
+      "n": 987,
+      "max_missingness": 0.0121580547112462,
+      "mean_missingness": 0.00018996960486322188,
+      "argmax_missingness": "sem.progression",
+      "filler_count_zero_share_pct": 99.29078014184397,
+      "filler_rate_zero_share_pct": 99.29078014184397,
+      "filled_pause_nonzero_share_pct": 85.91691995947315,
+      "filled_pause_tokens_est": 3768.3925357699254,
+      "filled_pause_rate_mean_control": 3.3439030468301505,
+      "filled_pause_rate_mean_impaired": 3.2901663610907828,
+      "filled_pause_auc": 0.4733036707452725
+    },
+    "graded": {
+      "max_missingness": {
+        "claimed": 0.012,
+        "recomputed": 0.0121580547112462,
+        "delta": 0.0001580547112462003,
+        "reproduced": true,
+        "tolerance": 0.001
+      },
+      "mean_missingness": {
+        "claimed": 0.0002,
+        "recomputed": 0.00018996960486322188,
+        "delta": -1.0030395136778126e-05,
+        "reproduced": true,
+        "tolerance": 0.0001
+      },
+      "filler_count_zero_share_pct": {
+        "claimed": 99.3,
+        "recomputed": 99.29078014184397,
+        "delta": -0.009219858156029659,
+        "reproduced": true,
+        "tolerance": 0.3
+      },
+      "filled_pause_nonzero_share_pct": {
+        "claimed": 81.8,
+        "recomputed": 85.91691995947315,
+        "delta": 4.116919959473151,
+        "reproduced": false,
+        "tolerance": 0.5
+      },
+      "filled_pause_tokens_est": {
+        "claimed": 1881.0,
+        "recomputed": 3768.3925357699254,
+        "delta": 1887.3925357699254,
+        "reproduced": false,
+        "tolerance": 18.81
+      },
+      "filled_pause_rate_mean_control": {
+        "claimed": 2.797,
+        "recomputed": 3.3439030468301505,
+        "delta": 0.5469030468301503,
+        "reproduced": false,
+        "tolerance": 0.02
+      },
+      "filled_pause_rate_mean_impaired": {
+        "claimed": 3.091,
+        "recomputed": 3.2901663610907828,
+        "delta": 0.19916636109078256,
+        "reproduced": false,
+        "tolerance": 0.02
+      },
+      "filled_pause_auc": {
+        "claimed": 0.5075,
+        "recomputed": 0.4733036707452725,
+        "delta": -0.03419632925472743,
+        "reproduced": false,
+        "tolerance": 0.003
+      }
+    },
+    "n_reproduced": 3,
+    "n_claims": 8
+  },
+  "secondary_pitt_only": {
+    "values": {
+      "n": 548,
+      "max_missingness": 0.010948905109489052,
+      "mean_missingness": 0.00017107664233576643,
+      "argmax_missingness": "sem.progression",
+      "filler_count_zero_share_pct": 99.08759124087592,
+      "filler_rate_zero_share_pct": 99.08759124087592,
+      "filled_pause_nonzero_share_pct": 81.75182481751825,
+      "filled_pause_tokens_est": 1636.6817195905699,
+      "filled_pause_rate_mean_control": 2.79667884137146,
+      "filled_pause_rate_mean_impaired": 3.0907306870244096,
+      "filled_pause_auc": 0.4925183835930648
+    },
+    "graded": {
+      "max_missingness": {
+        "claimed": 0.012,
+        "recomputed": 0.010948905109489052,
+        "delta": -0.0010510948905109486,
+        "reproduced": false,
+        "tolerance": 0.001
+      },
+      "mean_missingness": {
+        "claimed": 0.0002,
+        "recomputed": 0.00017107664233576643,
+        "delta": -2.892335766423358e-05,
+        "reproduced": true,
+        "tolerance": 0.0001
+      },
+      "filler_count_zero_share_pct": {
+        "claimed": 99.3,
+        "recomputed": 99.08759124087592,
+        "delta": -0.21240875912407375,
+        "reproduced": true,
+        "tolerance": 0.3
+      },
+      "filled_pause_nonzero_share_pct": {
+        "claimed": 81.8,
+        "recomputed": 81.75182481751825,
+        "delta": -0.04817518248174224,
+        "reproduced": true,
+        "tolerance": 0.5
+      },
+      "filled_pause_tokens_est": {
+        "claimed": 1881.0,
+        "recomputed": 1636.6817195905699,
+        "delta": -244.31828040943014,
+        "reproduced": false,
+        "tolerance": 18.81
+      },
+      "filled_pause_rate_mean_control": {
+        "claimed": 2.797,
+        "recomputed": 2.79667884137146,
+        "delta": -0.0003211586285400969,
+        "reproduced": true,
+        "tolerance": 0.02
+      },
+      "filled_pause_rate_mean_impaired": {
+        "claimed": 3.091,
+        "recomputed": 3.0907306870244096,
+        "delta": -0.00026931297559062983,
+        "reproduced": true,
+        "tolerance": 0.02
+      },
+      "filled_pause_auc": {
+        "claimed": 0.5075,
+        "recomputed": 0.4925183835930648,
+        "delta": -0.014981616406935128,
+        "reproduced": false,
+        "tolerance": 0.003
+      }
+    },
+    "n_reproduced": 5
+  },
+  "VERDICT": "PARTIAL",
+  "post_execution_notes": {
+    "population_split_decoded": "the missingness and filler-zero claims reproduce on the 987 development pool (max 0.01216, mean 0.00019, 99.29%); the filled-pause claims reproduce on Pitt-548 (81.75%, 2.79668, 3.09073) -- the original audit mixed two populations without recording either",
+    "filled_pause_auc": "registered criterion FAILED as written: recomputed Pitt AUC 0.492518 against claimed 0.5075. The two are exact complements (1 - 0.492518 = 0.507482): the original run oriented the statistic oppositely. Distance from chance is 0.0075 under either orientation, so the substantive claim -- the marker does not discriminate in this cohort -- stands; prose is corrected to cite the committed 0.4925 value with this file as source. Criterion not adjusted, run not iterated.",
+    "filled_pause_tokens": "1,881 not confirmable from the committed CSVs: the reconstruction per100 x ling.word_count/100 gives 1,637, and the gap is consistent with the parser's raw-token denominator exceeding the is_alpha word count by ~15%. Confirming the raw count needs a corpus-level recount of &-um / &-uh tokens (descriptive; queued with the Lu artefact recount). Until then the token count is cited from the plan or omitted."
+  }
+}
